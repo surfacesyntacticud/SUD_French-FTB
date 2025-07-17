@@ -1,4 +1,3 @@
-# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC
 # sent_id = flmf7ae1ep-1
 # text = Ou bien doit -il compter avec M. Eric Giuly et Mme Dominique Alduy, les directeurs généraux respectifs d'Antenne 2 et de FR3 ?
 1	Ou	ou	CCONJ	_	_	3	cc	_	_
@@ -23,7 +22,7 @@
 20	Antenne	Antenne	PROPN	_	_	19	comp:obj	_	mwehead=NPP+|pred=y
 21	2	2	NUM	_	NumType=Card	20	unk	_	pred=y
 22	et	et	CCONJ	_	_	23	cc	_	_
-23	de	de	ADP	_	_	19	conj	_	_
+23	de	de	ADP	_	_	19	conj:coord	_	_
 24	FR3	FR3	PROPN	_	Gender=Fem|Number=Sing	23	comp:obj	_	_
 25	?	?	PUNCT	_	_	3	punct	_	_
 
@@ -65,7 +64,7 @@
 20	Antenne	Antenne	PROPN	_	_	19	comp:obj	_	mwehead=NPP+|pred=y
 21	2	2	NUM	_	NumType=Card	20	unk	_	pred=y
 22	et	et	CCONJ	_	_	23	cc	_	_
-23	à	à	ADP	_	_	13	conj	_	_
+23	à	à	ADP	_	_	13	conj:coord	_	_
 24	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	direction	direction	NOUN	_	Gender=Fem|Number=Sing	23	comp:obj	_	_
 26	de	de	ADP	_	_	25	udep	_	_
@@ -186,7 +185,7 @@
 8	pas	pas	ADV	_	Polarity=Neg	6	mod	_	_
 9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	marge	marge	NOUN	_	Gender=Fem|Number=Sing	6	comp:obj	_	mwehead=NC+|pred=y
-11	de	de	ADP	_	_	10	unk	_	pred=y
+11	de	de	ADP	_	_	10	udep	_	pred=y
 12	manoeuvre	manoeuvre	NOUN	_	Number=Sing	11	comp:obj	_	pred=y
 13	bien	bien	ADV	_	_	14	mod	_	_
 14	large	large	ADJ	_	Gender=Fem|Number=Sing	10	mod	_	SpaceAfter=No
@@ -250,9 +249,9 @@
 51	d'	de	ADP	_	_	50	udep	_	SpaceAfter=No
 52	arguments	argument	NOUN	_	Gender=Masc|Number=Plur	51	comp:obj	_	_
 53	techniques	technique	ADJ	_	Gender=Masc|Number=Plur	52	mod	_	_
-54	tout	tout	ADV	_	_	52	mod	_	mwehead=ADV+|pred=y
-55	d'	de	ADP	_	_	54	unk	_	pred=y|SpaceAfter=No
-56	abord	abord	NOUN	_	Gender=Masc|Number=Sing	55	comp:obj	_	pred=y
+54	tout	tout	ADV	_	_	55	mod	_	pred=y
+55	d'	de	ADP	_	_	52	mod	_	Idiom=Yes|mwehead=ADV+|pred=y|SpaceAfter=No
+56	abord	abord	NOUN	_	Gender=Masc|Number=Sing	55	comp:obj	_	InIdiom=Yes|pred=y
 57	:	:	PUNCT	_	_	59	punct	_	_
 58	où	où	ADV	_	PronType=Int	59	mod	_	_
 59	loger	loger	VERB	_	VerbForm=Inf	52	parataxis	_	Subject=Generic
@@ -278,8 +277,8 @@
 7	qu'	que	ADV	_	Polarity=Neg	4	mod	_	SpaceAfter=No
 8-9	au	_	_	_	_	_	_	_	_
 8	à	à	ADP	_	ExtPos=ADV	4	mod	_	mwehead=P+|pred=y
-9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	unk	_	InIdiom=Yes
-10	prix	prix	NOUN	_	Gender=Masc	9	det	_	pred=y
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	InIdiom=Yes
+10	prix	prix	NOUN	_	Gender=Masc	8	unk	_	pred=y
 11	de	de	ADP	_	_	8	comp:obl	_	pred=y
 12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	refonte	refonte	NOUN	_	Gender=Fem|Number=Sing	11	comp:obj	_	_
@@ -371,7 +370,7 @@
 11	,	,	PUNCT	_	_	14	punct	_	_
 12	mais	mais	CCONJ	_	_	14	cc	_	_
 13	n'	ne	ADV	_	Polarity=Neg	14	mod	_	SpaceAfter=No
-14	ayant	avoir	VERB	_	Tense=Pres|VerbForm=Part	8	conj	_	_
+14	ayant	avoir	VERB	_	Tense=Pres|VerbForm=Part	8	conj:coord	_	_
 15	de	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	16	det	_	_
 16	comptes	compte	NOUN	_	Gender=Masc|Number=Plur	14	comp:obj	_	_
 17	à	à	ADP	_	_	16	udep	_	_
@@ -430,7 +429,7 @@
 35	Antenne	Antenne	PROPN	_	_	34	comp:obj	_	mwehead=NPP+|pred=y
 36	2	2	NUM	_	NumType=Card	35	unk	_	pred=y
 37	et	et	CCONJ	_	_	38	cc	_	_
-38	de	de	ADP	_	_	34	conj	_	_
+38	de	de	ADP	_	_	34	conj:coord	_	_
 39	FR3	FR3	PROPN	_	Gender=Fem|Number=Sing	38	comp:obj	_	_
 40	?	?	PUNCT	_	_	27	punct	_	_
 
@@ -521,7 +520,7 @@
 9	de	de	ADP	_	_	8	udep	_	_
 10	compétence	compétence	NOUN	_	Gender=Fem|Number=Sing	9	comp:obj	_	_
 11	et	et	CCONJ	_	_	12	cc	_	_
-12	d'	de	ADP	_	_	9	conj	_	SpaceAfter=No
+12	d'	de	ADP	_	_	9	conj:coord	_	SpaceAfter=No
 13	autorité	autorité	NOUN	_	Gender=Fem|Number=Sing	12	comp:obj	_	_
 14-15	au	_	_	_	_	_	_	_	_
 14	à	à	ADP	_	_	4	mod	_	_
@@ -588,7 +587,7 @@
 5	Antenne	Antenne	PROPN	_	_	4	comp:obj	_	mwehead=NPP+|pred=y
 6	2	2	NUM	_	NumType=Card	5	unk	_	pred=y
 7	et	et	CCONJ	_	_	8	cc	_	_
-8	de	de	ADP	_	_	4	conj	_	_
+8	de	de	ADP	_	_	4	conj:coord	_	_
 9	FR3	FR3	PROPN	_	Gender=Fem|Number=Sing	8	comp:obj	_	_
 10	semblent	sembler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 11	avoir	avoir	AUX	_	VerbForm=Inf	10	comp:obj	_	Subject=Generic
@@ -809,8 +808,8 @@
 42	-	-	PUNCT	_	_	41	unk	_	pred=y
 43	dire	dire	VERB	_	VerbForm=Inf	42	unk	_	pred=y|Subject=Generic
 44	à	à	ADP	_	ExtPos=ADV	38	udep	_	mwehead=P+|pred=y
-45	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	44	unk	_	pred=y|SpaceAfter=No
-46	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	45	det	_	pred=y
+45	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	46	det	_	pred=y|SpaceAfter=No
+46	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	44	unk	_	pred=y
 47	de	de	ADP	_	_	44	comp:obl	_	pred=y
 48	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	_	_
 49	présente	présent	ADJ	_	Gender=Fem|Number=Sing	50	mod	_	_
@@ -886,7 +885,7 @@
 21	ils	il	PRON	_	Gender=Masc|Number=Plur|Person=3	24	subj	_	_
 22	s'	le/lui	PRON	_	Gender=Masc|Number=Plur|Person=3|Reflex=Yes	24	comp:obl	_	SpaceAfter=No
 23	en	en	PRON	_	Gender=Masc|Number=Sing|Person=3	24	comp	_	_
-24	méfient	méfier	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+24	méfient	méfier	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj:coord	_	_
 25	de	de	ADP	_	_	24	mod	_	mwehead=ADV+|pred=y
 26	plus	plus	ADV	_	_	25	comp:obj	_	pred=y
 27	en	en	ADP	_	_	26	unk	_	pred=y
@@ -915,8 +914,8 @@
 17	SOFRES	SOFRES	PROPN	_	Gender=Fem|Number=Sing	15	comp:obj	_	SpaceAfter=No
 18	,	,	PUNCT	_	_	19	punct	_	_
 19	à	à	ADP	_	ExtPos=ADV	12	mod	_	mwehead=P+|pred=y
-20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	unk	_	pred=y
-21	demande	demande	NOUN	_	Gender=Fem|Number=Sing	20	det	_	pred=y
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	pred=y
+21	demande	demande	NOUN	_	Gender=Fem|Number=Sing	19	unk	_	pred=y
 22	de	de	ADP	_	_	19	comp:obl	_	pred=y
 23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	comp:obj	_	mwehead=NPP+|pred=y
 24	Croix	Croix	PROPN	_	Gender=Masc|Number=Sing	23	unk	_	pred=y|SpaceAfter=No
@@ -961,7 +960,7 @@
 5	presse	presse	NOUN	_	Gender=Fem|Number=Sing	3	comp:obj	_	mwehead=NC+|pred=y
 6	écrite	écrit	ADJ	_	Gender=Fem|Number=Sing	5	mod	_	pred=y
 7	et	et	CCONJ	_	_	8	cc	_	_
-8	de	de	ADP	_	_	3	conj	_	_
+8	de	de	ADP	_	_	3	conj:coord	_	_
 9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	radio	radio	NOUN	_	Gender=Fem|Number=Sing	8	comp:obj	_	_
 11	ne	ne	ADV	_	Polarity=Neg	12	mod	_	_
@@ -1036,8 +1035,8 @@
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
 5	méfiance	méfiance	NOUN	_	Gender=Fem|Number=Sing	12	subj	_	_
 6	à	à	ADP	_	ExtPos=ADV	5	udep	_	mwehead=P+|pred=y
-7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	unk	_	pred=y|SpaceAfter=No
-8	encontre	encontre	NOUN	_	Gender=Fem|Number=Sing	7	det	_	pred=y
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	pred=y|SpaceAfter=No
+8	encontre	encontre	NOUN	_	Gender=Fem|Number=Sing	6	unk	_	pred=y
 9	de	de	ADP	_	_	6	comp:obl	_	pred=y
 10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	télévision	télévision	NOUN	_	Gender=Fem|Number=Sing	9	comp:obj	_	_
@@ -1084,8 +1083,8 @@
 4	plus	plus	ADV	_	_	5	mod	_	_
 5	critiques	critique	ADJ	_	Gender=Fem|Number=Plur	2	mod	_	_
 6	à	à	ADP	_	ExtPos=ADV	5	mod	_	mwehead=P+D+|pred=y
-7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	unk	_	pred=y|SpaceAfter=No
-8	égard	égard	NOUN	_	Gender=Masc|Number=Sing	7	det	_	pred=y
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	pred=y|SpaceAfter=No
+8	égard	égard	NOUN	_	Gender=Masc|Number=Sing	6	unk	_	pred=y
 9-10	du	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	6	comp:obl	_	pred=y
 10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
@@ -1105,7 +1104,7 @@
 24	ans	an	NOUN	_	Gender=Masc|Number=Plur	20	comp:obj	_	_
 25	et	et	CCONJ	_	_	27	cc	_	_
 26	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
-27	diplômés	diplômé	NOUN	_	Gender=Masc|Number=Plur	15	conj	_	_
+27	diplômés	diplômé	NOUN	_	Gender=Masc|Number=Plur	15	conj:coord	_	_
 28-29	du	_	_	_	_	_	_	_	_
 28	de	de	ADP	_	_	27	udep	_	_
 29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
@@ -1173,7 +1172,7 @@
 55	radio	radio	NOUN	_	Gender=Fem|Number=Sing	53	comp:obj	_	_
 56	et	et	CCONJ	_	_	57	cc	_	_
 57-58	aux	_	_	_	_	_	_	_	_
-57	à	à	ADP	_	_	53	conj	_	_
+57	à	à	ADP	_	_	53	conj:coord	_	_
 58	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	59	det	_	_
 59	quotidiens	quotidien	NOUN	_	Gender=Masc|Number=Plur	57	comp:obj	_	SpaceAfter=No
 60	,	,	PUNCT	_	_	63	punct	_	_
@@ -1185,7 +1184,7 @@
 65	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	66	det	_	_
 66	hebdomadaires	hebdomadaire	NOUN	_	Gender=Masc|Number=Plur	64	comp:obj	_	_
 67	et	et	CCONJ	_	_	68	cc	_	_
-68	magazines	magazine	NOUN	_	Gender=Masc|Number=Plur	66	conj	_	SpaceAfter=No
+68	magazines	magazine	NOUN	_	Gender=Masc|Number=Plur	66	conj:coord	_	SpaceAfter=No
 69	.	.	PUNCT	_	_	29	punct	_	_
 
 # sent_id = flmf7ae1ep-38
@@ -1238,10 +1237,10 @@
 24	pas	pas	ADV	_	Polarity=Neg	23	mod	_	_
 25	indépendants	indépendant	ADJ	_	Gender=Masc|Number=Plur	23	comp:pred	_	_
 26	(	(	PUNCT	_	_	18	punct	_	SpaceAfter=No
-27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	mod	_	mwehead=NC+|pred=y
-28	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	27	det	_	pred=y
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	mwehead=NC+|pred=y
+28	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	18	mod	_	pred=y
 29-30	du	_	_	_	_	_	_	_	_
-29	de	de	ADP	_	_	27	dep	_	_
+29	de	de	ADP	_	_	28	dep	_	_
 30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	22	22	NUM	_	Gender=Masc|Number=Sing|NumType=Card	29	comp:obj	_	_
 32	août	août	NOUN	_	Gender=Masc|Number=Sing	31	udep	_	_
@@ -1283,7 +1282,7 @@
 28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
 29	pouvoir	pouvoir	NOUN	_	Gender=Masc|Number=Sing	27	comp:obj	_	_
 30	et	et	CCONJ	_	_	31	cc	_	_
-31	de	de	ADP	_	_	27	conj	_	_
+31	de	de	ADP	_	_	27	conj:coord	_	_
 32	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	SpaceAfter=No
 33	argent	argent	NOUN	_	Gender=Masc|Number=Sing	31	comp:obj	_	_
 34	"	"	PUNCT	_	_	18	punct	_	SpaceAfter=No
@@ -1330,7 +1329,7 @@
 35	)	)	PUNCT	_	_	27	punct	_	_
 36	ou	ou	CCONJ	_	_	38	cc	_	_
 37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	_
-38	dégradation	dégradation	NOUN	_	Gender=Fem|Number=Sing	27	conj	_	_
+38	dégradation	dégradation	NOUN	_	Gender=Fem|Number=Sing	27	conj:coord	_	_
 39	de	de	ADP	_	_	38	udep	_	_
 40	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	SpaceAfter=No
 41	image	image	NOUN	_	Gender=Fem|Number=Sing	39	comp:obj	_	_
@@ -1408,7 +1407,7 @@
 12	de	de	ADP	_	_	10	udep	_	_
 13	Moravie	Moravie	PROPN	_	Gender=Fem|Number=Sing	12	comp:obj	_	_
 14	et	et	CCONJ	_	_	15	cc	_	_
-15	renforce	renforcer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
+15	renforce	renforcer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj:coord	_	_
 16	ainsi	ainsi	ADV	_	_	15	mod	_	_
 17	ses	son	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes	18	det	_	_
 18	positions	position	NOUN	_	Gender=Fem|Number=Plur	15	comp:obj	_	_
@@ -1427,7 +1426,7 @@
 31	en	en	ADP	_	_	28	conj	_	_
 32	Hongrie	Hongrie	PROPN	_	Gender=Fem|Number=Sing	31	comp:obj	_	_
 33	et	et	CCONJ	_	_	34	cc	_	_
-34	en	en	ADP	_	_	31	conj	_	_
+34	en	en	ADP	_	_	31	conj:coord	_	_
 35	Russie	Russie	PROPN	_	Gender=Fem|Number=Sing	34	comp:obj	_	SpaceAfter=No
 36	.	.	PUNCT	_	Shared=Yes	15	punct	_	_
 
@@ -1440,7 +1439,7 @@
 5	)	)	PUNCT	_	_	2	punct	_	SpaceAfter=No
 6	,	,	PUNCT	_	_	9	punct	_	_
 7	où	où	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Rel	10	dep	_	_
-8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	9	subj@expl	_	_
+8	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	9	subj	_	_
 9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	mod@relcl	_	_
 10	assisté	assister	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	comp:aux@tense	_	_
 11	mardi	mardi	NOUN	_	Gender=Masc|Number=Sing	10	mod	_	_
@@ -1518,8 +1517,8 @@
 6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	5	comp:obj	_	mwehead=NC+|pred=y
 8	de	de	ADP	_	_	7	unk	_	pred=y
-9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	unk	_	pred=y
-10	défense	défense	NOUN	_	Gender=Fem|Number=Sing	9	det	_	pred=y|SpaceAfter=No
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	pred=y
+10	défense	défense	NOUN	_	Gender=Fem|Number=Sing	8	unk	_	pred=y|SpaceAfter=No
 11	,	,	PUNCT	_	_	12	punct	_	_
 12	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	7	mod	_	_
 13	Pierre	Pierre	PROPN	_	Gender=Masc|Number=Sing	12	mod	_	_
@@ -1592,8 +1591,8 @@
 44	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	29	comp:obj	_	_
 45	réalisée	réaliser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	44	comp:aux@pass	_	_
 46	à	à	ADP	_	ExtPos=ADV	44	mod	_	mwehead=P+|pred=y
-47	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	46	unk	_	pred=y
-48	fin	fin	NOUN	_	Number=Sing	47	det	_	pred=y
+47	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	pred=y
+48	fin	fin	NOUN	_	Number=Sing	46	unk	_	pred=y
 49	de	de	ADP	_	_	46	comp:obl	_	pred=y
 50	1995	1995	NUM	_	Gender=Fem|Number=Sing|NumType=Card	49	comp:obj	_	SpaceAfter=No
 51	.	.	PUNCT	_	_	3	punct	_	_
@@ -1619,15 +1618,15 @@
 16	régiment	régiment	NOUN	_	Gender=Masc|Number=Sing	13	comp:obj	_	_
 17	de	de	ADP	_	_	16	udep	_	_
 18	chars	char	NOUN	_	Gender=Masc|Number=Plur	17	comp:obj	_	mwehead=NC+|pred=y
-19	de	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	18	unk	_	pred=y
-20	combat	combat	NOUN	_	Gender=Masc|Number=Sing	19	det	_	pred=y
+19	de	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	20	det	_	pred=y
+20	combat	combat	NOUN	_	Gender=Masc|Number=Sing	18	unk	_	pred=y
 21	et	et	CCONJ	_	_	22	cc	_	_
 22-23	du	_	_	_	_	_	_	_	_
-22	de	de	ADP	_	_	13	conj	_	_
+22	de	de	ADP	_	_	13	conj:coord	_	_
 23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 24	4	4	NUM	_	Gender=Masc|Number=Sing|NumType=Card	25	mod	_	_
 25	régiment	régiment	NOUN	_	Gender=Masc|Number=Sing	22	comp:obj	_	mwehead=NC+|pred=y
-26	de	de	ADP	_	_	25	unk	_	pred=y
+26	de	de	ADP	_	_	25	udep	_	pred=y
 27	dragons	dragon	NOUN	_	Gender=Masc|Number=Plur	26	comp:obj	_	pred=y|SpaceAfter=No
 28	,	,	PUNCT	_	Shared=Yes	30	punct	_	_
 29	tous	tout	ADJ	_	Gender=Masc|Number=Plur	30	mod	_	_
@@ -1650,7 +1649,7 @@
 46	sept	sept	NUM	_	NumType=Card	45	unk	_	pred=y
 47	chars	char	NOUN	_	Gender=Masc|Number=Plur	42	mod	_	SpaceAfter=No
 48	)	)	PUNCT	_	_	42	punct	_	_
-49	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	conj	_	_
+49	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	9	conj:coord	_	_
 50	créé	créer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	49	comp:aux@pass	_	_
 51	dès	dès	ADP	_	_	49	mod	_	_
 52	1993	1993	NUM	_	Gender=Fem|Number=Sing|NumType=Card	51	comp:obj	_	SpaceAfter=No
@@ -1665,7 +1664,7 @@
 5	de	de	ADP	_	_	4	udep	_	_
 6	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	SpaceAfter=No
 7	armée	armée	NOUN	_	Gender=Fem|Number=Sing	5	comp:obj	_	mwehead=NC+|pred=y
-8	de	de	ADP	_	_	7	unk	_	pred=y
+8	de	de	ADP	_	_	7	udep	_	pred=y
 9	terre	terre	NOUN	_	Gender=Fem|Number=Sing	8	comp:obj	_	pred=y
 10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 11	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	comp:aux@tense	_	_
@@ -1733,12 +1732,12 @@
 6	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	mod@relcl	_	_
 7	développé	développer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	comp:aux@tense	_	_
 8	dans	dans	ADP	_	ExtPos=ADV	7	mod	_	mwehead=P+|pred=y
-9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	unk	_	pred=y
-10	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	9	det	_	pred=y
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	pred=y
+10	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	8	unk	_	pred=y
 11	d'	de	ADP	_	_	8	comp:obl	_	pred=y|SpaceAfter=No
 12	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
 13	politique	politique	NOUN	_	Gender=Fem|Number=Sing	11	comp:obj	_	mwehead=NC+|pred=y
-14	de	de	ADP	_	_	13	unk	_	pred=y
+14	de	de	ADP	_	_	13	udep	_	pred=y
 15	défense	défense	NOUN	_	Gender=Fem|Number=Sing	14	comp:obj	_	pred=y
 16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	industrie	industrie	NOUN	_	Gender=Fem|Number=Sing	7	comp:obj	_	_
@@ -1791,7 +1790,7 @@
 62	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	64	det	_	_
 63	nombreuses	nombreux	ADJ	_	Gender=Fem|Number=Plur	64	mod	_	_
 64	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	65	subj	_	_
-65	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	23	conj	_	_
+65	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	23	conj:coord	_	_
 66	conduites	conduire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	65	comp:aux@pass	_	_
 67	à	à	ADP	_	_	66	comp:obl	_	_
 68	diminuer	diminuer	VERB	_	VerbForm=Inf	67	comp:obj	_	Subject=Generic
@@ -1833,10 +1832,10 @@
 26	mille	mille	NUM	_	NumType=Card	25	unk	_	pred=y
 27	postes	poste	NOUN	_	Gender=Masc|Number=Plur	21	comp:obj	_	_
 28	(	(	PUNCT	_	_	17	punct	_	SpaceAfter=No
-29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	mod	_	mwehead=NC+|pred=y
-30	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	29	det	_	pred=y
+29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	mwehead=NC+|pred=y
+30	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	17	mod	_	pred=y
 31-32	du	_	_	_	_	_	_	_	_
-31	de	de	ADP	_	_	29	dep	_	_
+31	de	de	ADP	_	_	30	dep	_	_
 32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
 33	14	14	NUM	_	Gender=Masc|Number=Sing|NumType=Card	31	comp:obj	_	_
 34	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	33	udep	_	SpaceAfter=No
@@ -1887,7 +1886,7 @@
 40	1993	1993	NUM	_	Gender=Fem|Number=Sing|NumType=Card	39	comp:obj	_	_
 41	et	et	CCONJ	_	_	43	cc	_	_
 42	en	en	PRON	_	Gender=Masc|Number=Sing|Person=3	43	comp:obj	_	_
-43	déplace	déplacer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	conj	_	_
+43	déplace	déplacer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	conj:coord	_	_
 44	quatre	quatre	NUM	_	NumType=Card	46	det	_	mwehead=DET+|pred=y
 45	cents	cents	NUM	_	NumType=Card	44	unk	_	pred=y
 46	autres	autre	ADJ	_	Gender=Masc|Number=Plur	43	comp:obj	_	SpaceAfter=No
@@ -1901,7 +1900,7 @@
 54	en	en	ADP	_	_	48	mod	_	_
 55	province	province	NOUN	_	Gender=Fem|Number=Sing	54	comp:obj	_	_
 56	et	et	CCONJ	_	_	57	cc	_	_
-57	à	à	ADP	_	_	54	conj	_	_
+57	à	à	ADP	_	_	54	conj:coord	_	_
 58	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	57	comp:obj	_	SpaceAfter=No
 59	.	.	PUNCT	_	_	48	punct	_	_
 
@@ -1925,8 +1924,8 @@
 14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 15	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	13	comp:obj	_	mwehead=NC+|pred=y
 16	de	de	ADP	_	_	15	unk	_	pred=y
-17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	unk	_	pred=y
-18	défense	défense	NOUN	_	Gender=Fem|Number=Sing	17	det	_	pred=y|SpaceAfter=No
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	pred=y
+18	défense	défense	NOUN	_	Gender=Fem|Number=Sing	16	unk	_	pred=y|SpaceAfter=No
 19	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = flmf7ae1ep-55
@@ -1947,7 +1946,7 @@
 14	depuis	depuis	ADV	_	_	15	mod	_	_
 15	privatisé	privatiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	mod	_	_
 16	et	et	CCONJ	_	_	17	cc	_	_
-17	rebaptisé	rebaptiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	conj	_	_
+17	rebaptisé	rebaptiser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	conj:coord	_	_
 18	Lever	Lever	PROPN	_	Gender=Masc|Number=Sing	17	mod	_	_
 19	Polska	Polska	PROPN	_	Gender=Masc|Number=Sing	18	flat@name	_	SpaceAfter=No
 20	)	)	PUNCT	_	_	8	punct	_	SpaceAfter=No
@@ -2020,7 +2019,7 @@
 8	son	son	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes	10	det	_	_
 9	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	10	mod	_	_
 10	centre	centre	NOUN	_	Gender=Masc|Number=Sing	7	comp:obj	_	mwehead=NC+|pred=y
-11	de	de	ADP	_	_	10	unk	_	pred=y
+11	de	de	ADP	_	_	10	udep	_	pred=y
 12	production	production	NOUN	_	Gender=Fem|Number=Sing	11	comp:obj	_	pred=y
 13	de	de	ADP	_	_	10	udep	_	_
 14	glaces	glace	NOUN	_	Gender=Fem|Number=Plur	13	comp:obj	_	_
@@ -2028,7 +2027,7 @@
 16	Europe	Europe	PROPN	_	Gender=Fem|Number=Sing	15	comp:obj	_	_
 17	centrale	central	ADJ	_	Gender=Fem|Number=Sing	16	mod	_	_
 18	et	et	CCONJ	_	_	19	cc	_	_
-19	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	SpaceAfter=No
+19	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj:coord	_	SpaceAfter=No
 20	,	,	PUNCT	_	_	21	punct	_	_
 21	à	à	ADP	_	_	19	mod	_	_
 22	terme	terme	NOUN	_	Gender=Masc|Number=Sing	21	comp:obj	_	SpaceAfter=No
@@ -2067,7 +2066,7 @@
 17	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No
 18	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	16	comp:obj	_	_
 19	et	et	CCONJ	_	_	20	cc	_	_
-20	développer	développer	VERB	_	VerbForm=Inf	16	conj	_	Subject=Generic
+20	développer	développer	VERB	_	VerbForm=Inf	16	conj:coord	_	Subject=Generic
 21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	20	comp:obj	_	_
 23	de	de	ADP	_	_	22	udep	_	_
@@ -2099,7 +2098,7 @@
 13	oeuvre	oeuvre	NOUN	_	Number=Sing	12	comp:obj	_	pred=y
 14	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	15	det	_	_
 15	plans	plan	NOUN	_	Gender=Masc|Number=Plur	11	comp:obj	_	mwehead=NC+|pred=y
-16	de	de	ADP	_	_	15	unk	_	pred=y
+16	de	de	ADP	_	_	15	udep	_	pred=y
 17	redressement	redressement	NOUN	_	Gender=Masc|Number=Sing	16	comp:obj	_	pred=y
 18	pour	pour	ADP	_	_	11	mod	_	_
 19	arrêter	arrêter	VERB	_	VerbForm=Inf	18	comp:obj	_	Subject=Generic
@@ -2131,8 +2130,8 @@
 17	)	)	PUNCT	_	_	13	punct	_	_
 18-19	au	_	_	_	_	_	_	_	_
 18	à	à	ADP	_	ExtPos=ADV	11	mod	_	mwehead=P+|pred=y
-19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	unk	_	InIdiom=Yes
-20	cours	cours	NOUN	_	Gender=Masc	19	det	_	pred=y
+19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	InIdiom=Yes
+20	cours	cours	NOUN	_	Gender=Masc	18	unk	_	pred=y
 21	de	de	ADP	_	_	18	comp:obl	_	pred=y
 22	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	SpaceAfter=No
 23	année	année	NOUN	_	Gender=Fem|Number=Sing	21	comp:obj	_	_
@@ -2163,8 +2162,8 @@
 20	francs	franc	NOUN	_	Gender=Masc|Number=Plur	19	comp:obj	_	_
 21-22	au	_	_	_	_	_	_	_	_
 21	à	à	ADP	_	ExtPos=ADV	12	mod	_	mwehead=P+D+|pred=y
-22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	unk	_	InIdiom=Yes
-23	cours	cours	NOUN	_	Gender=Masc	22	det	_	pred=y
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	InIdiom=Yes
+23	cours	cours	NOUN	_	Gender=Masc	21	unk	_	pred=y
 24-25	du	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	21	comp:obl	_	pred=y
 25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
@@ -2188,7 +2187,7 @@
 9	,	,	PUNCT	_	_	11	punct	_	_
 10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	mise	mettre	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	conj	_	mwehead=NC+|pred=y
-12	en	en	ADP	_	_	11	unk	_	pred=y
+12	en	en	ADP	_	_	11	udep	_	pred=y
 13	vente	vente	NOUN	_	Gender=Fem|Number=Sing	12	comp:obj	_	pred=y
 14-15	des	_	_	_	_	_	_	_	_
 14	de	de	ADP	_	_	11	dep	_	_
@@ -2227,10 +2226,10 @@
 44	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	45	det	_	_
 45	comptes	compte	NOUN	_	Gender=Masc|Number=Plur	43	comp:obj	_	_
 46	(	(	PUNCT	_	_	39	punct	_	SpaceAfter=No
-47	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	mod	_	mwehead=NC+|pred=y
-48	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	47	det	_	pred=y
+47	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	48	det	_	mwehead=NC+|pred=y
+48	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	39	mod	_	pred=y
 49-50	du	_	_	_	_	_	_	_	_
-49	de	de	ADP	_	_	47	dep	_	_
+49	de	de	ADP	_	_	48	dep	_	_
 50	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	_
 51	24	24	NUM	_	Gender=Masc|Number=Sing|NumType=Card	49	comp:obj	_	_
 52	août	août	NOUN	_	Gender=Masc|Number=Sing	51	udep	_	_
@@ -2263,10 +2262,10 @@
 20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	Ruhr	Ruhr	PROPN	_	Gender=Masc|Number=Sing	19	comp:obj	_	_
 22	(	(	PUNCT	_	_	38	punct	_	SpaceAfter=No
-23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	mod	_	mwehead=NC+|pred=y
-24	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	23	det	_	pred=y
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	mwehead=NC+|pred=y
+24	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	38	mod	_	pred=y
 25-26	du	_	_	_	_	_	_	_	_
-25	de	de	ADP	_	_	23	dep	_	_
+25	de	de	ADP	_	_	24	dep	_	_
 26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	15	15	NUM	_	Gender=Masc|Number=Sing|NumType=Card	25	comp:obj	_	_
 28	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	27	udep	_	SpaceAfter=No
@@ -2313,8 +2312,8 @@
 8	%	%	NOUN	_	Gender=Masc|Number=Plur	6	comp:obj	_	SpaceAfter=No
 9	)	)	PUNCT	_	_	4	punct	_	_
 10	dans	dans	ADP	_	_	4	mod	_	mwehead=ADV+|pred=y
-11	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	10	unk	_	pred=y
-12	sens	sens	NOUN	_	Gender=Masc	11	det	_	pred=y|SpaceAfter=No
+11	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	12	det	_	pred=y
+12	sens	sens	NOUN	_	Gender=Masc	10	unk	_	pred=y|SpaceAfter=No
 13	,	,	PUNCT	_	_	4	punct	_	_
 14	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	16	subj@expl	_	_
 15	s'	le/lui	PRON	_	Gender=Masc|Number=Sing|Person=3|Reflex=Yes	16	comp@expl	_	SpaceAfter=No
@@ -2324,7 +2323,7 @@
 18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 19	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	20	mod	_	_
 20	arrêt	arrêt	NOUN	_	Gender=Masc|Number=Sing	17	comp:obj	_	mwehead=NC+|pred=y
-21	de	de	ADP	_	_	20	unk	_	pred=y
+21	de	de	ADP	_	_	20	udep	_	pred=y
 22	travail	travail	NOUN	_	Gender=Masc|Number=Sing	21	comp:obj	_	pred=y
 23	depuis	depuis	ADP	_	_	20	udep	_	_
 24	1979	1979	NUM	_	Gender=Fem|Number=Sing|NumType=Card	23	comp:obj	_	SpaceAfter=No
@@ -2452,7 +2451,7 @@
 19	économie	économie	NOUN	_	Gender=Fem|Number=Sing	17	comp:obj	_	_
 20	allemande	allemand	ADJ	_	Gender=Fem|Number=Sing	19	mod	_	_
 21	et	et	CCONJ	_	_	22	cc	_	_
-22	de	de	ADP	_	_	14	conj	_	_
+22	de	de	ADP	_	_	14	conj:coord	_	_
 23	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No
 24	inflation	inflation	NOUN	_	Gender=Fem|Number=Sing	22	comp:obj	_	_
 25	qui	qui	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Rel	26	subj	_	_
@@ -2504,7 +2503,7 @@
 18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_
 19	dossiers	dossier	NOUN	_	Gender=Masc|Number=Plur	17	comp:obj	_	_
 20	et	et	CCONJ	_	_	21	cc	_	_
-21	documents	document	NOUN	_	Gender=Masc|Number=Plur	19	conj	_	_
+21	documents	document	NOUN	_	Gender=Masc|Number=Plur	19	conj:coord	_	_
 22-23	du	_	_	_	_	_	_	_	_
 22	de	de	ADP	_	Shared=Yes	21	udep	_	_
 23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
@@ -2529,8 +2528,8 @@
 6	,	,	PUNCT	_	_	7	punct	_	_
 7	réalisée	réaliser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	5	mod	_	_
 8	sous	sous	ADV	_	ExtPos=ADV	7	mod	_	mwehead=P+|pred=y
-9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	unk	_	pred=y
-10	direction	direction	NOUN	_	Gender=Fem|Number=Sing	9	det	_	pred=y
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	pred=y
+10	direction	direction	NOUN	_	Gender=Fem|Number=Sing	8	unk	_	pred=y
 11	de	de	ADP	_	_	8	comp:obl	_	pred=y
 12	Michel	Michel	PROPN	_	Gender=Masc|Number=Sing	11	comp:obj	_	_
 13	Boyer	Boyer	PROPN	_	Gender=Masc|Number=Sing	12	flat@name	_	SpaceAfter=No
@@ -2541,7 +2540,7 @@
 18	et	et	CCONJ	_	_	21	cc	_	_
 19	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 20	nombreuses	nombreux	ADJ	_	Gender=Fem|Number=Plur	21	mod	_	_
-21	illustrations	illustration	NOUN	_	Gender=Fem|Number=Plur	17	conj	_	SpaceAfter=No
+21	illustrations	illustration	NOUN	_	Gender=Fem|Number=Plur	17	conj:coord	_	SpaceAfter=No
 22	.	.	PUNCT	_	_	15	punct	_	_
 
 # sent_id = flmf7ae1ep-73
@@ -2551,8 +2550,8 @@
 3	,	,	PUNCT	_	_	2	punct	_	_
 4	ce	ce	PRON	_	Gender=Fem|Number=Sing|Person=3	5	subj	_	_
 5	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-6	d'	de	ADP	_	_	5	mod	_	mwehead=ADV+|pred=y|SpaceAfter=No
-7	abord	abord	NOUN	_	Gender=Masc|Number=Sing	6	comp:obj	_	pred=y
+6	d'	de	ADP	_	_	5	mod	_	Idiom=Yes|mwehead=ADV+|pred=y|SpaceAfter=No
+7	abord	abord	NOUN	_	Gender=Masc|Number=Sing	6	comp:obj	_	InIdiom=Yes|pred=y
 8	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
 9	mouvements	mouvement	NOUN	_	Gender=Masc|Number=Plur	5	comp:pred	_	_
 10	plus	plus	ADV	_	_	13	mod	_	mwehead=ADV+|pred=y
@@ -2582,7 +2581,7 @@
 32	et	et	CCONJ	_	_	35	cc	_	_
 33	cela	cela	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	35	subj	_	_
 34	ne	ne	ADV	_	Polarity=Neg	35	mod	_	_
-35	concerne	concerner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+35	concerne	concerner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj:coord	_	_
 36	pas	pas	ADV	_	Polarity=Neg	35	mod	_	_
 37	seulement	seulement	ADV	_	_	35	mod	_	_
 38	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	39	det	_	_
@@ -2680,8 +2679,8 @@
 4	,	,	PUNCT	_	_	3	punct	_	_
 5	mais	mais	CCONJ	_	_	6	cc	_	_
 6	à	à	ADP	_	ExtPos=ADV	0	root	_	mwehead=P+D+|pred=y
-7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	unk	_	pred=y
-8	manière	manière	NOUN	_	Gender=Fem|Number=Sing	7	det	_	pred=y
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	pred=y
+8	manière	manière	NOUN	_	Gender=Fem|Number=Sing	6	unk	_	pred=y
 9-10	des	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	6	comp:obl	_	pred=y
 10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
@@ -2789,7 +2788,7 @@
 3	Ouest	ouest	NOUN	_	Gender=Masc|Number=Sing	1	comp:obj	_	_
 4	et	et	CCONJ	_	_	5	cc	_	_
 5-6	au	_	_	_	_	_	_	_	_
-5	à	à	ADP	_	_	1	conj	_	_
+5	à	à	ADP	_	_	1	conj:coord	_	_
 6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
 7	Japon	japon	NOUN	_	Gender=Masc|Number=Sing	5	comp:obj	_	SpaceAfter=No
 8	,	,	PUNCT	_	_	1	punct	_	_
@@ -2871,7 +2870,7 @@
 # text = Les chefs d'entreprise croyaient à dix ans d'expansion continue.
 1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	chefs	chef	NOUN	_	Number=Plur	5	subj	_	mwehead=NC+|pred=y
-3	d'	de	ADP	_	_	2	unk	_	pred=y|SpaceAfter=No
+3	d'	de	ADP	_	_	2	udep	_	pred=y|SpaceAfter=No
 4	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	3	comp:obj	_	pred=y
 5	croyaient	croire	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 6	à	à	ADP	_	_	5	comp:obl	_	_
@@ -2904,7 +2903,7 @@
 11	,	,	PUNCT	_	_	12	punct	_	_
 12	OPA	OPA	NOUN	_	Gender=Fem|Number=Sing	7	mod	_	_
 13	et	et	CCONJ	_	_	14	cc	_	_
-14	spéculation	spéculation	NOUN	_	Gender=Fem|Number=Sing	12	conj	_	mwehead=NC+|pred=y
+14	spéculation	spéculation	NOUN	_	Gender=Fem|Number=Sing	12	conj:coord	_	mwehead=NC+|pred=y
 15	immobilière	immobilier	ADJ	_	Gender=Fem|Number=Sing	14	mod	_	pred=y|SpaceAfter=No
 16	,	,	PUNCT	_	_	17	punct	_	_
 17	comme	comme	SCONJ	_	_	3	mod	_	_
@@ -2940,7 +2939,7 @@
 46	mexicain	mexicain	ADJ	_	Gender=Masc|Number=Sing	45	mod	_	_
 47	et	et	CCONJ	_	_	49	cc	_	_
 48	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	49	det	_	_
-49	reste	reste	NOUN	_	Gender=Masc|Number=Sing	45	conj	_	SpaceAfter=No
+49	reste	reste	NOUN	_	Gender=Masc|Number=Sing	45	conj:coord	_	SpaceAfter=No
 50	.	.	PUNCT	_	_	3	punct	_	_
 
 # sent_id = flmf7ae1ep-89
@@ -2951,13 +2950,13 @@
 4	à	à	ADP	_	_	19	mod	_	_
 5	Tokyo	Tokyo	PROPN	_	Gender=Masc|Number=Sing	4	comp:obj	_	_
 6	et	et	CCONJ	_	_	7	cc	_	_
-7	à	à	ADP	_	_	4	conj	_	_
+7	à	à	ADP	_	_	4	conj:coord	_	_
 8	Londres	Londres	PROPN	_	Gender=Masc|Number=Sing	7	comp:obj	_	SpaceAfter=No
 9	,	,	PUNCT	_	_	10	punct	_	_
 10	à	à	ADP	_	_	19	mod	_	_
 11	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	10	comp:obj	_	_
 12	et	et	CCONJ	_	_	13	cc	_	_
-13	à	à	ADP	_	_	10	conj	_	_
+13	à	à	ADP	_	_	10	conj:coord	_	_
 14	New	New	X	_	Foreign=Yes	13	comp:obj	_	mwehead=NPP+|pred=y
 15	-	-	PUNCT	_	_	14	unk	_	pred=y
 16	York	York	X	_	Foreign=Yes	15	unk	_	pred=y|SpaceAfter=No
@@ -2991,7 +2990,7 @@
 16	habituel	habituel	ADJ	_	Gender=Masc|Number=Sing	15	mod	_	SpaceAfter=No
 17	,	,	PUNCT	_	_	13	punct	_	_
 18	ne	ne	ADV	_	Polarity=Neg	19	mod	_	_
-19	veulent	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+19	veulent	vouloir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj:coord	_	_
 20	plus	plus	ADV	_	Polarity=Neg	19	mod	_	_
 21	faire	faire	VERB	_	VerbForm=Inf	19	comp:obj	_	Subject=Generic
 22	crédit	crédit	NOUN	_	Gender=Masc|Number=Sing	21	mod	_	SpaceAfter=No
@@ -3018,7 +3017,7 @@
 16	d'	un	DET	_	Gender=Masc|Number=Plur|PronType=Int	19	det	_	SpaceAfter=No
 17	autres	autre	ADJ	_	Gender=Masc|Number=Plur	19	mod	_	_
 18	grand	grand	ADJ	_	Gender=Masc|Number=Sing	19	mod	_	mwehead=NC+|pred=y
-19	argentiers	argentier	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	pred=y|SpaceAfter=No
+19	argentiers	argentier	NOUN	_	Gender=Masc|Number=Plur	12	conj:coord	_	pred=y|SpaceAfter=No
 20	,	,	PUNCT	_	_	21	punct	_	_
 21	soucieux	soucieux	ADJ	_	Gender=Masc|Number=Plur	19	mod	_	_
 22	de	de	ADP	_	_	21	comp:obl	_	_
@@ -3051,8 +3050,8 @@
 3	entrefaites	entrefaite	NOUN	_	Gender=Fem|Number=Plur	1	comp:obj	_	SpaceAfter=No
 4	,	,	PUNCT	_	_	5	punct	_	_
 5	à	à	ADP	_	ExtPos=ADV	28	mod	_	mwehead=P+|pred=y
-6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	unk	_	pred=y
-7	faveur	faveur	NOUN	_	Gender=Fem|Number=Sing	6	det	_	pred=y
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	pred=y
+7	faveur	faveur	NOUN	_	Gender=Fem|Number=Sing	5	unk	_	pred=y
 8	d'	de	ADP	_	_	5	comp:obl	_	pred=y|SpaceAfter=No
 9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
 10	baisse	baisse	NOUN	_	Gender=Fem|Number=Sing	8	comp:obj	_	_
@@ -3126,7 +3125,7 @@
 3	de	de	ADP	_	_	2	udep	_	_
 4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_
 5	taux	taux	NOUN	_	Gender=Masc	3	comp:obj	_	mwehead=NC+|pred=y
-6	de	de	ADP	_	_	5	unk	_	pred=y
+6	de	de	ADP	_	_	5	udep	_	pred=y
 7	change	change	NOUN	_	Gender=Masc|Number=Sing	6	comp:obj	_	pred=y
 
 # sent_id = flmf7ae1ep-96
@@ -3159,8 +3158,8 @@
 3	vieille	vieux	ADJ	_	Gender=Fem|Number=Sing	4	mod	_	_
 4	Europe	Europe	PROPN	_	Gender=Fem|Number=Sing	1	comp:obj	_	_
 5	en	en	ADP	_	_	1	mod	_	mwehead=ADV+|pred=y
-6	tout	tout	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	5	unk	_	pred=y
-7	cas	cas	NOUN	_	Gender=Masc	6	det	_	pred=y|SpaceAfter=No
+6	tout	tout	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	pred=y
+7	cas	cas	NOUN	_	Gender=Masc	5	unk	_	pred=y|SpaceAfter=No
 8	,	,	PUNCT	_	_	1	punct	_	_
 9	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	SpaceAfter=No
 10	aspiration	aspiration	NOUN	_	Gender=Fem|Number=Sing	19	subj	_	_
@@ -3171,7 +3170,7 @@
 14	de	de	ADP	_	_	13	udep	_	_
 15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	taux	taux	NOUN	_	Gender=Masc	14	comp:obj	_	mwehead=NC+|pred=y
-17	de	de	ADP	_	_	16	unk	_	pred=y
+17	de	de	ADP	_	_	16	udep	_	pred=y
 18	change	change	NOUN	_	Gender=Masc|Number=Sing	17	comp:obj	_	pred=y
 19	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 20	générale	général	ADJ	_	Gender=Fem|Number=Sing	19	comp:pred	_	SpaceAfter=No
@@ -3214,7 +3213,7 @@
 17	glissade	glissade	NOUN	_	Gender=Fem|Number=Sing	15	comp:obj	_	SpaceAfter=No
 18	,	,	PUNCT	_	_	20	punct	_	_
 19	voire	voire	CCONJ	_	_	20	cc	_	_
-20	sur	sur	ADP	_	_	12	conj	_	_
+20	sur	sur	ADP	_	_	12	conj:coord	_	_
 21	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	22	det	_	_
 22	revalorisation	revalorisation	NOUN	_	Gender=Fem|Number=Sing	20	comp:obj	_	SpaceAfter=No
 23	.	.	PUNCT	_	_	9	punct	_	_
@@ -3277,7 +3276,7 @@
 22	de	de	ADP	_	_	21	udep	_	_
 23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	taux	taux	NOUN	_	Gender=Masc	22	comp:obj	_	mwehead=NC+|pred=y
-25	de	de	ADP	_	_	24	unk	_	pred=y
+25	de	de	ADP	_	_	24	udep	_	pred=y
 26	change	change	NOUN	_	Gender=Masc|Number=Sing	25	comp:obj	_	pred=y|SpaceAfter=No
 27	.	.	PUNCT	_	_	16	punct	_	_
 
@@ -3319,7 +3318,7 @@
 6	-	-	PUNCT	_	_	5	unk	_	pred=y
 7	même	même	ADJ	_	Number=Sing	6	unk	_	pred=y|SpaceAfter=No
 8	,	,	PUNCT	_	_	1	punct	_	_
-9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	10	subj@expl	_	_
+9	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	10	subj	_	_
 10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 11	monté	monter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	comp:aux@tense	_	_
 12	quand	quand	SCONJ	_	_	11	mod	_	_
@@ -3340,7 +3339,7 @@
 26	)	)	PUNCT	_	_	14	punct	_	SpaceAfter=No
 27	,	,	PUNCT	_	_	29	punct	_	_
 28	et	et	CCONJ	_	_	29	cc	_	_
-29	baisser	baisser	VERB	_	VerbForm=Inf	11	conj	_	Subject=Generic
+29	baisser	baisser	VERB	_	VerbForm=Inf	11	conj:coord	_	Subject=Generic
 30	derechef	derechef	ADV	_	_	29	mod	_	_
 31	quand	quand	SCONJ	_	_	29	mod	_	_
 32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
@@ -3473,8 +3472,8 @@
 2	air	air	NOUN	_	Gender=Masc|Number=Sing	8	mod	_	mwehead=NC+|pred=y
 3-4	du	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	2	unk	_	pred=y
-4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	unk	_	InIdiom=Yes
-5	temps	temps	NOUN	_	Gender=Masc	4	det	_	pred=y|SpaceAfter=No
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	InIdiom=Yes
+5	temps	temps	NOUN	_	Gender=Masc	3	unk	_	pred=y|SpaceAfter=No
 6	,	,	PUNCT	_	_	2	punct	_	_
 7	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3	8	subj	_	SpaceAfter=No
 8	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -3506,7 +3505,7 @@
 34	ignorer	ignorer	VERB	_	VerbForm=Inf	30	comp:obj	_	Subject=Generic
 35	et	et	CCONJ	_	_	37	cc	_	_
 36	n'	ne	ADV	_	Polarity=Neg	37	mod	_	SpaceAfter=No
-37	ignore	ignorer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	conj	_	_
+37	ignore	ignorer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	conj:coord	_	_
 38	pas	pas	ADV	_	Polarity=Neg	37	mod	_	SpaceAfter=No
 39	.	.	PUNCT	_	_	8	punct	_	_
 
@@ -3546,7 +3545,7 @@
 31	de	de	ADP	_	_	30	mod	_	_
 32	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	33	det	_	_
 33	banques	banque	NOUN	_	Gender=Fem|Number=Plur	31	comp:obj	_	mwehead=NC+|pred=y
-34	d'	de	ADP	_	_	33	unk	_	pred=y|SpaceAfter=No
+34	d'	de	ADP	_	_	33	udep	_	pred=y|SpaceAfter=No
 35	investissement	investissement	NOUN	_	Gender=Masc|Number=Sing	34	comp:obj	_	pred=y
 36	Salomon	Salomon	PROPN	_	Gender=Masc|Number=Sing	30	mod	_	_
 37	Brothers	Brothers	PROPN	_	Gender=Masc|Number=Sing	36	flat@name	_	SpaceAfter=No
@@ -3667,7 +3666,7 @@
 49	de	de	ADP	_	_	48	udep	_	_
 50	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	51	det	_	_
 51	chevaliers	chevalier	NOUN	_	Gender=Masc|Number=Plur	49	comp:obj	_	mwehead=NC+|pred=y
-52	d'	de	ADP	_	_	51	unk	_	pred=y|SpaceAfter=No
+52	d'	de	ADP	_	_	51	udep	_	pred=y|SpaceAfter=No
 53	industrie	industrie	NOUN	_	Gender=Fem|Number=Sing	52	comp:obj	_	pred=y|SpaceAfter=No
 54	,	,	PUNCT	_	_	56	punct	_	_
 55	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	_	SpaceAfter=No
@@ -3681,7 +3680,7 @@
 62	drogue	drogue	NOUN	_	Gender=Fem|Number=Sing	60	comp:obj	_	_
 63	et	et	CCONJ	_	_	64	cc	_	_
 64-65	du	_	_	_	_	_	_	_	_
-64	de	de	ADP	_	_	60	conj	_	_
+64	de	de	ADP	_	_	60	conj:coord	_	_
 65	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	66	det	_	_
 66	crime	crime	NOUN	_	Gender=Masc|Number=Sing	64	comp:obj	_	_
 67	?	?	PUNCT	_	_	1	punct	_	_
@@ -3726,7 +3725,7 @@
 35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
 36	monde	monde	NOUN	_	Gender=Masc|Number=Sing	34	comp:obj	_	_
 37	et	et	CCONJ	_	_	38	cc	_	_
-38	de	de	ADP	_	_	34	conj	_	_
+38	de	de	ADP	_	_	34	conj:coord	_	_
 39	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	France	France	PROPN	_	Gender=Fem|Number=Sing	38	comp:obj	_	SpaceAfter=No
 41	,	,	PUNCT	_	_	42	punct	_	_
@@ -3746,7 +3745,7 @@
 54	"	"	PUNCT	_	_	50	punct	_	_
 55	et	et	CCONJ	_	_	56	cc	_	_
 56-57	des	_	_	_	_	_	_	_	_
-56	de	de	ADP	_	_	47	conj	_	_
+56	de	de	ADP	_	_	47	conj:coord	_	_
 57	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	58	det	_	_
 58	grands	grand	NOUN	_	Gender=Masc|Number=Plur	56	comp:obj	_	_
 59	courants	courant	NOUN	_	Gender=Masc|Number=Plur	58	mod	_	_
@@ -3829,7 +3828,7 @@
 11	grande	grand	ADJ	_	Gender=Fem|Number=Sing	10	unk	_	pred=y
 12	échelle	échelle	NOUN	_	Gender=Fem|Number=Sing	11	unk	_	pred=y
 13	et	et	CCONJ	_	_	14	cc	_	_
-14	fermée	fermer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	7	conj	_	_
+14	fermée	fermer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	7	conj:coord	_	_
 15	dans	dans	ADP	_	_	14	mod	_	_
 16	plusieurs	plusieurs	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
 17	dizaines	dizaines	NOUN	_	Gender=Masc|Number=Plur	15	comp:obj	_	_
@@ -3840,9 +3839,9 @@
 22	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	21	udep	_	_
 23	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	22	mod	_	_
 24	(	(	PUNCT	_	_	34	punct	_	SpaceAfter=No
-25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	mod	_	mwehead=NC+|pred=y
-26	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	25	det	_	pred=y
-27	daté	dater	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	25	mod	_	_
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	mwehead=NC+|pred=y
+26	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	34	mod	_	pred=y
+27	daté	dater	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	26	mod	_	_
 28	7	7	NUM	_	Gender=Masc|Number=Sing|NumType=Card	27	mod	_	_
 29	-8	-8	ADJ	_	Gender=Masc|Number=Sing	30	mod	_	_
 30	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	28	udep	_	_
@@ -3886,7 +3885,7 @@
 13	en	en	ADP	_	_	6	mod	_	_
 14	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	13	comp:obj	_	_
 15	et	et	CCONJ	_	_	16	cc	_	_
-16	en	en	ADP	_	_	13	conj	_	_
+16	en	en	ADP	_	_	13	conj:coord	_	_
 17	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	16	comp:obj	_	_
 18	1991	1991	NUM	_	Gender=Fem|Number=Sing|NumType=Card	17	mod	_	SpaceAfter=No
 19	,	,	PUNCT	_	_	20	punct	_	_
@@ -3899,7 +3898,7 @@
 25	concernées	concerner	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	24	mod	_	_
 26	(	(	PUNCT	_	_	24	punct	_	SpaceAfter=No
 27	en	en	ADP	_	_	30	mod	_	mwehead=ADV+|pred=y
-28	particulier	particulier	ADJ	_	Gender=Masc|Number=Sing	27	unk	_	pred=y
+28	particulier	particulier	ADJ	_	Gender=Masc|Number=Sing	27	comp:obj	_	pred=y
 29	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	SpaceAfter=No
 30	émirat	émirat	NOUN	_	Gender=Masc|Number=Sing	24	mod	_	_
 31	d'	de	ADP	_	_	30	udep	_	SpaceAfter=No
@@ -3921,7 +3920,7 @@
 46	étudier	étudier	VERB	_	VerbForm=Inf	45	comp:obj	_	Subject=Generic
 47	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	48	det	_	_
 48	plan	plan	NOUN	_	Gender=Masc|Number=Sing	46	comp:obj	_	mwehead=NC+|pred=y
-49	de	de	ADP	_	_	48	unk	_	pred=y
+49	de	de	ADP	_	_	48	udep	_	pred=y
 50	redressement	redressement	NOUN	_	Gender=Masc|Number=Sing	49	comp:obj	_	pred=y|SpaceAfter=No
 51	.	.	PUNCT	_	_	6	punct	_	_
 
@@ -3931,8 +3930,8 @@
 2	de	de	ADP	_	_	1	comp:obl	_	pred=y
 3	succès	succès	NOUN	_	Gender=Masc|Number=Sing	2	comp:obj	_	_
 4	dans	dans	ADP	_	_	3	mod	_	mwehead=ADV+|pred=y
-5	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	4	unk	_	pred=y
-6	sens	sens	NOUN	_	Gender=Masc	5	det	_	pred=y|SpaceAfter=No
+5	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	_	pred=y
+6	sens	sens	NOUN	_	Gender=Masc	4	unk	_	pred=y|SpaceAfter=No
 7	,	,	PUNCT	_	_	1	punct	_	_
 8	sa	son	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes	9	det	_	_
 9	décision	décision	NOUN	_	Gender=Fem|Number=Sing	10	subj	_	_
@@ -3958,9 +3957,9 @@
 27	BCCI	BCCI	PROPN	_	Gender=Fem|Number=Sing	25	comp:obj	_	_
 28	SA	SA	NOUN	_	Gender=Fem|Number=Sing	27	mod	_	_
 29	(	(	PUNCT	_	_	10	punct	_	SpaceAfter=No
-30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	mod	_	mwehead=NC+|pred=y
-31	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	30	det	_	pred=y
-32	daté	dater	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	30	mod	_	_
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	mwehead=NC+|pred=y
+31	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	10	mod	_	pred=y
+32	daté	dater	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	mod	_	_
 33	5	5	NUM	_	Gender=Masc|Number=Sing|NumType=Card	35	udep	_	_
 34	-	-	PUNCT	_	_	35	punct	_	_
 35	6	6	NUM	_	Gender=Masc|Number=Sing|NumType=Card	32	mod	_	_
@@ -4055,7 +4054,7 @@
 16	de	de	ADP	_	_	15	udep	_	_
 17	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	18	det	_	_
 18	opérations	opération	NOUN	_	Gender=Fem|Number=Plur	16	comp:obj	_	mwehead=NC+|pred=y
-19	de	de	ADP	_	_	18	unk	_	pred=y
+19	de	de	ADP	_	_	18	udep	_	pred=y
 20	bourse	bourse	NOUN	_	Gender=Fem|Number=Sing	19	comp:obj	_	pred=y
 21	(	(	PUNCT	_	_	15	punct	_	SpaceAfter=No
 22	COB	COB	PROPN	_	Gender=Fem|Number=Sing	15	mod	_	SpaceAfter=No
@@ -4071,7 +4070,7 @@
 32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	justice	justice	NOUN	_	Gender=Fem|Number=Sing	31	comp:obj	_	_
 34	et	et	CCONJ	_	_	35	cc	_	_
-35	ouvre	ouvrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	conj	_	_
+35	ouvre	ouvrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	conj:coord	_	_
 36	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 37	procédure	procédure	NOUN	_	Gender=Fem|Number=Sing	35	comp:obj	_	_
 38	de	de	ADP	_	_	37	udep	_	_
@@ -4081,7 +4080,7 @@
 42	société	société	NOUN	_	Gender=Fem|Number=Sing	40	comp:obj	_	_
 43	et	et	CCONJ	_	_	45	cc	_	_
 44	son	son	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes	45	det	_	_
-45	PDG	PDG	NOUN	_	Gender=Masc|Number=Sing	42	conj	_	_
+45	PDG	PDG	NOUN	_	Gender=Masc|Number=Sing	42	conj:coord	_	_
 46	de	de	ADP	_	_	45	udep	_	_
 47	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	48	det	_	SpaceAfter=No
 48	époque	époque	NOUN	_	Gender=Fem|Number=Sing	46	comp:obj	_	SpaceAfter=No
@@ -4105,7 +4104,7 @@
 66	public	public	NOUN	_	Gender=Masc|Number=Sing	64	comp:obj	_	_
 67	et	et	CCONJ	_	_	69	cc	_	_
 68	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	det	_	_
-69	marché	marché	NOUN	_	Gender=Masc|Number=Sing	66	conj	_	_
+69	marché	marché	NOUN	_	Gender=Masc|Number=Sing	66	conj:coord	_	_
 70	"	"	PUNCT	_	_	62	punct	_	SpaceAfter=No
 71	.	.	PUNCT	_	_	24	punct	_	_
 
@@ -4131,7 +4130,7 @@
 18	à	à	ADP	_	_	11	comp:obl	_	_
 19	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	20	det	_	_
 20	augmentation	augmentation	NOUN	_	Gender=Fem|Number=Sing	18	comp:obj	_	mwehead=NC+|pred=y
-21	de	de	ADP	_	_	20	unk	_	pred=y
+21	de	de	ADP	_	_	20	udep	_	pred=y
 22	capital	capital	NOUN	_	Gender=Masc|Number=Plur	21	comp:obj	_	pred=y
 23	de	de	ADP	_	_	20	udep	_	_
 24	143	143	NUM	_	Gender=Masc|Number=Plur|NumType=Card	25	det	_	_
@@ -4139,7 +4138,7 @@
 26	de	de	ADP	_	_	25	udep	_	_
 27	francs	franc	NOUN	_	Gender=Masc|Number=Plur	26	comp:obj	_	_
 28	et	et	CCONJ	_	_	29	cc	_	_
-29	émet	émettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
+29	émet	émettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj:coord	_	_
 30	pour	pour	ADP	_	_	29	comp:obj	_	_
 31	210	210	NUM	_	Gender=Masc|Number=Plur|NumType=Card	32	det	_	_
 32	millions	million	NOUN	_	Gender=Masc|Number=Plur	30	comp:obj	_	_
@@ -4167,7 +4166,7 @@
 15	,	,	PUNCT	_	_	18	punct	_	_
 16	mais	mais	CCONJ	_	_	18	cc	_	_
 17	se	le/lui	PRON	_	Gender=Masc|Number=Sing|Person=3|Reflex=Yes	18	comp	_	_
-18	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
+18	veut	vouloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj:coord	_	_
 19	optimiste	optimiste	ADJ	_	Gender=Masc|Number=Sing	18	comp:pred	_	_
 20	pour	pour	ADP	_	_	18	mod	_	_
 21	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No
@@ -4199,7 +4198,7 @@
 17	,	,	PUNCT	_	_	14	punct	_	_
 18	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	_	_
 19	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	20	subj	_	_
-20	avoue	avouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj	_	_
+20	avoue	avouer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	conj:coord	_	_
 21	finalement	finalement	ADV	_	_	20	mod	_	_
 22	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	perte	perte	NOUN	_	Gender=Fem|Number=Sing	20	comp:obj	_	_
@@ -4211,7 +4210,7 @@
 29	pour	pour	ADP	_	_	23	udep	_	_
 30	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
 31	chiffre	chiffre	NOUN	_	Gender=Masc|Number=Sing	29	comp:obj	_	mwehead=NC+|pred=y
-32	d'	de	ADP	_	_	31	unk	_	pred=y|SpaceAfter=No
+32	d'	de	ADP	_	_	31	udep	_	pred=y|SpaceAfter=No
 33	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	32	comp:obj	_	pred=y
 34	de	de	ADP	_	_	31	udep	_	_
 35	5	5	NUM	_	NumType=Card	38	det	_	mwehead=DET+|pred=y|SpaceAfter=No
@@ -4250,7 +4249,7 @@
 23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
 24	cotation	cotation	NOUN	_	Gender=Fem|Number=Sing	22	comp:obj	_	_
 25	et	et	CCONJ	_	_	26	cc	_	_
-26	d'	de	ADP	_	_	11	conj	_	SpaceAfter=No
+26	d'	de	ADP	_	_	11	conj:coord	_	SpaceAfter=No
 27	avoir	avoir	AUX	_	VerbForm=Inf	26	comp:obj	_	Subject=Generic
 28	inscrit	inscrire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	27	comp:aux@tense	_	_
 29	dans	dans	ADP	_	_	28	mod	_	_
@@ -4338,8 +4337,8 @@
 1	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	2	det	_	_
 2	informations	information	NOUN	_	Gender=Fem|Number=Plur	6	subj	_	_
 3	dans	dans	ADP	_	_	2	mod	_	mwehead=ADV+|pred=y
-4	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	3	unk	_	pred=y
-5	sens	sens	NOUN	_	Gender=Masc	4	det	_	pred=y
+4	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	pred=y
+5	sens	sens	NOUN	_	Gender=Masc	3	unk	_	pred=y
 6	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	comp:aux@tense	_	_
 8	données	donner	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	7	comp:aux@pass	_	SpaceAfter=No
@@ -4359,7 +4358,7 @@
 22	centrale	central	ADJ	_	Gender=Fem|Number=Sing	21	mod	_	pred=y
 23	russe	russe	ADJ	_	Gender=Fem|Number=Sing	21	mod	_	_
 24	et	et	CCONJ	_	_	25	cc	_	_
-25	de	de	ADP	_	_	19	conj	_	_
+25	de	de	ADP	_	_	19	conj:coord	_	_
 26	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 27	Vnesheconombank	Vnesheconombank	PROPN	_	Gender=Fem|Number=Sing	25	comp:obj	_	SpaceAfter=No
 28	,	,	PUNCT	_	_	30	punct	_	_
@@ -4555,7 +4554,7 @@
 
 # sent_id = flmf7ae1ep-134
 # text = Il a aussi indiqué que les calculs de répartition de la dette soviétique entre les Républiques n'étaient pas encore faits.
-1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	subj@expl	_	_
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	2	subj	_	_
 2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	aussi	aussi	ADV	_	_	2	mod	_	_
 4	indiqué	indiquer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	comp:aux@tense	_	_
@@ -4590,7 +4589,7 @@
 8	Russie	Russie	PROPN	_	Gender=Fem|Number=Sing	7	comp:obj	_	_
 9	ou	ou	CCONJ	_	_	11	cc	_	_
 10	y	y	PRON	_	Gender=Masc|Number=Sing|Person=3	11	mod	_	_
-11	acheter	acheter	VERB	_	VerbForm=Inf	6	conj	_	Subject=Generic
+11	acheter	acheter	VERB	_	VerbForm=Inf	6	conj:coord	_	Subject=Generic
 12	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
 13	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	11	comp:obj	_	SpaceAfter=No
 14	,	,	PUNCT	_	_	15	punct	_	_
@@ -4623,8 +4622,8 @@
 # sent_id = flmf7ae1ep-136
 # text = Dans l'attente de négociations financières précises entre l'ex-URSS et les prêteurs occidentaux, un crédit européen de 500 millions d'écus, destiné à l'achat de produits alimentaires, a été suspendu, a indiqué mardi soir 14 janvier la commission européenne.
 1	Dans	dans	ADP	_	ExtPos=ADV	33	mod	_	mwehead=P+|pred=y
-2	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	1	unk	_	pred=y|SpaceAfter=No
-3	attente	attente	NOUN	_	Gender=Fem|Number=Sing	2	det	_	pred=y
+2	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	pred=y|SpaceAfter=No
+3	attente	attente	NOUN	_	Gender=Fem|Number=Sing	1	unk	_	pred=y
 4	de	de	ADP	_	_	1	comp:obl	_	pred=y
 5	négociations	négociation	NOUN	_	Gender=Fem|Number=Plur	4	comp:obj	_	_
 6	financières	financier	ADJ	_	Gender=Fem|Number=Plur	5	mod	_	_
@@ -4717,7 +4716,7 @@
 40	généraux	général	NOUN	_	Gender=Masc|Number=Plur	38	conj	_	_
 41	et	et	CCONJ	_	_	42	cc	_	_
 42-43	aux	_	_	_	_	_	_	_	_
-42	à	à	ADP	_	_	29	conj	_	_
+42	à	à	ADP	_	_	29	conj:coord	_	_
 43	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	44	det	_	_
 44	maires	maire	NOUN	_	Gender=Masc|Number=Plur	42	comp:obj	_	_
 45	de	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	47	det	_	_
@@ -4731,7 +4730,7 @@
 53	ensemble	ensemble	ADV	_	_	52	mod	_	_
 54	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	55	det	_	_
 55	société	société	NOUN	_	Gender=Fem|Number=Sing	52	comp:obj	_	mwehead=NC+|pred=y
-56	d'	de	ADP	_	_	55	unk	_	pred=y|SpaceAfter=No
+56	d'	de	ADP	_	_	55	udep	_	pred=y|SpaceAfter=No
 57	économie	économie	NOUN	_	Gender=Fem|Number=Sing	56	comp:obj	_	pred=y
 58	mixte	mixte	ADJ	_	Number=Sing	57	mod	_	pred=y
 59	"	"	PUNCT	_	_	55	punct	_	_
@@ -4857,8 +4856,8 @@
 11	cahier	cahier	NOUN	_	Gender=Masc|Number=Sing	9	comp:obj	_	mwehead=NC+|pred=y
 12-13	des	_	_	_	_	_	_	_	_
 12	de	de	ADP	_	_	11	unk	_	pred=y
-13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	unk	_	InIdiom=Yes
-14	charges	charge	NOUN	_	Gender=Fem|Number=Plur	13	det	_	pred=y
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	InIdiom=Yes
+14	charges	charge	NOUN	_	Gender=Fem|Number=Plur	12	unk	_	pred=y
 15	actuel	actuel	ADJ	_	Gender=Masc|Number=Sing	11	mod	_	_
 16	"	"	PUNCT	_	_	4	punct	_	SpaceAfter=No
 17	,	,	PUNCT	_	_	18	punct	_	_
@@ -4938,7 +4937,7 @@
 50	sociétés	société	NOUN	_	Gender=Fem|Number=Plur	48	comp:obj	_	_
 51	"	"	PUNCT	_	_	41	punct	_	SpaceAfter=No
 52	,	,	PUNCT	_	_	30	punct	_	_
-53	demander	demander	VERB	_	VerbForm=Inf	18	conj	_	Subject=Generic
+53	demander	demander	VERB	_	VerbForm=Inf	18	conj:coord	_	Subject=Generic
 54	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	55	det	_	_
 55	audience	audience	NOUN	_	Gender=Fem|Number=Sing	53	comp:obj	_	_
 56-57	au	_	_	_	_	_	_	_	_
@@ -4977,7 +4976,7 @@
 26	chaîne	chaîne	NOUN	_	Gender=Fem|Number=Sing	24	comp:obj	_	SpaceAfter=No
 27	,	,	PUNCT	_	_	29	punct	_	_
 28	mais	mais	CCONJ	_	_	29	cc	_	_
-29	veillerait	veiller	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
+29	veillerait	veiller	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj:coord	_	_
 30	"	"	PUNCT	_	_	29	punct	_	_
 31-32	au	_	_	_	_	_	_	_	_
 31	à	à	ADP	_	_	29	comp:obl	_	_
@@ -5005,8 +5004,8 @@
 6	serait	être	AUX	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	nommé	nommer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	comp:aux@pass	_	_
 8	à	à	ADP	_	ExtPos=ADV	6	mod	_	mwehead=P+|pred=y
-9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	unk	_	pred=y
-10	tête	tête	NOUN	_	Gender=Fem|Number=Sing	9	det	_	pred=y
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	pred=y
+10	tête	tête	NOUN	_	Gender=Fem|Number=Sing	8	unk	_	pred=y
 11	de	de	ADP	_	_	8	comp:obl	_	pred=y
 12	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	comp:obj	_	mwehead=NPP+|pred=y
 13	Cinq	Cinq	PROPN	_	_	12	unk	_	pred=y
@@ -5063,7 +5062,7 @@
 29	à	à	ADP	_	_	25	mod	_	_
 30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
 31	session	session	NOUN	_	Gender=Fem|Number=Sing	29	comp:obj	_	mwehead=NC+|pred=y
-32	de	de	ADP	_	_	31	unk	_	pred=y
+32	de	de	ADP	_	_	31	udep	_	pred=y
 33	printemps	printemps	NOUN	_	Gender=Masc	32	comp:obj	_	pred=y
 34	-	-	PUNCT	_	_	5	punct	_	_
 35	pour	pour	ADP	_	_	5	mod	_	_
@@ -5119,10 +5118,10 @@
 13	Robert	robert	PROPN	_	Gender=Masc|Number=Sing	12	mod	_	_
 14	Cottave	Cottave	PROPN	_	Gender=Masc|Number=Sing	13	flat@name	_	_
 15	(	(	PUNCT	_	_	23	punct	_	SpaceAfter=No
-16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	mod	_	mwehead=NC+|pred=y
-17	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	16	det	_	pred=y
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	mwehead=NC+|pred=y
+17	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	23	mod	_	pred=y
 18-19	du	_	_	_	_	_	_	_	_
-18	de	de	ADP	_	_	16	dep	_	_
+18	de	de	ADP	_	_	17	dep	_	_
 19	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
 20	15	15	NUM	_	Gender=Masc|Number=Sing|NumType=Card	18	comp:obj	_	_
 21	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	20	udep	_	SpaceAfter=No
@@ -5141,7 +5140,7 @@
 34	société	société	NOUN	_	Gender=Fem|Number=Sing	33	comp:obj	_	_
 35	"	"	PUNCT	_	_	27	punct	_	_
 36	et	et	CCONJ	_	_	37	cc	_	_
-37	constitue	constituer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj	_	_
+37	constitue	constituer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	conj:coord	_	_
 38	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
 39	"	"	PUNCT	_	_	40	punct	_	_
 40	processus	processus	NOUN	_	Gender=Masc|Number=Sing	37	comp:obj	_	_
@@ -5192,7 +5191,7 @@
 34	de	de	ADP	_	_	33	udep	_	_
 35	consulter	consulter	VERB	_	VerbForm=Inf	34	comp:obj	_	Subject=Generic
 36	et	et	CCONJ	_	_	37	cc	_	_
-37	de	de	ADP	_	_	34	conj	_	_
+37	de	de	ADP	_	_	34	conj:coord	_	_
 38	dépolitiser	dépolitiser	VERB	_	VerbForm=Inf	37	comp:obj	_	Subject=Generic
 39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
 40	débat	débat	NOUN	_	Gender=Masc|Number=Sing	38	comp:obj	_	_
@@ -5258,7 +5257,7 @@
 30	salariés	salarié	NOUN	_	Gender=Masc|Number=Plur	28	comp:obj	_	_
 31	et	et	CCONJ	_	_	33	cc	_	_
 32	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	33	det	_	_
-33	retraités	retraité	NOUN	_	Gender=Masc|Number=Plur	30	conj	_	_
+33	retraités	retraité	NOUN	_	Gender=Masc|Number=Plur	30	conj:coord	_	_
 34	si	si	SCONJ	_	_	20	mod	_	_
 35	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	37	det	_	_
 36	vraie	vrai	ADJ	_	Gender=Fem|Number=Sing	37	mod	_	_
@@ -5296,14 +5295,14 @@
 21	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	20	mod	_	_
 22	"	"	PUNCT	_	_	17	punct	_	_
 23	et	et	CCONJ	_	_	24	cc	_	_
-24	déplore	déplorer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+24	déplore	déplorer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj:coord	_	_
 25	que	que	SCONJ	_	_	24	comp:obj	_	_
 26	"	"	PUNCT	_	_	32	punct	_	_
 27	sa	son	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes	28	det	_	_
 28	cohérence	cohérence	NOUN	_	Gender=Fem|Number=Sing	32	subj	_	_
 29	et	et	CCONJ	_	_	31	cc	_	_
 30	sa	son	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes	31	det	_	_
-31	crédibilité	crédibilité	NOUN	_	Gender=Fem|Number=Sing	28	conj	_	_
+31	crédibilité	crédibilité	NOUN	_	Gender=Fem|Number=Sing	28	conj:coord	_	_
 32	soient	être	AUX	_	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	25	comp:obj	_	_
 33	invalidées	invalider	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	32	comp:aux@pass	_	_
 34	par	par	ADP	_	_	33	comp:obl	_	_
@@ -5381,7 +5380,7 @@
 29	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	27	comp:obj	_	_
 30	"	"	PUNCT	_	_	26	punct	_	_
 31	et	et	CCONJ	_	_	32	cc	_	_
-32	considère	considérer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	conj	_	_
+32	considère	considérer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	conj:coord	_	_
 33	qu'	que	SCONJ	_	_	32	comp:obj	_	SpaceAfter=No
 34	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	36	subj@expl	_	_
 35	"	"	PUNCT	_	_	36	punct	_	_
@@ -5412,7 +5411,7 @@
 4	de	de	ADP	_	_	3	udep	_	_
 5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_
 6	chauffeurs	chauffeur	NOUN	_	Gender=Masc|Number=Plur	4	comp:obj	_	mwehead=NC+|pred=y
-7	de	de	ADP	_	_	6	unk	_	pred=y
+7	de	de	ADP	_	_	6	udep	_	pred=y
 8	taxi	taxi	NOUN	_	Gender=Masc|Number=Sing	7	comp:obj	_	pred=y
 9	salariés	salarier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	6	mod	_	_
 10	organisée	organiser	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	3	mod	_	_
@@ -5451,7 +5450,7 @@
 9	parmi	parmi	ADP	_	_	6	mod	_	_
 10	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	11	det	_	_
 11	chauffeurs	chauffeur	NOUN	_	Gender=Masc|Number=Plur	9	comp:obj	_	mwehead=NC+|pred=y
-12	de	de	ADP	_	_	11	unk	_	pred=y
+12	de	de	ADP	_	_	11	udep	_	pred=y
 13	taxi	taxi	NOUN	_	Gender=Masc|Number=Sing	12	comp:obj	_	pred=y|SpaceAfter=No
 14	,	,	PUNCT	_	_	18	punct	_	_
 15	où	où	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Rel	18	mod	_	_
@@ -5501,7 +5500,7 @@
 15	francs	franc	NOUN	_	Gender=Masc|Number=Plur	4	conj	_	_
 16	de	de	ADP	_	_	15	udep	_	_
 17	prise	prise	NOUN	_	Gender=Fem|Number=Sing	16	comp:obj	_	mwehead=NC+|pred=y
-18	en	en	ADP	_	_	17	unk	_	pred=y
+18	en	en	ADP	_	_	17	udep	_	pred=y
 19	charge	charge	NOUN	_	Gender=Fem|Number=Sing	18	comp:obj	_	pred=y|SpaceAfter=No
 20	,	,	PUNCT	_	_	24	punct	_	_
 21	3	3	NUM	_	NumType=Card	24	det	_	mwehead=DET+|pred=y|SpaceAfter=No
@@ -5519,7 +5518,7 @@
 33	d'	de	ADP	_	_	32	udep	_	SpaceAfter=No
 34	attente	attente	NOUN	_	Gender=Fem|Number=Sing	33	comp:obj	_	_
 35	ou	ou	CCONJ	_	_	36	cc	_	_
-36	de	de	ADP	_	_	33	conj	_	_
+36	de	de	ADP	_	_	33	conj:coord	_	_
 37	"	"	PUNCT	_	_	36	punct	_	_
 38	marche	marche	NOUN	_	Gender=Fem|Number=Sing	36	comp:obj	_	_
 39	lente	lent	ADJ	_	Gender=Fem|Number=Sing	38	mod	_	_
@@ -5550,8 +5549,8 @@
 20	ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	18	comp:obj	_	mwehead=NC+|pred=y
 21-22	des	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	20	unk	_	pred=y
-22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	unk	_	InIdiom=Yes
-23	finances	finance	NOUN	_	Gender=Fem|Number=Plur	22	det	_	pred=y
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	InIdiom=Yes
+23	finances	finance	NOUN	_	Gender=Fem|Number=Plur	21	unk	_	pred=y
 24	n'	ne	ADV	_	Polarity=Neg	25	mod	_	SpaceAfter=No
 25	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	dep.coord	_	_
 26	pas	pas	ADV	_	Polarity=Neg	25	mod	_	_
@@ -5608,7 +5607,7 @@
 9	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 10	éventuelle	éventuelle	ADJ	_	Gender=Fem|Number=Sing	11	mod	_	_
 11	mise	mise	NOUN	_	Gender=Fem|Number=Sing	8	comp:obj	_	mwehead=NC+|pred=y
-12	en	en	ADP	_	_	11	unk	_	pred=y
+12	en	en	ADP	_	_	11	udep	_	pred=y
 13	cause	cause	NOUN	_	Gender=Fem|Number=Sing	12	comp:obj	_	pred=y
 14	de	de	ADP	_	_	8	dep	_	_
 15	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No
@@ -5664,14 +5663,14 @@
 29	,	,	PUNCT	_	_	32	punct	_	_
 30	et	et	CCONJ	_	_	32	cc	_	_
 31	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	32	det	_	_
-32	déclarations	déclaration	NOUN	_	Gender=Fem|Number=Plur	12	conj	_	_
+32	déclarations	déclaration	NOUN	_	Gender=Fem|Number=Plur	12	conj:coord	_	_
 33-34	du	_	_	_	_	_	_	_	_
 33	de	de	ADP	_	_	32	udep	_	_
 34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
 35	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	33	comp:obj	_	mwehead=NC+|pred=y
 36	de	de	ADP	_	_	35	unk	_	pred=y
-37	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	36	unk	_	pred=y|SpaceAfter=No
-38	industrie	industrie	NOUN	_	Gender=Fem|Number=Sing	37	det	_	pred=y|SpaceAfter=No
+37	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	38	det	_	pred=y|SpaceAfter=No
+38	industrie	industrie	NOUN	_	Gender=Fem|Number=Sing	36	unk	_	pred=y|SpaceAfter=No
 39	,	,	PUNCT	_	_	40	punct	_	_
 40	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	35	mod	_	_
 41	Dominique	Dominique	PROPN	_	Gender=Masc|Number=Sing	40	mod	_	_
@@ -5768,7 +5767,7 @@
 17	de	de	ADP	_	_	16	udep	_	_
 18	Volvo	Volvo	PROPN	_	Gender=Masc|Number=Sing	17	comp:obj	_	_
 19	et	et	CCONJ	_	_	20	cc	_	_
-20	de	de	ADP	_	_	17	conj	_	_
+20	de	de	ADP	_	_	17	conj:coord	_	_
 21	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	SpaceAfter=No
 22	état	état	NOUN	_	Gender=Masc|Number=Sing	20	comp:obj	_	_
 23	néerlandais	néerlandais	ADJ	_	Gender=Masc|Number=Sing	22	mod	_	SpaceAfter=No
@@ -5871,8 +5870,8 @@
 17	,	,	PUNCT	_	_	18	punct	_	_
 18	etc.	etc.	ADV	_	_	8	mod	_	_
 19	de	de	ADP	_	_	28	mod	_	mwehead=ADV+|pred=y
-20	toute	tout	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	19	unk	_	pred=y
-21	façon	façon	NOUN	_	Gender=Fem|Number=Sing	20	det	_	pred=y|SpaceAfter=No
+20	toute	tout	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	21	det	_	pred=y
+21	façon	façon	NOUN	_	Gender=Fem|Number=Sing	19	unk	_	pred=y|SpaceAfter=No
 22	,	,	PUNCT	_	_	19	punct	_	_
 23	certaines	certain	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	24	det	_	_
 24	clauses	clause	NOUN	_	Gender=Fem|Number=Plur	28	subj	_	_
@@ -5917,7 +5916,7 @@
 7	de	de	ADP	_	_	5	udep	_	_
 8	Renault	Renault	PROPN	_	Gender=Fem|Number=Sing	7	comp:obj	_	_
 9	et	et	CCONJ	_	_	10	cc	_	_
-10	dauphin	dauphin	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_
+10	dauphin	dauphin	NOUN	_	Gender=Masc|Number=Sing	1	conj:coord	_	_
 11	désigné	désigner	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	mod	_	_
 12	de	de	ADP	_	_	10	udep	_	_
 13	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	12	comp:obj	_	_
@@ -5959,14 +5958,14 @@
 9	inspecteur	inspecteur	NOUN	_	Gender=Masc|Number=Sing	7	mod	_	mwehead=NC+|pred=y
 10-11	des	_	_	_	_	_	_	_	_
 10	de	de	ADP	_	_	9	unk	_	pred=y
-11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	unk	_	InIdiom=Yes
-12	finances	finance	NOUN	_	Gender=Fem|Number=Plur	11	det	_	pred=y|SpaceAfter=No
+11	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	InIdiom=Yes
+12	finances	finance	NOUN	_	Gender=Fem|Number=Plur	10	unk	_	pred=y|SpaceAfter=No
 13	,	,	PUNCT	_	_	15	punct	_	_
 14	qui	qui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Rel	15	subj	_	_
 15	fut	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	7	mod@relcl	_	_
 16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
 17	directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	15	comp:pred	_	mwehead=NC+|pred=y
-18	de	de	ADP	_	_	17	unk	_	pred=y
+18	de	de	ADP	_	_	17	udep	_	pred=y
 19	cabinet	cabinet	NOUN	_	Gender=Masc|Number=Sing	18	comp:obj	_	pred=y
 20	de	de	ADP	_	_	17	udep	_	_
 21	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	20	comp:obj	_	_
@@ -5981,7 +5980,7 @@
 # sent_id = flmf7ae1ep-170
 # text = Or il a été l'un des principaux artisans du rapprochement entre Renault et Volvo.
 1	Or	or	CCONJ	_	_	3	cc	_	_
-2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	3	subj@expl	_	_
+2	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	3	subj	_	_
 3	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	comp:aux@tense	_	_
 5	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	SpaceAfter=No
@@ -6131,7 +6130,7 @@
 19	5	5	NUM	_	NumType=Card	22	det	_	mwehead=DET+|pred=y|SpaceAfter=No
 20	,	,	PUNCT	_	_	19	unk	_	pred=y
 21	14	14	NUM	_	NumType=Card	20	unk	_	pred=y
-22	francs	franc	NOUN	_	Gender=Masc|Number=Plur	17	conj	_	SpaceAfter=No
+22	francs	franc	NOUN	_	Gender=Masc|Number=Plur	17	conj:coord	_	SpaceAfter=No
 23	,	,	PUNCT	_	_	9	punct	_	_
 24-25	au	_	_	_	_	_	_	_	_
 24	à	à	ADP	_	_	8	mod	_	_
@@ -6158,11 +6157,11 @@
 45	5	5	NUM	_	NumType=Card	48	det	_	mwehead=DET+|pred=y|SpaceAfter=No
 46	,	,	PUNCT	_	_	45	unk	_	pred=y
 47	39	39	NUM	_	NumType=Card	46	unk	_	pred=y
-48	francs	franc	NOUN	_	Gender=Masc|Number=Plur	43	conj	_	_
+48	francs	franc	NOUN	_	Gender=Masc|Number=Plur	43	conj:coord	_	_
 49	pour	pour	ADP	_	_	32	mod	_	_
 50	céder	céder	VERB	_	VerbForm=Inf	49	comp:obj	_	Subject=Generic
-51	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	54	mod	_	mwehead=ADV+|pred=y
-52	peu	peu	ADV	_	_	51	unk	_	pred=y
+51	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	52	det	_	InIdiom=Yes|pred=y
+52	peu	peu	NOUN	_	Gender=Masc|Number=Sing	54	mod	_	Idiom=Yes|mwehead=ADV+|pred=y
 53	de	de	ADP	_	_	54	det	_	_
 54	terrain	terrain	NOUN	_	Gender=Masc|Number=Sing	50	comp:obj	_	_
 55	lundi	lundi	NOUN	_	Gender=Masc|Number=Sing	50	mod	_	_
@@ -6178,7 +6177,7 @@
 65	5	5	NUM	_	NumType=Card	68	det	_	mwehead=DET+|pred=y|SpaceAfter=No
 66	,	,	PUNCT	_	_	65	unk	_	pred=y
 67	34	34	NUM	_	NumType=Card	66	unk	_	pred=y
-68	francs	franc	NOUN	_	Gender=Masc|Number=Plur	62	conj	_	SpaceAfter=No
+68	francs	franc	NOUN	_	Gender=Masc|Number=Plur	62	conj:coord	_	SpaceAfter=No
 69	.	.	PUNCT	_	_	32	punct	_	_
 
 # sent_id = flmf7ae1ep-176
@@ -6200,7 +6199,7 @@
 15	5	5	NUM	_	NumType=Card	18	det	_	mwehead=DET+|pred=y|SpaceAfter=No
 16	,	,	PUNCT	_	_	15	unk	_	pred=y
 17	45	45	NUM	_	NumType=Card	16	unk	_	pred=y
-18	francs	franc	NOUN	_	Gender=Masc|Number=Plur	13	conj	_	_
+18	francs	franc	NOUN	_	Gender=Masc|Number=Plur	13	conj:coord	_	_
 19	touchant	toucher	VERB	_	Tense=Pres|VerbForm=Part	2	mod	_	SpaceAfter=No
 20	,	,	PUNCT	_	_	21	punct	_	_
 21	mercredi	mercredi	NOUN	_	Gender=Masc|Number=Sing	19	mod	_	SpaceAfter=No
@@ -6213,7 +6212,7 @@
 28	5	5	NUM	_	NumType=Card	31	det	_	mwehead=DET+|pred=y|SpaceAfter=No
 29	,	,	PUNCT	_	_	28	unk	_	pred=y
 30	52	52	NUM	_	NumType=Card	29	unk	_	pred=y
-31	francs	franc	NOUN	_	Gender=Masc|Number=Plur	26	conj	_	_
+31	francs	franc	NOUN	_	Gender=Masc|Number=Plur	26	conj:coord	_	_
 32	sur	sur	ADP	_	_	19	mod	_	_
 33	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	34	det	_	_
 34	marchés	marché	NOUN	_	Gender=Masc|Number=Plur	32	comp:obj	_	_
@@ -6369,10 +6368,10 @@
 3	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3	4	comp:obj	_	_
 4	sait	savoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	comp:obj	_	_
 5	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No
-6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	mod	_	mwehead=NC+|pred=y
-7	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	6	det	_	pred=y
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	mwehead=NC+|pred=y
+7	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	16	mod	_	pred=y
 8-9	du	_	_	_	_	_	_	_	_
-8	de	de	ADP	_	_	6	dep	_	_
+8	de	de	ADP	_	_	7	dep	_	_
 9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	14	14	NUM	_	Gender=Masc|Number=Sing|NumType=Card	8	comp:obj	_	_
 11	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	10	udep	_	SpaceAfter=No
@@ -6415,7 +6414,7 @@
 46	DM	DM	NOUN	_	Gender=Masc|Number=Plur	42	comp:obj	_	_
 47	et	et	CCONJ	_	_	49	cc	_	_
 48	2	2	NUM	_	Gender=Masc|Number=Plur|NumType=Card	49	det	_	_
-49	DM	DM	NOUN	_	Gender=Masc|Number=Plur	46	conj	_	_
+49	DM	DM	NOUN	_	Gender=Masc|Number=Plur	46	conj:coord	_	_
 50	(	(	PUNCT	_	_	41	punct	_	SpaceAfter=No
 51	entre	entre	ADP	_	_	41	mod	_	_
 52	6	6	NUM	_	NumType=Card	55	det	_	mwehead=DET+|pred=y|SpaceAfter=No
@@ -6426,7 +6425,7 @@
 57	6	6	NUM	_	NumType=Card	60	det	_	mwehead=DET+|pred=y|SpaceAfter=No
 58	,	,	PUNCT	_	_	57	unk	_	pred=y
 59	70	70	NUM	_	NumType=Card	58	unk	_	pred=y
-60	francs	franc	NOUN	_	Gender=Masc|Number=Plur	55	conj	_	SpaceAfter=No
+60	francs	franc	NOUN	_	Gender=Masc|Number=Plur	55	conj:coord	_	SpaceAfter=No
 61	)	)	PUNCT	_	_	41	punct	_	SpaceAfter=No
 62	.	.	PUNCT	_	_	16	punct	_	_
 
@@ -6446,7 +6445,7 @@
 12	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
 13	puissant	puissant	ADJ	_	Gender=Masc|Number=Sing	14	mod	_	_
 14	ressort	ressort	NOUN	_	Gender=Masc|Number=Sing	5	comp:obj	_	mwehead=NC+|pred=y
-15	de	de	ADP	_	_	14	unk	_	pred=y
+15	de	de	ADP	_	_	14	udep	_	pred=y
 16	rappel	rappel	NOUN	_	Gender=Masc|Number=Sing	15	comp:obj	_	pred=y
 17	qui	qui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Rel	18	subj	_	_
 18	pourrait	pouvoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	mod@relcl	_	_
@@ -6558,7 +6557,7 @@
 29	de	de	ADP	_	_	28	udep	_	_
 30	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	31	det	_	_
 31	changes	change	NOUN	_	Gender=Masc|Number=Plur	29	comp:obj	_	_
-32	pourraient	pouvoir	VERB	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+32	pourraient	pouvoir	VERB	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	conj:coord	_	_
 33	anticiper	anticiper	VERB	_	VerbForm=Inf	32	comp:obj	_	Subject=Generic
 34	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	_	_
 35	phénomène	phénomène	NOUN	_	Gender=Masc|Number=Sing	33	comp:obj	_	SpaceAfter=No
@@ -6598,7 +6597,7 @@
 26	et	et	CCONJ	_	_	28	cc	_	_
 27	aussi	aussi	ADV	_	_	26	mod	_	_
 28-29	du	_	_	_	_	_	_	_	_
-28	de	de	ADP	_	_	23	conj	_	_
+28	de	de	ADP	_	_	23	conj:coord	_	_
 29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 30	franc	franc	NOUN	_	Gender=Masc|Number=Sing	28	comp:obj	_	mwehead=NC+|pred=y
 31	français	français	ADJ	_	Gender=Masc	30	mod	_	pred=y|SpaceAfter=No
@@ -6723,7 +6722,7 @@
 14	ingénierie	ingénierie	NOUN	_	Gender=Fem|Number=Sing	12	comp:obj	_	_
 15	et	et	CCONJ	_	_	17	cc	_	_
 16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
-17	construction	construction	NOUN	_	Gender=Fem|Number=Sing	14	conj	_	SpaceAfter=No
+17	construction	construction	NOUN	_	Gender=Fem|Number=Sing	14	conj:coord	_	SpaceAfter=No
 18	,	,	PUNCT	_	_	19	punct	_	_
 19	réaliseront	réaliser	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 20	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	21	det	_	_
@@ -6891,7 +6890,7 @@
 5	,	,	PUNCT	_	_	6	punct	_	_
 6	notes	note	NOUN	_	Gender=Fem|Number=Plur	2	mod	_	_
 7	et	et	CCONJ	_	_	8	cc	_	_
-8	graphiques	graphique	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No
+8	graphiques	graphique	NOUN	_	Gender=Masc|Number=Plur	6	conj:coord	_	SpaceAfter=No
 9	,	,	PUNCT	_	_	10	punct	_	_
 10	n	n	NOUN	_	Gender=Masc|Number=Sing	2	mod	_	_
 11	17	17	NUM	_	Gender=Masc|Number=Sing|NumType=Card	10	mod	_	SpaceAfter=No
@@ -6913,8 +6912,8 @@
 12	cotisations	cotisation	NOUN	_	Gender=Fem|Number=Plur	9	comp:obj	_	_
 13-14	au	_	_	_	_	_	_	_	_
 13	à	à	ADP	_	ExtPos=ADV	9	mod	_	mwehead=P+|pred=y
-14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	unk	_	InIdiom=Yes
-15	bout	bout	NOUN	_	Gender=Masc|Number=Sing	14	det	_	pred=y
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	InIdiom=Yes
+15	bout	bout	NOUN	_	Gender=Masc|Number=Sing	13	unk	_	pred=y
 16	de	de	ADP	_	_	13	comp:obl	_	pred=y
 17	dix	dix	NUM	_	Gender=Masc|Number=Plur|NumType=Card	18	det	_	_
 18	ans	an	NOUN	_	Gender=Masc|Number=Plur	16	comp:obj	_	_
@@ -6944,7 +6943,7 @@
 16	revenus	revenu	NOUN	_	Gender=Masc|Number=Plur	14	comp:obj	_	_
 17	et	et	CCONJ	_	_	18	cc	_	_
 18-19	des	_	_	_	_	_	_	_	_
-18	de	de	ADP	_	_	14	conj	_	_
+18	de	de	ADP	_	_	14	conj:coord	_	_
 19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_
 20	coûts	coût	NOUN	_	Gender=Masc|Number=Plur	18	comp:obj	_	_
 21	(	(	PUNCT	_	_	11	punct	_	SpaceAfter=No
@@ -6992,7 +6991,7 @@
 18	active	actif	ADJ	_	Gender=Fem|Number=Sing	17	mod	_	_
 19	et	et	CCONJ	_	_	21	cc	_	_
 20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
-21	total	total	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_
+21	total	total	NOUN	_	Gender=Masc|Number=Sing	6	conj:coord	_	_
 22-23	des	_	_	_	_	_	_	_	_
 22	de	de	ADP	_	_	21	udep	_	_
 23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_
@@ -7009,7 +7008,7 @@
 34	sociale	social	ADJ	_	Gender=Fem|Number=Sing	33	mod	_	pred=y
 35	ou	ou	CCONJ	_	_	36	cc	_	_
 36-37	des	_	_	_	_	_	_	_	_
-36	de	de	ADP	_	_	31	conj	_	_
+36	de	de	ADP	_	_	31	conj:coord	_	_
 37	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	38	det	_	_
 38	régimes	régime	NOUN	_	Gender=Masc|Number=Plur	36	comp:obj	_	_
 39	complémentaires	complémentaire	ADJ	_	Gender=Masc|Number=Plur	38	mod	_	SpaceAfter=No
@@ -7037,12 +7036,12 @@
 6	anciens	ancien	NOUN	_	Gender=Masc|Number=Plur	4	comp:obj	_	_
 7	ouvriers	ouvrier	NOUN	_	Gender=Masc|Number=Plur	6	mod	_	_
 8	et	et	CCONJ	_	_	9	cc	_	_
-9	employés	employé	NOUN	_	Gender=Masc|Number=Plur	6	conj	_	_
+9	employés	employé	NOUN	_	Gender=Masc|Number=Plur	6	conj:coord	_	_
 10	pour	pour	ADP	_	_	3	mod	_	_
 11	toucher	toucher	VERB	_	VerbForm=Inf	10	comp:obj	_	Subject=Generic
 12	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
 13	pensions	pension	NOUN	_	Gender=Fem|Number=Plur	11	comp:obj	_	mwehead=NC+|pred=y
-14	de	de	ADP	_	_	13	unk	_	pred=y
+14	de	de	ADP	_	_	13	udep	_	pred=y
 15	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	14	comp:obj	_	pred=y
 16	égales	égal	ADJ	_	Gender=Fem|Number=Plur	13	mod	_	_
 17-18	au	_	_	_	_	_	_	_	_
@@ -7064,7 +7063,7 @@
 4	supérieurs	supérieur	ADJ	_	Gender=Masc|Number=Plur	3	mod	_	pred=y
 5	et	et	CCONJ	_	_	7	cc	_	_
 6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
-7	professions	profession	NOUN	_	Gender=Fem|Number=Plur	3	conj	_	_
+7	professions	profession	NOUN	_	Gender=Fem|Number=Plur	3	conj:coord	_	_
 8	intermédiaires	intermédiaire	ADJ	_	Gender=Fem|Number=Plur	7	mod	_	SpaceAfter=No
 9	,	,	PUNCT	_	_	1	punct	_	_
 10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	11	subj@expl	_	_
@@ -7113,7 +7112,7 @@
 10	d'	de	ADP	_	_	9	comp:obl	_	SpaceAfter=No
 11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	espérance	espérance	NOUN	_	Gender=Fem|Number=Sing	10	comp:obj	_	mwehead=NC+|pred=y
-13	de	de	ADP	_	_	12	unk	_	pred=y
+13	de	de	ADP	_	_	12	udep	_	pred=y
 14	vie	vie	NOUN	_	Gender=Fem|Number=Sing	13	comp:obj	_	pred=y
 15	plus	plus	ADV	_	_	16	mod	_	_
 16	longue	long	ADJ	_	Gender=Fem|Number=Sing	12	mod	_	_
@@ -7133,8 +7132,8 @@
 30	huit	huit	NUM	_	NumType=Card	29	unk	_	pred=y
 31	ans	an	NOUN	_	Gender=Masc|Number=Plur	27	comp:obj	_	_
 32	contre	contre	ADP	_	_	25	mod	_	_
-33	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	35	mod	_	mwehead=ADV+|pred=y
-34	peu	peu	ADV	_	_	33	unk	_	pred=y
+33	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	34	det	_	InIdiom=Yes|pred=y
+34	peu	peu	NOUN	_	Gender=Masc|Number=Sing	35	mod	_	Idiom=Yes|mwehead=ADV+|pred=y
 35	plus	plus	ADV	_	_	38	mod	_	_
 36	de	de	ADP	_	_	38	udep	_	_
 37	quatorze	quatorze	NUM	_	Gender=Masc|Number=Plur|NumType=Card	38	det	_	_
@@ -7198,7 +7197,7 @@
 30	pour	pour	ADP	_	_	28	mod	_	_
 31	eux	soi	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Prs	30	comp:obj	_	_
 32	mais	mais	CCONJ	_	_	33	cc	_	_
-33	pour	pour	ADP	_	_	30	conj	_	_
+33	pour	pour	ADP	_	_	30	conj:coord	_	_
 34	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	35	det	_	_
 35	retraités	retraité	NOUN	_	Gender=Masc|Number=Plur	33	comp:obj	_	_
 36-37	du	_	_	_	_	_	_	_	_
@@ -7229,7 +7228,7 @@
 18	entre	entre	ADP	_	_	17	udep	_	_
 19	actifs	actif	NOUN	_	Gender=Masc|Number=Plur	18	comp:obj	_	_
 20	et	et	CCONJ	_	_	21	cc	_	_
-21	inactifs	inactif	NOUN	_	Gender=Masc|Number=Plur	19	conj	_	_
+21	inactifs	inactif	NOUN	_	Gender=Masc|Number=Plur	19	conj:coord	_	_
 22	n'	ne	ADV	_	Polarity=Neg	23	mod	_	SpaceAfter=No
 23	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	comp:obj	_	_
 24	pas	pas	ADV	_	Polarity=Neg	23	mod	_	_
@@ -7243,7 +7242,7 @@
 31	de	de	ADP	_	_	30	udep	_	_
 32	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	33	det	_	_
 33	régimes	régime	NOUN	_	Gender=Masc|Number=Plur	31	comp:obj	_	mwehead=NC+|pred=y
-34	de	de	ADP	_	_	33	unk	_	pred=y
+34	de	de	ADP	_	_	33	udep	_	pred=y
 35	retraite	retraite	NOUN	_	Gender=Fem|Number=Sing	34	comp:obj	_	pred=y|SpaceAfter=No
 36	.	.	PUNCT	_	_	4	punct	_	_
 
@@ -7271,7 +7270,7 @@
 20	sept	sept	NUM	_	NumType=Card	19	unk	_	pred=y
 21	années	année	NOUN	_	Gender=Fem|Number=Plur	17	comp:obj	_	_
 22	et	et	CCONJ	_	_	23	cc	_	_
-23	demie	demie	NOUN	_	Gender=Fem|Number=Sing	21	conj	_	_
+23	demie	demie	NOUN	_	Gender=Fem|Number=Sing	21	conj:coord	_	_
 24	aujourd'	aujourd'	ADP	_	_	17	mod	_	mwehead=ADV+|pred=y|SpaceAfter=No
 25	hui	hui	NOUN	_	_	24	comp:obj	_	pred=y
 26	à	à	ADP	_	_	17	comp:obl	_	_
@@ -7325,8 +7324,8 @@
 20	-	-	PUNCT	_	_	11	punct	_	_
 21-22	au	_	_	_	_	_	_	_	_
 21	à	à	ADP	_	ExtPos=ADV	11	udep	_	mwehead=P+D+|pred=y
-22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	unk	_	InIdiom=Yes
-23	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	22	det	_	pred=y
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	InIdiom=Yes
+23	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	21	unk	_	pred=y
 24-25	des	_	_	_	_	_	_	_	_
 24	de	de	ADP	_	_	21	comp:obl	_	pred=y
 25	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
@@ -7466,7 +7465,7 @@
 20	en	en	ADP	_	_	23	mod	_	_
 21	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	20	comp:obj	_	SpaceAfter=No
 22	,	,	PUNCT	_	_	20	punct	_	_
-23	devrait	devoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+23	devrait	devoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj:coord	_	_
 24	rassembler	rassembler	VERB	_	VerbForm=Inf	23	comp:obj	_	Subject=Generic
 25	1500	1500	NUM	_	Gender=Masc|Number=Plur|NumType=Card	26	det	_	_
 26	bateaux	bateau	NOUN	_	Gender=Masc|Number=Plur	24	comp:obj	_	_
@@ -7486,7 +7485,7 @@
 40	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	41	det	_	_
 41	million	million	NOUN	_	Gender=Masc|Number=Sing	37	comp:obj	_	_
 42	et	et	CCONJ	_	_	43	cc	_	_
-43	demi	demi	NOUN	_	Gender=Masc|Number=Sing	41	conj	_	_
+43	demi	demi	NOUN	_	Gender=Masc|Number=Sing	41	conj:coord	_	_
 44	de	de	ADP	_	Shared=Yes	43	udep	_	_
 45	visiteurs	visiteur	NOUN	_	Gender=Masc|Number=Plur	44	comp:obj	_	SpaceAfter=No
 46	.	.	PUNCT	_	Shared=Yes	23	punct	_	_
@@ -7499,8 +7498,8 @@
 4	,	,	PUNCT	_	_	5	punct	_	_
 5	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	1	mod	_	mwehead=NC+|pred=y
 6	de	de	ADP	_	_	5	unk	_	pred=y
-7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	unk	_	pred=y
-8	culture	culture	NOUN	_	Gender=Fem|Number=Sing	7	det	_	pred=y|SpaceAfter=No
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	pred=y
+8	culture	culture	NOUN	_	Gender=Fem|Number=Sing	6	unk	_	pred=y|SpaceAfter=No
 9	,	,	PUNCT	_	_	11	punct	_	_
 10	et	et	CCONJ	_	_	11	cc	_	_
 11	Jean	Jean	PROPN	_	Gender=Masc|Number=Sing	1	conj	_	_
@@ -7519,8 +7518,8 @@
 24	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 25	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	24	comp:aux@tense	_	_
 26	à	à	ADP	_	_	25	mod	_	mwehead=ADV+|pred=y
-27	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	26	unk	_	pred=y
-28	sujet	sujet	NOUN	_	Gender=Masc|Number=Sing	27	det	_	pred=y
+27	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	28	det	_	pred=y
+28	sujet	sujet	NOUN	_	Gender=Masc|Number=Sing	26	unk	_	pred=y
 29	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	communication	communication	NOUN	_	Gender=Fem|Number=Sing	25	comp:obj	_	_
 31-32	au	_	_	_	_	_	_	_	_
@@ -7529,8 +7528,8 @@
 33	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	31	comp:obj	_	mwehead=NC+|pred=y
 34-35	des	_	_	_	_	_	_	_	_
 34	de	de	ADP	_	_	33	unk	_	pred=y
-35	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	unk	_	InIdiom=Yes
-36	ministres	ministre	NOUN	_	Gender=Masc|Number=Plur	35	det	_	pred=y
+35	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	InIdiom=Yes
+36	ministres	ministre	NOUN	_	Gender=Masc|Number=Plur	34	unk	_	pred=y
 37-38	du	_	_	_	_	_	_	_	_
 37	de	de	ADP	_	_	33	udep	_	_
 38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
@@ -7566,7 +7565,7 @@
 23	maritimité	maritimité	NOUN	_	Gender=Fem|Number=Sing	21	comp:obj	_	_
 24	"	"	PUNCT	_	_	21	punct	_	_
 25	et	et	CCONJ	_	_	26	cc	_	_
-26	de	de	ADP	_	_	21	conj	_	_
+26	de	de	ADP	_	_	21	conj:coord	_	_
 27	patrimoine	patrimoine	NOUN	_	Gender=Masc|Number=Sing	26	comp:obj	_	_
 28	marin	marin	ADJ	_	Gender=Masc|Number=Sing	27	mod	_	_
 29	indique	indiquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -7588,8 +7587,8 @@
 45	indique	indiquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	parataxis	_	_
 46	-t-on	il	PRON	_	Gender=Masc|Number=Sing|Person=3	45	subj	_	c=yes
 47	dans	dans	ADP	_	ExtPos=ADV	45	mod	_	mwehead=P+|pred=y
-48	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	47	unk	_	pred=y|SpaceAfter=No
-49	entourage	entourage	NOUN	_	Gender=Masc|Number=Sing	48	det	_	pred=y
+48	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	49	det	_	pred=y|SpaceAfter=No
+49	entourage	entourage	NOUN	_	Gender=Masc|Number=Sing	47	unk	_	pred=y
 50	de	de	ADP	_	_	47	comp:obl	_	pred=y
 51	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	50	comp:obj	_	_
 52	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	det	_	_
@@ -7688,7 +7687,7 @@
 # text = La mise en place d'un dispositif de sauvegarde de plusieurs dizaines de bateaux de pêche d'antan, à des fins culturelles ou pédagogiques ;
 1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	mise	mise	NOUN	_	Gender=Fem|Number=Sing	0	root	_	mwehead=NC+|pred=y
-3	en	en	ADP	_	_	2	unk	_	pred=y
+3	en	en	ADP	_	_	2	udep	_	pred=y
 4	place	place	NOUN	_	Gender=Fem|Number=Sing	3	comp:obj	_	pred=y
 5	d'	de	ADP	_	_	2	udep	_	SpaceAfter=No
 6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
@@ -7700,7 +7699,7 @@
 12	dizaines	dizaines	NOUN	_	Gender=Fem|Number=Plur	10	comp:obj	_	_
 13	de	de	ADP	_	_	12	udep	_	_
 14	bateaux	bateau	NOUN	_	Gender=Masc|Number=Plur	13	comp:obj	_	mwehead=NC+|pred=y
-15	de	de	ADP	_	_	14	unk	_	pred=y
+15	de	de	ADP	_	_	14	udep	_	pred=y
 16	pêche	pêche	NOUN	_	Gender=Fem|Number=Sing	15	comp:obj	_	pred=y
 17	d'	de	ADP	_	_	14	mod	_	mwehead=ADJ+|pred=y|SpaceAfter=No
 18	antan	antan	NOUN	_	Gender=Masc|Number=Sing	17	comp:obj	_	pred=y|SpaceAfter=No
@@ -7759,7 +7758,7 @@
 40	chercheurs	chercheur	NOUN	_	Gender=Masc|Number=Plur	38	comp:obj	_	_
 41	et	et	CCONJ	_	_	42	cc	_	_
 42-43	des	_	_	_	_	_	_	_	_
-42	de	de	ADP	_	_	38	conj	_	_
+42	de	de	ADP	_	_	38	conj:coord	_	_
 43	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	44	det	_	_
 44	associations	association	NOUN	_	Gender=Fem|Number=Plur	42	comp:obj	_	SpaceAfter=No
 45	.	.	PUNCT	_	_	2	punct	_	_
@@ -7773,7 +7772,7 @@
 5	Noël	Noël	PROPN	_	Gender=Masc|Number=Sing	4	comp:obj	_	_
 6	et	et	CCONJ	_	_	8	cc	_	_
 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
-8	stratégie	stratégie	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	_
+8	stratégie	stratégie	NOUN	_	Gender=Fem|Number=Sing	3	conj:coord	_	_
 9	commerciale	commercial	ADJ	_	Gender=Fem|Number=Sing	8	mod	_	_
 10	agressive	agressif	ADJ	_	Gender=Fem|Number=Sing	8	mod	_	_
 11-12	des	_	_	_	_	_	_	_	_
@@ -7876,8 +7875,8 @@
 34	,	,	PUNCT	_	_	35	punct	_	_
 35-36	au	_	_	_	_	_	_	_	_
 35	à	à	ADP	_	ExtPos=ADV	19	mod	_	mwehead=P+|pred=y
-36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	unk	_	InIdiom=Yes
-37	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	36	det	_	pred=y
+36	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	37	det	_	InIdiom=Yes
+37	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	35	unk	_	pred=y
 38	d'	de	ADP	_	_	35	comp:obl	_	pred=y|SpaceAfter=No
 39	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	hausse	hausse	NOUN	_	Gender=Fem|Number=Sing	38	comp:obj	_	_
@@ -7886,8 +7885,8 @@
 43	,	,	PUNCT	_	_	42	unk	_	pred=y
 44	3	3	NUM	_	NumType=Card	43	unk	_	pred=y
 45	%	%	NOUN	_	Gender=Masc|Number=Plur	41	comp:obj	_	_
-46	d'	de	ADP	_	_	48	mod	_	mwehead=ADV+|pred=y|SpaceAfter=No
-47	abord	abord	NOUN	_	Gender=Masc|Number=Sing	46	comp:obj	_	pred=y
+46	d'	de	ADP	_	_	48	mod	_	Idiom=Yes|mwehead=ADV+|pred=y|SpaceAfter=No
+47	abord	abord	NOUN	_	Gender=Masc|Number=Sing	46	comp:obj	_	InIdiom=Yes|pred=y
 48	annoncée	annoncer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	40	mod	_	SpaceAfter=No
 49	.	.	PUNCT	_	_	4	punct	_	_
 
@@ -7962,7 +7961,7 @@
 4	de	de	ADP	_	_	3	udep	_	_
 5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
 6	cour	cour	NOUN	_	Gender=Fem|Number=Sing	4	comp:obj	_	mwehead=NC+|pred=y
-7	d'	de	ADP	_	_	6	unk	_	pred=y|SpaceAfter=No
+7	d'	de	ADP	_	_	6	udep	_	pred=y|SpaceAfter=No
 8	appel	appel	NOUN	_	Gender=Masc|Number=Sing	7	comp:obj	_	pred=y
 9	de	de	ADP	_	_	6	udep	_	_
 10	Paris	Paris	PROPN	_	Gender=Masc|Number=Sing	9	comp:obj	_	SpaceAfter=No
@@ -7977,7 +7976,7 @@
 19	affaire	affaire	NOUN	_	Gender=Fem|Number=Sing	17	comp:obj	_	_
 20	de	de	ADP	_	_	19	udep	_	_
 21	délit	délit	NOUN	_	Gender=Masc|Number=Sing	20	comp:obj	_	mwehead=NC+|pred=y
-22	d'	de	ADP	_	_	21	unk	_	pred=y|SpaceAfter=No
+22	d'	de	ADP	_	_	21	udep	_	pred=y|SpaceAfter=No
 23	initiés	initié	NOUN	_	Gender=Masc|Number=Plur	22	comp:obj	_	pred=y
 24	portant	porter	VERB	_	Tense=Pres|VerbForm=Part	19	mod	_	_
 25	sur	sur	ADP	_	_	24	comp:obl	_	_
@@ -8169,7 +8168,7 @@
 38	par	par	ADP	_	_	32	comp:obl	_	_
 39	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	cour	cour	NOUN	_	Gender=Fem|Number=Sing	38	comp:obj	_	mwehead=NC+|pred=y
-41	d'	de	ADP	_	_	40	unk	_	pred=y|SpaceAfter=No
+41	d'	de	ADP	_	_	40	udep	_	pred=y|SpaceAfter=No
 42	appel	appel	NOUN	_	Gender=Masc|Number=Sing	41	comp:obj	_	pred=y|SpaceAfter=No
 43	.	.	PUNCT	_	_	30	punct	_	_
 
@@ -8218,7 +8217,7 @@
 13	de	de	ADP	_	_	12	udep	_	_
 14	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	15	det	_	_
 15	opérations	opération	NOUN	_	Gender=Fem|Number=Plur	13	comp:obj	_	mwehead=NC+|pred=y
-16	de	de	ADP	_	_	15	unk	_	pred=y
+16	de	de	ADP	_	_	15	udep	_	pred=y
 17	bourse	bourse	NOUN	_	Gender=Fem|Number=Sing	16	comp:obj	_	pred=y
 18	(	(	PUNCT	_	_	5	punct	_	SpaceAfter=No
 19	COB	COB	PROPN	_	Gender=Fem|Number=Sing	5	mod	_	SpaceAfter=No
@@ -8232,8 +8231,8 @@
 26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	début	début	NOUN	_	Gender=Masc|Number=Sing	25	comp:obj	_	mwehead=NC+|pred=y
 28	de	de	ADP	_	_	27	unk	_	pred=y
-29	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	28	unk	_	pred=y|SpaceAfter=No
-30	année	année	NOUN	_	Gender=Fem|Number=Sing	29	det	_	pred=y
+29	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	30	det	_	pred=y|SpaceAfter=No
+30	année	année	NOUN	_	Gender=Fem|Number=Sing	28	unk	_	pred=y
 31	1986	1986	NUM	_	Gender=Fem|Number=Sing|NumType=Card	27	mod	_	SpaceAfter=No
 32	,	,	PUNCT	_	_	33	punct	_	_
 33	sciemment	sciemment	ADV	_	_	23	mod	_	_
@@ -8258,10 +8257,10 @@
 52	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	53	det	_	_
 53	titre	titre	NOUN	_	Gender=Masc|Number=Sing	51	comp:obj	_	_
 54	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No
-55	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	mod	_	mwehead=NC+|pred=y
-56	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	55	det	_	pred=y
+55	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	_	mwehead=NC+|pred=y
+56	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	4	mod	_	pred=y
 57-58	du	_	_	_	_	_	_	_	_
-57	de	de	ADP	_	_	55	dep	_	_
+57	de	de	ADP	_	_	56	dep	_	_
 58	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	59	det	_	_
 59	17	17	NUM	_	Gender=Masc|Number=Sing|NumType=Card	57	comp:obj	_	_
 60	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	59	udep	_	_
@@ -8306,7 +8305,7 @@
 5	,	,	PUNCT	_	_	1	punct	_	_
 6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	cour	cour	NOUN	_	Gender=Fem|Number=Sing	10	subj	_	mwehead=NC+|pred=y
-8	d'	de	ADP	_	_	7	unk	_	pred=y|SpaceAfter=No
+8	d'	de	ADP	_	_	7	udep	_	pred=y|SpaceAfter=No
 9	appel	appel	NOUN	_	Gender=Masc|Number=Sing	8	comp:obj	_	pred=y
 10	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 11	observé	observer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	comp:aux@tense	_	_
@@ -8337,8 +8336,8 @@
 8	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	5	comp:obj	_	_
 9	démontré	démontrer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	comp:aux@pass	_	_
 10	à	à	ADP	_	ExtPos=ADV	9	mod	_	mwehead=P+|pred=y
-11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	unk	_	pred=y|SpaceAfter=No
-12	encontre	encontre	NOUN	_	Gender=Fem|Number=Sing	11	det	_	pred=y
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	pred=y|SpaceAfter=No
+12	encontre	encontre	NOUN	_	Gender=Fem|Number=Sing	10	unk	_	pred=y
 13	de	de	ADP	_	_	10	comp:obl	_	pred=y
 14	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	13	comp:obj	_	_
 15	Morin	Morin	PROPN	_	Number=Sing	14	mod	_	_
@@ -8356,8 +8355,8 @@
 26	opérations	opération	NOUN	_	Gender=Fem|Number=Plur	24	comp:obj	_	_
 27	retenues	retenir	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	26	mod	_	_
 28	à	à	ADP	_	ExtPos=ADV	27	mod	_	mwehead=P+|pred=y
-29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	28	unk	_	pred=y
-30	charge	charge	NOUN	_	Gender=Fem|Number=Sing	29	det	_	pred=y
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	pred=y
+30	charge	charge	NOUN	_	Gender=Fem|Number=Sing	28	unk	_	pred=y
 31	de	de	ADP	_	_	28	comp:obl	_	pred=y
 32	Cosson	Cosson	PROPN	_	Gender=Masc|Number=Sing	31	comp:obj	_	_
 33	et	et	CCONJ	_	_	34	cc	_	_
@@ -8448,8 +8447,8 @@
 25	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
 26	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	27	mod	_	_
 27	dérogation	dérogation	NOUN	_	Gender=Fem|Number=Sing	24	comp:obj	_	_
-28	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	32	mod	_	mwehead=ADV+|pred=y
-29	fois	fois	NOUN	_	Gender=Fem	28	det	_	pred=y
+28	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	29	det	_	mwehead=ADV+|pred=y
+29	fois	fois	NOUN	_	Gender=Fem	32	mod	_	pred=y
 30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
 31	situation	situation	NOUN	_	Gender=Fem|Number=Sing	32	mod	_	_
 32	clarifiée	clarifier	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	24	mod	_	SpaceAfter=No
@@ -8480,7 +8479,7 @@
 21	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	mois	mois	NOUN	_	Gender=Masc|Number=Sing	20	comp:obj	_	_
 23	et	et	CCONJ	_	_	24	cc	_	_
-24	demi	demi	NOUN	_	Gender=Masc|Number=Sing	22	conj	_	SpaceAfter=No
+24	demi	demi	NOUN	_	Gender=Masc|Number=Sing	22	conj:coord	_	SpaceAfter=No
 25	.	.	PUNCT	_	_	10	punct	_	_
 
 # sent_id = flmf7ae1ep-233
@@ -8533,7 +8532,7 @@
 46	et	et	CCONJ	_	_	49	cc	_	_
 47	surtout	surtout	ADV	_	_	46	mod	_	_
 48	qui	qui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Rel	49	subj	_	_
-49	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	conj	_	_
+49	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	33	conj:coord	_	_
 50	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	52	det	_	_
 51	premier	premier	ADJ	_	Gender=Masc|Number=Sing|NumType=Ord	52	mod	_	_
 52	actionnaire	actionnaire	NOUN	_	Gender=Masc|Number=Sing	49	comp:pred	_	_
@@ -8564,7 +8563,7 @@
 18	de	de	ADP	_	_	17	udep	_	_
 19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_
 20	opérations	opération	NOUN	_	Gender=Fem|Number=Plur	18	comp:obj	_	mwehead=NC+|pred=y
-21	de	de	ADP	_	_	20	unk	_	pred=y
+21	de	de	ADP	_	_	20	udep	_	pred=y
 22	bourse	bourse	NOUN	_	Gender=Fem|Number=Sing	21	comp:obj	_	pred=y
 23	(	(	PUNCT	_	_	26	punct	_	SpaceAfter=No
 24	COB	COB	PROPN	_	Gender=Fem|Number=Sing	26	mod	_	SpaceAfter=No
@@ -8617,7 +8616,7 @@
 14	de	de	ADP	_	_	13	udep	_	_
 15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	_
 16	numéro	numéro	NOUN	_	Gender=Masc|Number=Sing	14	comp:obj	_	mwehead=NC+|pred=y
-17	un	un	NOUN	_	Gender=Masc|Number=Sing	16	unk	_	pred=y
+17	un	un	NOUN	_	Gender=Masc|Number=Sing	16	mod	_	pred=y
 18	mondial	mondial	ADJ	_	Gender=Masc|Number=Sing	16	mod	_	_
 19-20	des	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	16	udep	_	_
@@ -8677,8 +8676,8 @@
 29	entré	entrer	VERB	_	Gender=Masc|Number=Sing|Shared=Yes|Tense=Past|VerbForm=Part	28	mod	_	_
 30	récemment	récemment	ADV	_	_	29	mod	_	_
 31	dans	dans	ADP	_	ExtPos=ADV	29	mod	_	mwehead=P+|pred=y
-32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	unk	_	pred=y
-33	mouvance	mouvance	NOUN	_	Gender=Fem|Number=Sing	32	det	_	pred=y
+32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	pred=y
+33	mouvance	mouvance	NOUN	_	Gender=Fem|Number=Sing	31	unk	_	pred=y
 34	d'	de	ADP	_	_	31	comp:obl	_	pred=y|SpaceAfter=No
 35	Agnelli	Agnelli	PROPN	_	Gender=Masc|Number=Sing	34	comp:obj	_	SpaceAfter=No
 36	.	.	PUNCT	_	_	16	punct	_	_
@@ -8896,7 +8895,7 @@
 37	"	"	PUNCT	_	_	38	punct	_	_
 38	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	40	subj	_	_
 39	s'	le/lui	PRON	_	Gender=Fem|Number=Sing|Person=3|Reflex=Yes	41	comp:obj	_	SpaceAfter=No
-40	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj	_	_
+40	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	conj:coord	_	_
 41	estimée	estimer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	40	comp:aux@tense	_	_
 42	ne	ne	ADV	_	Polarity=Neg	44	mod	_	mwehead=ADV+|pred=y
 43	pas	pas	ADV	_	Polarity=Neg	42	unk	_	pred=y
@@ -8992,7 +8991,7 @@
 18	toujours	toujours	ADV	_	_	17	mod	_	_
 19	en	en	ADP	_	_	17	comp:obl	_	_
 20	garde	garde	NOUN	_	Number=Sing	19	comp:obj	_	mwehead=NC+|pred=y
-21	à	à	ADP	_	_	20	unk	_	pred=y
+21	à	à	ADP	_	_	20	udep	_	pred=y
 22	vue	vue	NOUN	_	Gender=Fem|Number=Sing	21	comp:obj	_	pred=y
 23	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	17	mod	_	_
 24	16	16	NUM	_	Gender=Masc|Number=Sing|NumType=Card	23	mod	_	_
@@ -9027,8 +9026,8 @@
 18	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 19	entendu	entendre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	comp:aux@pass	_	_
 20	dans	dans	ADP	_	ExtPos=ADV	18	mod	_	mwehead=P+|pred=y
-21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	unk	_	pred=y
-22	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	21	det	_	pred=y
+21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	pred=y
+22	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	20	unk	_	pred=y
 23	d'	de	ADP	_	_	20	comp:obl	_	pred=y|SpaceAfter=No
 24	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	25	det	_	_
 25	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	23	comp:obj	_	mwehead=NC+|pred=y
@@ -9114,7 +9113,7 @@
 26	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	_
 27	industriels	industriel	NOUN	_	Gender=Masc|Number=Plur	25	comp:obj	_	_
 28	et	et	CCONJ	_	_	29	cc	_	_
-29	entrepreneurs	entrepreneur	NOUN	_	Gender=Masc|Number=Plur	27	conj	_	_
+29	entrepreneurs	entrepreneur	NOUN	_	Gender=Masc|Number=Plur	27	conj:coord	_	_
 30	de	de	ADP	_	_	29	udep	_	_
 31	Russie	Russie	PROPN	_	Gender=Fem|Number=Sing	30	comp:obj	_	SpaceAfter=No
 32	.	.	PUNCT	_	_	20	punct	_	_
@@ -9202,7 +9201,7 @@
 24	de	de	ADP	_	_	23	udep	_	_
 25	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No
 26	appareil	appareil	NOUN	_	Gender=Masc|Number=Sing	24	comp:obj	_	mwehead=NC+|pred=y
-27	d'	de	ADP	_	_	26	unk	_	pred=y|SpaceAfter=No
+27	d'	de	ADP	_	_	26	udep	_	pred=y|SpaceAfter=No
 28	Etat	état	NOUN	_	Gender=Masc|Number=Sing	27	comp:obj	_	pred=y
 29	avant	avant	ADP	_	_	14	mod	_	_
 30	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	31	det	_	_
@@ -9541,7 +9540,7 @@
 16	)	)	PUNCT	_	_	9	punct	_	_
 17	et	et	CCONJ	_	_	18	cc	_	_
 18-19	des	_	_	_	_	_	_	_	_
-18	de	de	ADP	_	_	9	conj	_	_
+18	de	de	ADP	_	_	9	conj:coord	_	_
 19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_
 20	Japonais	japonais	NOUN	_	Gender=Masc|Number=Plur	18	comp:obj	_	_
 21	(	(	PUNCT	_	_	20	punct	_	SpaceAfter=No
@@ -9620,7 +9619,7 @@
 13	pour	pour	ADP	_	_	11	dep	_	_
 14	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	15	det	_	_
 15	vacances	vacances	NOUN	_	Gender=Masc|Number=Plur	13	comp:obj	_	mwehead=NC+|pred=y
-16	de	de	ADP	_	_	15	unk	_	pred=y
+16	de	de	ADP	_	_	15	udep	_	pred=y
 17	Noël	noël	NOUN	_	Gender=Masc|Number=Sing	16	comp:obj	_	pred=y|SpaceAfter=No
 18	,	,	PUNCT	_	_	11	punct	_	_
 19	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
@@ -9633,10 +9632,10 @@
 25	hôtels	hôtel	NOUN	_	Gender=Masc|Number=Plur	23	comp:obj	_	_
 26	et	et	CCONJ	_	_	27	cc	_	_
 27-28	des	_	_	_	_	_	_	_	_
-27	de	de	ADP	_	_	23	conj	_	_
+27	de	de	ADP	_	_	23	conj:coord	_	_
 28	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	29	det	_	_
 29	stations	station	NOUN	_	Gender=Fem|Number=Plur	27	comp:obj	_	mwehead=NC+|pred=y
-30	de	de	ADP	_	_	29	unk	_	pred=y
+30	de	de	ADP	_	_	29	udep	_	pred=y
 31	ski	ski	NOUN	_	Gender=Masc|Number=Sing	30	comp:obj	_	pred=y
 32	de	de	ADP	_	_	11	dep	_	_
 33	60	60	NUM	_	Gender=Masc|Number=Plur|NumType=Card	34	det	_	_
@@ -9789,8 +9788,8 @@
 59	aménagement	aménagement	NOUN	_	Gender=Masc|Number=Sing	48	mod	_	mwehead=NC+|pred=y
 60-61	du	_	_	_	_	_	_	_	_
 60	de	de	ADP	_	_	59	unk	_	pred=y
-61	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	60	unk	_	InIdiom=Yes
-62	territoire	territoire	NOUN	_	Gender=Masc|Number=Sing	61	det	_	pred=y
+61	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	62	det	_	InIdiom=Yes
+62	territoire	territoire	NOUN	_	Gender=Masc|Number=Sing	60	unk	_	pred=y
 63	...	...	PUNCT	_	_	48	punct	_	SpaceAfter=No
 64	)	)	PUNCT	_	_	48	punct	_	_
 65	dans	dans	ADP	_	_	44	udep	_	_
@@ -10081,7 +10080,7 @@
 8	et	et	CCONJ	_	_	11	cc	_	_
 9	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	11	det	_	_
 10	"	"	PUNCT	_	_	11	punct	_	_
-11	améliorations	amélioration	NOUN	_	Gender=Fem|Number=Plur	5	conj	_	_
+11	améliorations	amélioration	NOUN	_	Gender=Fem|Number=Plur	5	conj:coord	_	_
 12	importantes	important	ADJ	_	Gender=Fem|Number=Plur	11	mod	_	_
 13	"	"	PUNCT	_	_	12	punct	_	SpaceAfter=No
 14	,	,	PUNCT	_	Shared=Yes	15	punct	_	_
@@ -10134,10 +10133,10 @@
 32	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	_	_
 33	CGT	CGT	PROPN	_	Gender=Fem|Number=Sing	31	comp:obj	_	_
 34	(	(	PUNCT	_	_	19	punct	_	SpaceAfter=No
-35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	mod	_	mwehead=NC+|pred=y
-36	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	35	det	_	pred=y
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	mwehead=NC+|pred=y
+36	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	19	mod	_	pred=y
 37-38	du	_	_	_	_	_	_	_	_
-37	de	de	ADP	_	_	35	dep	_	_
+37	de	de	ADP	_	_	36	dep	_	_
 38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
 39	9	9	NUM	_	Gender=Masc|Number=Sing|NumType=Card	37	comp:obj	_	_
 40	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	39	udep	_	SpaceAfter=No
@@ -10167,7 +10166,7 @@
 19	et	et	CCONJ	_	_	22	cc	_	_
 20	d'	un	DET	_	Gender=Masc|Number=Plur|PronType=Int	22	det	_	SpaceAfter=No
 21	autres	autre	ADJ	_	Gender=Masc|Number=Plur	22	mod	_	_
-22	députés	député	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	_
+22	députés	député	NOUN	_	Gender=Masc|Number=Plur	8	conj:coord	_	_
 23-24	du	_	_	_	_	_	_	_	_
 23	de	de	ADP	_	_	22	udep	_	_
 24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
@@ -10192,15 +10191,15 @@
 42	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	43	det	_	_
 43	consommateurs	consommateur	NOUN	_	Gender=Masc|Number=Plur	41	comp:obj	_	_
 44	et	et	CCONJ	_	_	45	cc	_	_
-45	autorisant	autoriser	VERB	_	Tense=Pres|VerbForm=Part	38	conj	_	_
+45	autorisant	autoriser	VERB	_	Tense=Pres|VerbForm=Part	38	conj:coord	_	_
 46	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	_
 47	publicité	publicité	NOUN	_	Gender=Fem|Number=Sing	45	comp:obj	_	mwehead=NC+|pred=y
 48	comparative	comparatif	ADJ	_	Gender=Fem|Number=Sing	47	mod	_	pred=y
 49	(	(	PUNCT	_	_	4	punct	_	SpaceAfter=No
-50	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	mod	_	mwehead=NC+|pred=y
-51	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	50	det	_	pred=y
+50	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	mwehead=NC+|pred=y
+51	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	4	mod	_	pred=y
 52-53	des	_	_	_	_	_	_	_	_
-52	de	de	ADP	_	_	50	dep	_	_
+52	de	de	ADP	_	_	51	dep	_	_
 53	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	54	det	_	_
 54	25	25	NUM	_	Gender=Masc|Number=Plur|NumType=Card	52	comp:obj	_	_
 55	et	et	CCONJ	_	_	56	cc	_	_
@@ -10242,8 +10241,8 @@
 27	des	de	P+D	_	_	26	mod	_	_
 28	droits	droit	NOUN	_	Gender=Masc|Number=Plur	26	mod	_	mwehead=NC+|pred=y
 29	de	de	ADP	_	_	28	unk	_	pred=y
-30	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	29	unk	_	pred=y|SpaceAfter=No
-31	homme	homme	NOUN	_	Gender=Masc|Number=Sing	30	det	_	pred=y
+30	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	31	det	_	pred=y|SpaceAfter=No
+31	homme	homme	NOUN	_	Gender=Masc|Number=Sing	29	unk	_	pred=y
 32	et	et	CCONJ	_	_	26	coord	_	_
 33	du	de	P+D	_	_	26	mod	_	_
 34	citoyen	citoyen	NOUN	_	Gender=Masc|Number=Sing	26	mod	_	_
@@ -10281,7 +10280,7 @@
 25	propriété	propriété	NOUN	_	Gender=Fem|Number=Sing	24	comp:obj	_	SpaceAfter=No
 26	,	,	PUNCT	_	_	29	punct	_	_
 27	mais	mais	CCONJ	_	_	29	cc	_	_
-28	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	29	subj@expl	_	_
+28	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	29	subj	_	_
 29	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	conj	_	_
 30	ajouté	ajouter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	29	comp:aux@tense	_	_
 31	que	que	SCONJ	_	_	30	comp:obj	_	_
@@ -10329,7 +10328,7 @@
 71	transactions	transaction	NOUN	_	Gender=Fem|Number=Plur	69	comp:obj	_	_
 72	commerciales	commercial	ADJ	_	Gender=Fem|Number=Plur	71	mod	_	_
 73	et	et	CCONJ	_	_	74	cc	_	_
-74	à	à	ADP	_	_	65	conj	_	_
+74	à	à	ADP	_	_	65	conj:coord	_	_
 75	promouvoir	promouvoir	VERB	_	VerbForm=Inf	74	comp:obj	_	Subject=Generic
 76	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	77	det	_	_
 77	défense	défense	NOUN	_	Gender=Fem|Number=Sing	75	comp:obj	_	_
@@ -10356,7 +10355,7 @@
 7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	législateur	législateur	NOUN	_	Gender=Masc|Number=Sing	6	comp:obj	_	_
 9	lorsqu'	lorsque	SCONJ	_	_	3	mod	_	SpaceAfter=No
-10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	11	subj@expl	_	_
+10	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	11	subj	_	_
 11	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	comp:obj	_	_
 12	autorisé	autoriser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	comp:aux@tense	_	_
 13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	_
@@ -10394,11 +10393,11 @@
 13	ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	11	comp:obj	_	mwehead=NC+|pred=y
 14-15	du	_	_	_	_	_	_	_	_
 14	de	de	ADP	_	_	13	unk	_	pred=y
-15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	unk	_	InIdiom=Yes
-16	travail	travail	NOUN	_	Gender=Masc|Number=Sing	15	det	_	pred=y
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	InIdiom=Yes
+16	travail	travail	NOUN	_	Gender=Masc|Number=Sing	14	unk	_	pred=y
 17	et	et	CCONJ	_	_	19	cc	_	_
 18	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	19	det	_	_
-19	retraités	retraité	NOUN	_	Gender=Masc|Number=Plur	13	conj	_	SpaceAfter=No
+19	retraités	retraité	NOUN	_	Gender=Masc|Number=Plur	13	conj:coord	_	SpaceAfter=No
 20	,	,	PUNCT	_	_	1	punct	_	_
 21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	gouvernement	gouvernement	NOUN	_	Gender=Masc|Number=Sing	24	subj	_	_
@@ -10429,7 +10428,7 @@
 45	441000	441000	NUM	_	Gender=Masc|Number=Plur|NumType=Card	46	det	_	_
 46	retraités	retraité	NOUN	_	Gender=Masc|Number=Plur	43	comp:obj	_	_
 47	et	et	CCONJ	_	_	48	cc	_	_
-48	pensionnés	pensionné	NOUN	_	Gender=Masc|Number=Plur	46	conj	_	_
+48	pensionnés	pensionné	NOUN	_	Gender=Masc|Number=Plur	46	conj:coord	_	_
 49	de	de	ADP	_	Shared=Yes	48	udep	_	_
 50	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	51	det	_	SpaceAfter=No
 51	Etat	état	NOUN	_	Gender=Masc|Number=Sing	49	comp:obj	_	_
@@ -10447,7 +10446,7 @@
 2	MK2	MK2	PROPN	_	Gender=Masc|Number=Sing	17	subj	_	SpaceAfter=No
 3	,	,	PUNCT	_	_	4	punct	_	_
 4	société	société	NOUN	_	Gender=Fem|Number=Sing	2	mod	_	mwehead=NC+|pred=y
-5	de	de	ADP	_	_	4	unk	_	pred=y
+5	de	de	ADP	_	_	4	udep	_	pred=y
 6	production	production	NOUN	_	Gender=Fem|Number=Sing	5	comp:obj	_	pred=y
 7	et	et	CCONJ	_	_	8	cc	_	_
 8	de	de	ADP	_	_	4	conj	_	_
@@ -10489,7 +10488,7 @@
 # text = Cette prise de participation majoritaire fait suite à un rapprochement intervenu, en mai, entre MK2 et la CED pour mieux intégrer la gestion de catalogues (188 films, dont 142 en provenance de la CED) et la coproduction de films.
 1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	prise	prise	NOUN	_	Gender=Fem|Number=Sing	6	subj	_	mwehead=NC+|pred=y
-3	de	de	ADP	_	_	2	unk	_	pred=y
+3	de	de	ADP	_	_	2	udep	_	pred=y
 4	participation	participation	NOUN	_	Gender=Fem|Number=Sing	3	comp:obj	_	pred=y
 5	majoritaire	majoritaire	ADJ	_	Gender=Fem|Number=Sing	2	mod	_	_
 6	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	mwehead=V+|pred=y
@@ -10596,7 +10595,7 @@
 7	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No
 8	énergie	énergie	NOUN	_	Gender=Fem|Number=Sing	6	comp:obj	_	_
 9	et	et	CCONJ	_	_	10	cc	_	_
-10	de	de	ADP	_	_	6	conj	_	_
+10	de	de	ADP	_	_	6	conj:coord	_	_
 11	certains	certain	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	12	det	_	_
 12	services	service	NOUN	_	Gender=Masc|Number=Plur	10	comp:obj	_	_
 13	intervenues	intervenir	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	mod	_	_
@@ -10630,7 +10629,7 @@
 10	à	à	ADP	_	_	9	comp:obl	_	_
 11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	mouvement	mouvement	NOUN	_	Gender=Masc|Number=Sing	10	comp:obj	_	mwehead=NC+|pred=y
-13	de	de	ADP	_	_	12	unk	_	pred=y
+13	de	de	ADP	_	_	12	udep	_	pred=y
 14	grève	grève	NOUN	_	Gender=Fem|Number=Sing	13	comp:obj	_	pred=y
 15	jeudi	jeudi	NOUN	_	Gender=Masc|Number=Sing	12	mod	_	_
 16	16	16	NUM	_	Gender=Masc|Number=Sing|NumType=Card	12	mod	_	_
@@ -10685,7 +10684,7 @@
 43	exportations	exportation	NOUN	_	Gender=Fem|Number=Plur	41	comp:obj	_	_
 44	et	et	CCONJ	_	_	46	cc	_	_
 45	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	_	_
-46	investissements	investissement	NOUN	_	Gender=Masc|Number=Plur	43	conj	_	SpaceAfter=No
+46	investissements	investissement	NOUN	_	Gender=Masc|Number=Plur	43	conj:coord	_	SpaceAfter=No
 47	,	,	PUNCT	_	_	48	punct	_	_
 48	pour	pour	ADP	_	_	28	mod	_	_
 49	parvenir	parvenir	VERB	_	VerbForm=Inf	48	comp:obj	_	Subject=Generic
@@ -10727,7 +10726,7 @@
 12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	Plan	plan	NOUN	_	Gender=Masc|Number=Sing	11	comp:obj	_	_
 14	et	et	CCONJ	_	_	15	cc	_	_
-15	président	président	NOUN	_	Gender=Masc|Number=Sing	10	conj	_	_
+15	président	président	NOUN	_	Gender=Masc|Number=Sing	10	conj:coord	_	_
 16-17	du	_	_	_	_	_	_	_	_
 16	de	de	ADP	_	_	15	udep	_	_
 17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
@@ -10802,8 +10801,8 @@
 19	grèves	grève	NOUN	_	Gender=Fem|Number=Plur	23	subj	_	_
 20	et	et	CCONJ	_	_	22	cc	_	_
 21	des	un	DET	_	Definite=Ind|Gender=Fem|Number=Plur|PronType=Art	22	det	_	_
-22	manifestations	manifestation	NOUN	_	Gender=Fem|Number=Plur	19	conj	_	_
-23	sont	être	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
+22	manifestations	manifestation	NOUN	_	Gender=Fem|Number=Plur	19	conj:coord	_	_
+23	sont	être	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	conj:coord	_	_
 24	là	là	ADV	_	_	23	mod	_	_
 25	pour	pour	ADP	_	_	23	mod	_	_
 26	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3	27	comp:obj	_	_
@@ -10832,13 +10831,13 @@
 18	)	)	PUNCT	_	_	7	punct	_	_
 19	et	et	CCONJ	_	_	21	cc	_	_
 20	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	21	det	_	_
-21	conflits	conflit	NOUN	_	Gender=Masc|Number=Plur	7	conj	_	_
+21	conflits	conflit	NOUN	_	Gender=Masc|Number=Plur	7	conj:coord	_	_
 22	sociaux	social	ADJ	_	Gender=Masc|Number=Plur	21	mod	_	_
 23	persistants	persistant	ADJ	_	Gender=Masc|Number=Plur	21	mod	_	SpaceAfter=No
 24	,	,	PUNCT	_	_	1	punct	_	_
 25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
 26	marge	marge	NOUN	_	Gender=Fem|Number=Sing	32	subj	_	mwehead=NC+|pred=y
-27	de	de	ADP	_	_	26	unk	_	pred=y
+27	de	de	ADP	_	_	26	udep	_	pred=y
 28	manoeuvre	manoeuvre	NOUN	_	Number=Sing	27	comp:obj	_	pred=y
 29	de	de	ADP	_	_	26	udep	_	_
 30	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	29	comp:obj	_	_
@@ -10946,8 +10945,8 @@
 34	économique	économique	ADJ	_	Number=Sing	33	mod	_	pred=y
 35	nulle	nul	ADJ	_	Gender=Fem|Number=Sing	33	mod	_	_
 36	à	à	ADP	_	ExtPos=ADV	30	mod	_	mwehead=P+|pred=y
-37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	unk	_	pred=y
-38	fin	fin	NOUN	_	Number=Sing	37	det	_	pred=y
+37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	pred=y
+38	fin	fin	NOUN	_	Number=Sing	36	unk	_	pred=y
 39	de	de	ADP	_	_	36	comp:obl	_	pred=y
 40	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	_	SpaceAfter=No
 41	année	année	NOUN	_	Gender=Fem|Number=Sing	39	comp:obj	_	_
@@ -11001,8 +11000,8 @@
 7	alors	alors	ADV	_	_	3	mod	_	mwehead=CS+|pred=y
 8	que	que	SCONJ	_	_	7	unk	_	pred=y|SpaceAfter=No
 9	,	,	PUNCT	_	_	17	punct	_	_
-10	par	par	ADP	_	_	17	mod	_	mwehead=ADV+|pred=y
-11	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	10	comp:obj	_	pred=y|SpaceAfter=No
+10	par	par	ADP	_	_	17	mod	_	Idiom=Yes|mwehead=ADV+|pred=y
+11	exemple	exemple	NOUN	_	Gender=Masc|Number=Sing	10	comp:obj	_	InIdiom=Yes|pred=y|SpaceAfter=No
 12	,	,	PUNCT	_	_	10	punct	_	_
 13	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	14	det	_	_
 14	dépenses	dépense	NOUN	_	Gender=Fem|Number=Plur	17	subj	_	mwehead=NC+|pred=y
@@ -11061,8 +11060,8 @@
 29	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	26	mod	_	mwehead=NC+|pred=y
 30-31	des	_	_	_	_	_	_	_	_
 30	de	de	ADP	_	_	29	unk	_	pred=y
-31	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	unk	_	InIdiom=Yes
-32	finances	finance	NOUN	_	Gender=Fem|Number=Plur	31	det	_	pred=y|SpaceAfter=No
+31	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	InIdiom=Yes
+32	finances	finance	NOUN	_	Gender=Fem|Number=Plur	30	unk	_	pred=y|SpaceAfter=No
 33	,	,	PUNCT	_	_	34	punct	_	_
 34	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	29	mod	_	_
 35	Leszek	Leszek	PROPN	_	Gender=Masc|Number=Sing	34	mod	_	_
@@ -11071,9 +11070,9 @@
 
 # sent_id = flmf7ae1ep-296
 # text = Tout d'abord, affirme M. Eysymontt, le solde commercial, légèrement déficitaire en 1991, après le fort excédent de 1990, doit devenir positif.
-1	Tout	tout	ADV	_	_	25	mod	_	mwehead=ADV+|pred=y
-2	d'	de	ADP	_	_	1	unk	_	pred=y|SpaceAfter=No
-3	abord	abord	NOUN	_	Gender=Masc|Number=Sing	2	comp:obj	_	pred=y|SpaceAfter=No
+1	Tout	tout	ADV	_	_	2	mod	_	pred=y
+2	d'	de	ADP	_	_	25	mod	_	Idiom=Yes|mwehead=ADV+|pred=y|SpaceAfter=No
+3	abord	abord	NOUN	_	Gender=Masc|Number=Sing	2	comp:obj	_	InIdiom=Yes|pred=y|SpaceAfter=No
 4	,	,	PUNCT	_	_	5	punct	_	_
 5	affirme	affirmer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	mod	_	_
 6	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	5	subj	_	_
@@ -11184,8 +11183,8 @@
 23	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
 24	dépréciation	dépréciation	NOUN	_	Gender=Fem|Number=Sing	22	comp:obj	_	_
 25	à	à	ADP	_	ExtPos=ADV	24	udep	_	mwehead=P+D+|pred=y
-26	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	25	unk	_	pred=y|SpaceAfter=No
-27	égard	égard	NOUN	_	Gender=Masc|Number=Sing	26	det	_	pred=y
+26	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	27	det	_	pred=y|SpaceAfter=No
+27	égard	égard	NOUN	_	Gender=Masc|Number=Sing	25	unk	_	pred=y
 28-29	du	_	_	_	_	_	_	_	_
 28	de	de	ADP	_	_	25	comp:obl	_	pred=y
 29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
@@ -11202,7 +11201,7 @@
 # text = Un taux de change plus favorable, explique M. Eysymontt, doit permettre la relance des exportations en espérant qu'une " telle opinion sera comprise par le fonds monétaire international et la banque mondiale " (les deux organismes supervisent le programme économique polonais et redoutent les risques d'hyperinflation).
 1	Un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	taux	taux	NOUN	_	Gender=Masc	12	subj	_	mwehead=NC+|pred=y
-3	de	de	ADP	_	_	2	unk	_	pred=y
+3	de	de	ADP	_	_	2	udep	_	pred=y
 4	change	change	NOUN	_	Gender=Masc|Number=Sing	3	comp:obj	_	pred=y
 5	plus	plus	ADV	_	_	6	mod	_	_
 6	favorable	favorable	ADJ	_	Gender=Masc|Number=Sing	2	mod	_	SpaceAfter=No
@@ -11235,7 +11234,7 @@
 32	international	international	ADJ	_	Gender=Masc|Number=Sing	31	unk	_	pred=y
 33	et	et	CCONJ	_	_	35	cc	_	_
 34	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
-35	banque	banque	NOUN	_	Gender=Fem|Number=Sing	30	conj	_	mwehead=NC+|pred=y
+35	banque	banque	NOUN	_	Gender=Fem|Number=Sing	30	conj:coord	_	mwehead=NC+|pred=y
 36	mondiale	mondial	ADJ	_	Gender=Fem|Number=Sing	35	mod	_	pred=y
 37	"	"	PUNCT	_	_	26	punct	_	_
 38	(	(	PUNCT	_	_	12	punct	_	SpaceAfter=No
@@ -11248,7 +11247,7 @@
 45	économique	économique	ADJ	_	Number=Sing	44	mod	_	pred=y
 46	polonais	polonais	ADJ	_	Gender=Masc|Number=Sing	44	mod	_	_
 47	et	et	CCONJ	_	_	48	cc	_	_
-48	redoutent	redouter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	42	conj	_	_
+48	redoutent	redouter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	42	conj:coord	_	_
 49	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	50	det	_	_
 50	risques	risque	NOUN	_	Gender=Masc|Number=Plur	48	comp:obj	_	_
 51	d'	de	ADP	_	_	50	udep	_	SpaceAfter=No
@@ -11312,7 +11311,7 @@
 51	alcool	alcool	NOUN	_	Gender=Masc|Number=Sing	44	mod	_	_
 52	et	et	CCONJ	_	_	54	cc	_	_
 53	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	54	det	_	_
-54	tabac	tabac	NOUN	_	Gender=Masc|Number=Sing	51	conj	_	SpaceAfter=No
+54	tabac	tabac	NOUN	_	Gender=Masc|Number=Sing	51	conj:coord	_	SpaceAfter=No
 55	.	.	PUNCT	_	_	28	punct	_	_
 
 # sent_id = flmf7ae1ep-302
@@ -11448,8 +11447,8 @@
 25	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No
 26	impôt	impôt	NOUN	_	Gender=Masc|Number=Sing	24	comp:obj	_	mwehead=NC+|pred=y
 27	sur	sur	ADP	_	_	26	unk	_	pred=y
-28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	unk	_	pred=y
-29	revenu	revenu	NOUN	_	Gender=Masc|Number=Sing	28	det	_	pred=y
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	pred=y
+29	revenu	revenu	NOUN	_	Gender=Masc|Number=Sing	27	unk	_	pred=y
 30-31	des	_	_	_	_	_	_	_	_
 30	de	de	ADP	_	_	26	udep	_	_
 31	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	32	det	_	_
@@ -11529,8 +11528,8 @@
 5	trouver	trouver	VERB	_	VerbForm=Inf	2	comp:obj	_	Subject=Generic
 6	prochainement	prochainement	ADV	_	_	5	mod	_	_
 7	à	à	ADP	_	ExtPos=ADV	5	comp:obl	_	mwehead=P+|pred=y
-8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	unk	_	pred=y
-9	tête	tête	NOUN	_	Gender=Fem|Number=Sing	8	det	_	pred=y
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	pred=y
+9	tête	tête	NOUN	_	Gender=Fem|Number=Sing	7	unk	_	pred=y
 10	d'	de	ADP	_	_	7	comp:obl	_	pred=y|SpaceAfter=No
 11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
 12	"	"	PUNCT	_	_	15	punct	_	_
@@ -11611,7 +11610,7 @@
 21	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	19	comp:obj	_	_
 22	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
 23	conseils	conseil	NOUN	_	Gender=Masc|Number=Plur	16	comp:obj	_	mwehead=NC+|pred=y
-24	d'	de	ADP	_	_	23	unk	_	pred=y|SpaceAfter=No
+24	d'	de	ADP	_	_	23	udep	_	pred=y|SpaceAfter=No
 25	administration	administration	NOUN	_	Gender=Fem|Number=Sing	24	comp:obj	_	pred=y
 26	puissants	puissant	ADJ	_	Gender=Masc|Number=Plur	23	mod	_	SpaceAfter=No
 27	,	,	PUNCT	_	_	31	punct	_	_
@@ -11719,7 +11718,7 @@
 40	agriculture	agriculture	NOUN	_	Gender=Fem|Number=Sing	38	comp:obj	_	_
 41	et	et	CCONJ	_	_	42	cc	_	_
 42-43	du	_	_	_	_	_	_	_	_
-42	de	de	ADP	_	_	38	conj	_	_
+42	de	de	ADP	_	_	38	conj:coord	_	_
 43	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	det	_	_
 44	textile	textile	NOUN	_	Gender=Masc|Number=Sing	42	comp:obj	_	_
 45	"	"	PUNCT	_	_	44	punct	_	SpaceAfter=No
@@ -11750,15 +11749,15 @@
 21	de	de	ADP	_	_	20	udep	_	_
 22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	conjoncture	conjoncture	NOUN	_	Gender=Fem|Number=Sing	21	comp:obj	_	_
-24	en	en	ADP	_	_	23	mod	_	mwehead=ADV+|pred=y
-25	général	général	NOUN	_	Gender=Masc|Number=Sing	24	comp:obj	_	pred=y|SpaceAfter=No
+24	en	en	ADP	_	_	23	mod	_	Idiom=Yes|mwehead=ADV+|pred=y
+25	général	général	NOUN	_	Gender=Masc|Number=Sing	24	comp:obj	_	InIdiom=Yes|pred=y|SpaceAfter=No
 26	,	,	PUNCT	_	_	32	punct	_	_
 27	et	et	CCONJ	_	_	32	cc	_	_
 28	c'	ce	PRON	_	Number=Sing|Person=3	32	mod	_	mwehead=ADV+|pred=y|SpaceAfter=No
 29	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	28	unk	_	pred=y
 30	pourquoi	pourquoi	ADV	_	_	29	unk	_	pred=y
 31	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	32	subj	_	_
-32	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj	_	_
+32	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	conj:coord	_	_
 33	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	32	comp:pred	_	_
 34	de	de	ADP	_	_	32	comp:obj	_	_
 35	les	le	PRON	_	Gender=Masc|Number=Plur|Person=3	36	comp:obj	_	_
@@ -11772,7 +11771,7 @@
 42	relevant	relever	VERB	_	Tense=Pres|VerbForm=Part	41	comp:obj	_	_
 43	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	44	det	_	_
 44	droits	droit	NOUN	_	Gender=Masc|Number=Plur	42	comp:obj	_	mwehead=NC+|pred=y
-45	de	de	ADP	_	_	44	unk	_	pred=y
+45	de	de	ADP	_	_	44	udep	_	pred=y
 46	douane	douane	NOUN	_	Gender=Fem|Number=Sing	45	comp:obj	_	pred=y|SpaceAfter=No
 47	.	.	PUNCT	_	Shared=Yes	32	punct	_	_
 
@@ -11803,7 +11802,7 @@
 22	de	de	ADP	_	_	21	udep	_	_
 23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
 24	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	22	comp:obj	_	mwehead=NC+|pred=y
-25	de	de	ADP	_	_	24	unk	_	pred=y
+25	de	de	ADP	_	_	24	udep	_	pred=y
 26	vie	vie	NOUN	_	Gender=Fem|Number=Sing	25	comp:obj	_	pred=y
 27	"	"	PUNCT	_	_	24	punct	_	_
 28	et	et	CCONJ	_	_	29	cc	_	_
@@ -11825,7 +11824,7 @@
 42	services	service	NOUN	_	Gender=Masc|Number=Plur	40	comp:obj	_	_
 43	et	et	CCONJ	_	_	44	cc	_	_
 44-45	des	_	_	_	_	_	_	_	_
-44	de	de	ADP	_	_	31	conj	_	_
+44	de	de	ADP	_	_	31	conj:coord	_	_
 45	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	46	det	_	_
 46	coupes	coupe	NOUN	_	Gender=Fem|Number=Plur	44	comp:obj	_	_
 47	sévères	sévère	ADJ	_	Gender=Fem|Number=Plur	46	mod	_	_
@@ -11898,7 +11897,7 @@
 10	mais	mais	CCONJ	_	_	13	cc	_	_
 11	cela	cela	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	subj	_	_
 12	n'	ne	ADV	_	Polarity=Neg	13	mod	_	SpaceAfter=No
-13	équivaut	équivaloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	conj	_	_
+13	équivaut	équivaloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	26	conj:coord	_	_
 14	en	en	ADP	_	_	13	mod	_	mwehead=ADV+|pred=y
 15	aucun	aucun	ADJ	_	Gender=Masc|Number=Sing|Polarity=Neg	14	unk	_	pred=y
 16	cas	cas	NOUN	_	Gender=Masc	15	unk	_	pred=y
@@ -12028,7 +12027,7 @@
 4	de	de	ADP	_	_	3	udep	_	_
 5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	plan	plan	NOUN	_	Gender=Masc|Number=Sing	4	comp:obj	_	mwehead=NC+|pred=y
-7	d'	de	ADP	_	_	6	unk	_	pred=y|SpaceAfter=No
+7	d'	de	ADP	_	_	6	udep	_	pred=y|SpaceAfter=No
 8	accompagnement	accompagnement	NOUN	_	Gender=Masc|Number=Sing	7	comp:obj	_	pred=y
 9	social	social	ADJ	_	Gender=Masc|Number=Sing	6	mod	_	SpaceAfter=No
 10	,	,	PUNCT	_	_	11	punct	_	_
@@ -12144,7 +12143,7 @@
 4	de	de	ADP	_	_	3	comp:obl	_	_
 5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	champ	champ	NOUN	_	Gender=Masc|Number=Sing	4	comp:obj	_	mwehead=NC+|pred=y
-7	d'	de	ADP	_	_	6	unk	_	pred=y|SpaceAfter=No
+7	d'	de	ADP	_	_	6	udep	_	pred=y|SpaceAfter=No
 8	application	application	NOUN	_	Gender=Fem|Number=Sing	7	comp:obj	_	pred=y
 9	de	de	ADP	_	_	6	udep	_	_
 10	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	11	det	_	_
@@ -12274,7 +12273,7 @@
 31	de	de	ADP	_	_	30	udep	_	_
 32	résidence	résidence	NOUN	_	Gender=Fem|Number=Sing	31	comp:obj	_	_
 33	et	et	CCONJ	_	_	34	cc	_	_
-34	allocation	allocation	NOUN	_	Gender=Fem|Number=Sing	28	conj	_	_
+34	allocation	allocation	NOUN	_	Gender=Fem|Number=Sing	28	conj:coord	_	_
 35	de	de	ADP	_	_	34	udep	_	_
 36	mobilité	mobilité	NOUN	_	Gender=Fem|Number=Sing	35	comp:obj	_	_
 37-38	du	_	_	_	_	_	_	_	_
@@ -12463,7 +12462,7 @@
 9	dans	dans	ADP	_	_	4	mod	_	_
 10	leur	son	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes	11	det	_	_
 11	mise	mise	NOUN	_	Gender=Fem|Number=Sing	9	comp:obj	_	mwehead=NC+|pred=y
-12	en	en	ADP	_	_	11	unk	_	pred=y
+12	en	en	ADP	_	_	11	udep	_	pred=y
 13	oeuvre	oeuvre	NOUN	_	Number=Sing	12	comp:obj	_	pred=y|SpaceAfter=No
 14	.	.	PUNCT	_	_	2	punct	_	_
 
@@ -12484,8 +12483,8 @@
 11	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	9	comp:obj	_	mwehead=NC+|pred=y
 12-13	des	_	_	_	_	_	_	_	_
 12	de	de	ADP	_	_	11	unk	_	pred=y
-13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	unk	_	InIdiom=Yes
-14	ministres	ministre	NOUN	_	Gender=Masc|Number=Plur	13	det	_	pred=y
+13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	InIdiom=Yes
+14	ministres	ministre	NOUN	_	Gender=Masc|Number=Plur	12	unk	_	pred=y
 15-16	du	_	_	_	_	_	_	_	_
 15	de	de	ADP	_	_	11	udep	_	_
 16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
@@ -12562,8 +12561,8 @@
 22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	président	président	NOUN	_	Gender=Masc|Number=Sing	20	subj	_	mwehead=NC+|pred=y
 24	de	de	ADP	_	_	23	unk	_	pred=y
-25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	unk	_	pred=y
-26	République	république	NOUN	_	Gender=Fem|Number=Sing	25	det	_	pred=y|SpaceAfter=No
+25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	pred=y
+26	République	république	NOUN	_	Gender=Fem|Number=Sing	24	unk	_	pred=y|SpaceAfter=No
 27	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = flmf7ae1ep-335
@@ -12590,8 +12589,8 @@
 20	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	16	mod	_	mwehead=NC+|pred=y
 21-22	des	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	20	unk	_	pred=y
-22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	unk	_	InIdiom=Yes
-23	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	22	det	_	pred=y
+22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	InIdiom=Yes
+23	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	21	unk	_	pred=y
 24	étrangères	étranger	ADJ	_	Gender=Fem|Number=Plur	23	mod	_	pred=y|SpaceAfter=No
 25	.	.	PUNCT	_	_	4	punct	_	_
 
@@ -12666,8 +12665,8 @@
 65	avoir	avoir	AUX	_	VerbForm=Inf	64	comp:obj	_	Subject=Generic
 66	bénéficié	bénéficier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	65	comp:aux@tense	_	_
 67	de	de	ADP	_	ExtPos=ADV	66	mod	_	mwehead=P+D+|pred=y
-68	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	67	unk	_	pred=y
-69	part	part	NOUN	_	Number=Sing	68	det	_	pred=y
+68	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	69	det	_	pred=y
+69	part	part	NOUN	_	Number=Sing	67	unk	_	pred=y
 70-71	du	_	_	_	_	_	_	_	_
 70	de	de	ADP	_	_	67	comp:obl	_	pred=y
 71	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	72	det	_	_
@@ -12766,14 +12765,14 @@
 16	en	en	ADP	_	_	15	mod	_	_
 17	1990	1990	NUM	_	Gender=Fem|Number=Sing|NumType=Card	16	comp:obj	_	_
 18	à	à	ADP	_	ExtPos=ADV	15	mod	_	mwehead=P+|pred=y
-19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	unk	_	pred=y
-20	suite	suite	NOUN	_	Gender=Fem|Number=Sing	19	det	_	pred=y
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	pred=y
+20	suite	suite	NOUN	_	Gender=Fem|Number=Sing	18	unk	_	pred=y
 21	de	de	ADP	_	_	18	comp:obl	_	pred=y
 22	leur	son	DET	_	Gender=Fem|Number=Plur|Person=3|Poss=Yes	23	det	_	_
 23	plainte	plainte	NOUN	_	Gender=Fem|Number=Sing	21	comp:obj	_	_
 24	dans	dans	ADP	_	ExtPos=ADV	23	udep	_	mwehead=P+D+|pred=y
-25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	unk	_	pred=y
-26	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	25	det	_	pred=y
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	pred=y
+26	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	24	unk	_	pred=y
 27-28	du	_	_	_	_	_	_	_	_
 27	de	de	ADP	_	_	24	comp:obl	_	pred=y
 28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	_
@@ -12826,7 +12825,7 @@
 2	arbitrage	arbitrage	NOUN	_	Gender=Masc|Number=Sing	15	subj	_	SpaceAfter=No
 3	,	,	PUNCT	_	_	4	punct	_	_
 4	s'	si	SCONJ	_	_	15	mod	_	SpaceAfter=No
-5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	7	subj@expl	_	_
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	7	subj	_	_
 6	n'	ne	ADV	_	Polarity=Neg	7	mod	_	SpaceAfter=No
 7	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	comp:obj	_	_
 8	pas	pas	ADV	_	Polarity=Neg	7	mod	_	_
@@ -12990,7 +12989,7 @@
 24	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	25	det	_	_
 25	règles	règle	NOUN	_	Gender=Fem|Number=Plur	23	comp:obj	_	_
 26	et	et	CCONJ	_	_	27	cc	_	_
-27	disciplines	discipline	NOUN	_	Gender=Fem|Number=Plur	25	conj	_	_
+27	disciplines	discipline	NOUN	_	Gender=Fem|Number=Plur	25	conj:coord	_	_
 28-29	du	_	_	_	_	_	_	_	_
 28	de	de	ADP	_	Shared=Yes	27	udep	_	_
 29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
@@ -13105,8 +13104,8 @@
 # text = Au cours des tractations précédentes, les Européens ont accepté de les ramener à 45 %, et même indiqué qu'ils pourraient descendre au - dessous de ce plafond.
 1-2	Au	_	_	_	_	_	_	_	_
 1	À	à	ADP	_	ExtPos=ADV	11	mod	_	mwehead=P+D+|pred=y
-2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	unk	_	InIdiom=Yes
-3	cours	cours	NOUN	_	Gender=Masc	2	det	_	pred=y
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	InIdiom=Yes
+3	cours	cours	NOUN	_	Gender=Masc	1	unk	_	pred=y
 4-5	des	_	_	_	_	_	_	_	_
 4	de	de	ADP	_	_	1	comp:obl	_	pred=y
 5	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
@@ -13238,7 +13237,7 @@
 30	locales	local	ADJ	_	Gender=Fem|Number=Plur	29	mod	_	pred=y|SpaceAfter=No
 31	,	,	PUNCT	_	_	33	punct	_	_
 32	et	et	CCONJ	_	_	33	cc	_	_
-33	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	20	conj	_	_
+33	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	20	conj:coord	_	_
 34	Silvio	Silvio	PROPN	_	Gender=Masc|Number=Sing	33	mod	_	_
 35	Berlusconi	Berlusconi	PROPN	_	Gender=Masc|Number=Sing	34	flat@name	_	SpaceAfter=No
 36	,	,	PUNCT	_	_	37	punct	_	_
@@ -13289,7 +13288,7 @@
 31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
 32	matinée	matinée	NOUN	_	Gender=Fem|Number=Sing	30	comp:obj	_	_
 33	qu'	que	SCONJ	_	_	26	comp:obj	_	SpaceAfter=No
-34	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	35	subj@expl	_	_
+34	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	35	subj	_	_
 35	avait	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	33	comp:obj	_	_
 36	écrit	écrire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	35	comp:aux@tense	_	_
 37-38	aux	_	_	_	_	_	_	_	_
@@ -13305,7 +13304,7 @@
 45	régionaux	régional	ADJ	_	Gender=Masc|Number=Plur	42	conj	_	_
 46	et	et	CCONJ	_	_	47	cc	_	_
 47-48	aux	_	_	_	_	_	_	_	_
-47	à	à	ADP	_	_	37	conj	_	_
+47	à	à	ADP	_	_	37	conj:coord	_	_
 48	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	49	det	_	_
 49	maires	maire	NOUN	_	Gender=Masc|Number=Plur	47	comp:obj	_	_
 50-51	des	_	_	_	_	_	_	_	_
@@ -13320,7 +13319,7 @@
 58	créer	créer	VERB	_	VerbForm=Inf	57	comp:obj	_	Subject=Generic
 59	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	60	det	_	_
 60	société	société	NOUN	_	Gender=Fem|Number=Sing	58	comp:obj	_	mwehead=NC+|pred=y
-61	d'	de	ADP	_	_	60	unk	_	pred=y|SpaceAfter=No
+61	d'	de	ADP	_	_	60	udep	_	pred=y|SpaceAfter=No
 62	économie	économie	NOUN	_	Gender=Fem|Number=Sing	61	comp:obj	_	pred=y
 63	mixte	mixte	ADJ	_	Gender=Fem|Number=Sing	60	mod	_	_
 64	(	(	PUNCT	_	_	60	punct	_	SpaceAfter=No
@@ -13501,7 +13500,7 @@
 95	programmes	programme	NOUN	_	Gender=Masc|Number=Plur	93	comp:obj	_	_
 96	et	et	CCONJ	_	_	97	cc	_	_
 97-98	des	_	_	_	_	_	_	_	_
-97	de	de	ADP	_	_	93	conj	_	_
+97	de	de	ADP	_	_	93	conj:coord	_	_
 98	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	99	det	_	_
 99	productions	production	NOUN	_	Gender=Fem|Number=Plur	97	comp:obj	_	_
 100	réalisées	réaliser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	99	mod	_	_
@@ -13591,7 +13590,7 @@
 12	monter	monter	VERB	_	VerbForm=Inf	11	comp:obj	_	Subject=Generic
 13	son	son	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes	14	det	_	_
 14	tour	tour	NOUN	_	Number=Sing	12	comp:obj	_	mwehead=NC+|pred=y
-15	de	de	ADP	_	_	14	unk	_	pred=y
+15	de	de	ADP	_	_	14	udep	_	pred=y
 16	table	table	NOUN	_	Gender=Fem|Number=Sing	15	comp:obj	_	pred=y|SpaceAfter=No
 17	.	.	PUNCT	_	_	4	punct	_	_
 
@@ -13616,7 +13615,7 @@
 16	Seydoux	Seydoux	PROPN	_	Gender=Masc|Number=Sing	15	flat@name	_	SpaceAfter=No
 17	,	,	PUNCT	_	_	18	punct	_	_
 18	voire	voire	CCONJ	_	_	19	cc	_	_
-19	de	de	ADP	_	_	13	conj	_	_
+19	de	de	ADP	_	_	13	conj:coord	_	_
 20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	Compagnie	compagnie	NOUN	_	Gender=Fem|Number=Sing	19	comp:obj	_	_
 22	luxembourgeoise	luxembourgeois	ADJ	_	Gender=Fem|Number=Sing	21	mod	_	_
@@ -13658,7 +13657,7 @@
 20	,	,	PUNCT	_	_	17	punct	_	_
 21	et	et	CCONJ	_	_	23	cc	_	_
 22	surtout	surtout	ADV	_	_	23	mod	_	_
-23	à	à	ADP	_	_	6	conj	_	_
+23	à	à	ADP	_	_	6	conj:coord	_	_
 24	recevoir	recevoir	VERB	_	VerbForm=Inf	23	comp:obj	_	Subject=Generic
 25	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	SpaceAfter=No
 26	agrément	agrément	NOUN	_	Gender=Masc|Number=Sing	24	comp:obj	_	_
@@ -13668,8 +13667,8 @@
 29	Conseil	conseil	PROPN	_	Gender=Masc|Number=Sing	27	comp:obj	_	mwehead=NPP+|pred=y
 30	supérieur	supérieur	ADJ	_	Gender=Masc|Number=Sing	29	unk	_	pred=y
 31	de	de	ADP	_	_	30	unk	_	pred=y
-32	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	31	unk	_	pred=y|SpaceAfter=No
-33	audiovisuel	audiovisuel	NOUN	_	Gender=Masc|Number=Sing	32	det	_	pred=y|SpaceAfter=No
+32	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	33	det	_	pred=y|SpaceAfter=No
+33	audiovisuel	audiovisuel	NOUN	_	Gender=Masc|Number=Sing	31	unk	_	pred=y|SpaceAfter=No
 34	.	.	PUNCT	_	_	2	punct	_	_
 
 # sent_id = flmf7ae1ep-361
@@ -13704,7 +13703,7 @@
 27	communautaire	communautaire	ADJ	_	Gender=Masc|Number=Sing	26	mod	_	_
 28	et	et	CCONJ	_	_	30	cc	_	_
 29	n'	ne	ADV	_	Polarity=Neg	30	mod	_	SpaceAfter=No
-30	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	conj	_	_
+30	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	conj:coord	_	_
 31	donc	donc	ADV	_	_	30	mod	_	_
 32	pas	pas	ADV	_	Polarity=Neg	30	mod	_	_
 33	considéré	considérer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	30	comp:aux@pass	_	_
@@ -13806,7 +13805,7 @@
 45	autorisés	autoriser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	44	mod	_	_
 46	ou	ou	CCONJ	_	_	48	cc	_	_
 47	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	48	det	_	_
-48	atténuation	atténuation	NOUN	_	Gender=Fem|Number=Sing	41	conj	_	_
+48	atténuation	atténuation	NOUN	_	Gender=Fem|Number=Sing	41	conj:coord	_	_
 49	de	de	ADP	_	_	48	udep	_	_
 50	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	51	det	_	_
 51	réglementation	réglementation	NOUN	_	Gender=Fem|Number=Sing	49	comp:obj	_	SpaceAfter=No
@@ -13820,8 +13819,8 @@
 4	revanche	revanche	NOUN	_	Gender=Fem|Number=Sing	3	comp:obj	_	pred=y|SpaceAfter=No
 5	,	,	PUNCT	_	_	6	punct	_	_
 6	dans	dans	ADP	_	ExtPos=ADV	19	mod	_	mwehead=P+D+|pred=y
-7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	unk	_	pred=y
-8	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	7	det	_	pred=y
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	pred=y
+8	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	6	unk	_	pred=y
 9-10	du	_	_	_	_	_	_	_	_
 9	de	de	ADP	_	_	6	comp:obl	_	pred=y
 10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
@@ -13867,7 +13866,7 @@
 8	d'	de	ADP	_	_	7	udep	_	SpaceAfter=No
 9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 10	comité	comité	NOUN	_	Gender=Masc|Number=Sing	8	comp:obj	_	mwehead=NC+|pred=y
-11	d'	de	ADP	_	_	10	unk	_	pred=y|SpaceAfter=No
+11	d'	de	ADP	_	_	10	udep	_	pred=y|SpaceAfter=No
 12	entreprise	entreprise	NOUN	_	Gender=Fem|Number=Sing	11	comp:obj	_	pred=y
 13	de	de	ADP	_	_	10	udep	_	_
 14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	comp:obj	_	mwehead=NPP+|pred=y
@@ -13902,7 +13901,7 @@
 42	chaîne	chaîne	NOUN	_	Gender=Fem|Number=Sing	40	comp:obj	_	_
 43	mais	mais	CCONJ	_	_	45	cc	_	_
 44	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3	45	comp:obj	_	_
-45	mettre	mettre	VERB	_	VerbForm=Inf	40	conj	_	Subject=Generic
+45	mettre	mettre	VERB	_	VerbForm=Inf	40	conj:coord	_	Subject=Generic
 46	en	en	ADP	_	_	45	mod	_	_
 47	redressement	redressement	NOUN	_	Gender=Masc|Number=Sing	46	comp:obj	_	mwehead=NC+|pred=y
 48	judiciaire	judiciaire	ADJ	_	Number=Sing	47	mod	_	pred=y|SpaceAfter=No
@@ -14077,7 +14076,7 @@
 12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
 13	personnel	personnel	NOUN	_	Gender=Masc|Number=Sing	11	comp:obj	_	_
 14	et	et	CCONJ	_	_	15	cc	_	_
-15	relancent	relancer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+15	relancent	relancer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	conj:coord	_	_
 16	son	son	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes	17	det	_	_
 17	mouvement	mouvement	NOUN	_	Gender=Masc|Number=Sing	15	comp:obj	_	_
 18	de	de	ADP	_	_	17	udep	_	_
@@ -14198,7 +14197,7 @@
 # text = Le taux d'inflation annuel est désormais nettement plus élevé en Allemagne qu'en France.
 1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	taux	taux	NOUN	_	Gender=Masc	6	subj	_	mwehead=NC+|pred=y
-3	d'	de	ADP	_	_	2	unk	_	pred=y|SpaceAfter=No
+3	d'	de	ADP	_	_	2	udep	_	pred=y|SpaceAfter=No
 4	inflation	inflation	NOUN	_	Gender=Fem|Number=Sing	3	comp:obj	_	pred=y
 5	annuel	annuel	ADJ	_	Gender=Masc|Number=Sing	2	mod	_	_
 6	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -14307,7 +14306,7 @@
 53	mais	mais	CCONJ	_	_	56	cc	_	_
 54	aussi	aussi	ADV	_	_	53	mod	_	_
 55	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	56	det	_	_
-56	fait	fait	NOUN	_	Gender=Masc|Number=Sing	5	conj	_	_
+56	fait	fait	NOUN	_	Gender=Masc|Number=Sing	5	conj:coord	_	_
 57	que	que	SCONJ	_	_	56	mod	_	_
 58	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	59	det	_	_
 59	TVA	TVA	NOUN	_	Gender=Fem|Number=Sing	61	subj	_	_
@@ -14424,10 +14423,10 @@
 35	,	,	PUNCT	_	_	36	punct	_	_
 36	mais	mais	CCONJ	_	_	38	cc	_	_
 37	elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3	38	subj	_	_
-38	maintient	maintenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
+38	maintient	maintenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj:coord	_	_
 39	ses	son	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes	40	det	_	_
 40	mots	mot	NOUN	_	Gender=Masc|Number=Plur	38	comp:obj	_	mwehead=NC+|pred=y
-41	d'	de	ADP	_	_	40	unk	_	pred=y|SpaceAfter=No
+41	d'	de	ADP	_	_	40	udep	_	pred=y|SpaceAfter=No
 42	ordre	ordre	NOUN	_	Gender=Masc|Number=Sing	41	comp:obj	_	pred=y
 43	de	de	ADP	_	_	40	udep	_	_
 44	grève	grève	NOUN	_	Gender=Fem|Number=Sing	43	comp:obj	_	_
@@ -14453,7 +14452,7 @@
 # text = Cette prise de position survient deux jours après une rencontre infructueuse avec le secrétaire d'Etat à la mer, M. Jean - Yves Le Drian.
 1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	_
 2	prise	prise	NOUN	_	Gender=Fem|Number=Sing	5	subj	_	mwehead=NC+|pred=y
-3	de	de	ADP	_	_	2	unk	_	pred=y
+3	de	de	ADP	_	_	2	udep	_	pred=y
 4	position	position	NOUN	_	Gender=Fem|Number=Sing	3	comp:obj	_	pred=y
 5	survient	survenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 6	deux	deux	NUM	_	Gender=Masc|Number=Plur|NumType=Card	7	det	_	_
@@ -14493,7 +14492,7 @@
 9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_
 10	ports	port	NOUN	_	Gender=Masc|Number=Plur	8	comp:obj	_	_
 11	et	et	CCONJ	_	_	12	cc	_	_
-12	docks	dock	NOUN	_	Gender=Masc|Number=Plur	10	conj	_	SpaceAfter=No
+12	docks	dock	NOUN	_	Gender=Masc|Number=Plur	10	conj:coord	_	SpaceAfter=No
 13	,	,	PUNCT	_	_	14	punct	_	_
 14	M.	monsieur	NOUN	_	Gender=Masc|Number=Sing	2	mod	_	_
 15	Daniel	Daniel	PROPN	_	Gender=Masc|Number=Sing	14	mod	_	_
@@ -14505,7 +14504,7 @@
 21	d'	de	ADP	_	_	20	comp:obl	_	pred=y|SpaceAfter=No
 22	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
 23	conférence	conférence	NOUN	_	Gender=Fem|Number=Sing	21	comp:obj	_	mwehead=NC+|pred=y
-24	de	de	ADP	_	_	23	unk	_	pred=y
+24	de	de	ADP	_	_	23	udep	_	pred=y
 25	presse	presse	NOUN	_	Gender=Fem|Number=Sing	24	comp:obj	_	pred=y
 26	qu'	que	SCONJ	_	_	19	comp:obj	_	SpaceAfter=No
 27	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	28	subj	_	_
@@ -14621,7 +14620,7 @@
 25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 26	fort	fort	ADJ	_	Gender=Masc|Number=Sing	27	mod	_	_
 27	taux	taux	NOUN	_	Gender=Masc	24	comp:obj	_	mwehead=NC+|pred=y
-28	de	de	ADP	_	_	27	unk	_	pred=y
+28	de	de	ADP	_	_	27	udep	_	pred=y
 29	chômage	chômage	NOUN	_	Gender=Masc|Number=Sing	28	comp:obj	_	pred=y
 30	dans	dans	ADP	_	_	24	mod	_	_
 31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	_
@@ -14634,8 +14633,8 @@
 2	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	7	subj	_	mwehead=NC+|pred=y
 3-4	des	_	_	_	_	_	_	_	_
 3	de	de	ADP	_	_	2	unk	_	pred=y
-4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	unk	_	InIdiom=Yes
-5	ministres	ministre	NOUN	_	Gender=Masc|Number=Plur	4	det	_	pred=y
+4	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	InIdiom=Yes
+5	ministres	ministre	NOUN	_	Gender=Masc|Number=Plur	3	unk	_	pred=y
 6	s'	le/lui	PRON	_	Gender=Masc|Number=Sing|Person=3|Reflex=Yes	8	comp	_	SpaceAfter=No
 7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	félicité	féliciter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	comp:aux@tense	_	SpaceAfter=No
@@ -14658,7 +14657,7 @@
 24	Etat	état	NOUN	_	Gender=Masc|Number=Sing	22	comp:obj	_	_
 25	et	et	CCONJ	_	_	27	cc	_	_
 26	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	_	_
-27	Poste	poste	NOUN	_	Gender=Fem|Number=Sing	24	conj	_	SpaceAfter=No
+27	Poste	poste	NOUN	_	Gender=Fem|Number=Sing	24	conj:coord	_	SpaceAfter=No
 28	.	.	PUNCT	_	_	8	punct	_	_
 
 # sent_id = flmf7ae1ep-386
@@ -14684,7 +14683,7 @@
 17	de	de	ADP	_	_	14	comp:obl	_	_
 18	parlementaires	parlementaire	NOUN	_	Gender=Masc|Number=Plur	17	comp:obj	_	_
 19	et	et	CCONJ	_	_	20	cc	_	_
-20	chargée	charger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	14	conj	_	_
+20	chargée	charger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	14	conj:coord	_	_
 21	de	de	ADP	_	_	20	comp:obl	_	_
 22	veiller	veiller	VERB	_	VerbForm=Inf	21	comp:obj	_	Subject=Generic
 23	sur	sur	ADP	_	_	22	comp:obl	_	_
@@ -14757,7 +14756,7 @@
 14	mal	mal	ADV	_	_	15	mod	_	_
 15	encore	encore	ADV	_	_	12	mod	_	_
 16-17	du	_	_	_	_	_	_	_	_
-16	de	de	ADP	_	_	5	conj	_	_
+16	de	de	ADP	_	_	5	conj:coord	_	_
 17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	principe	principe	NOUN	_	Gender=Masc|Number=Sing	16	comp:obj	_	_
 19	d'	de	ADP	_	_	18	udep	_	SpaceAfter=No
@@ -14791,7 +14790,7 @@
 12	de	de	ADP	_	_	9	dep	_	_
 13	service	service	NOUN	_	Gender=Masc|Number=Sing	12	comp:obj	_	_
 14	et	et	CCONJ	_	_	15	cc	_	_
-15	de	de	ADP	_	_	9	conj	_	_
+15	de	de	ADP	_	_	9	conj:coord	_	_
 16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	_
 17	reconnaissance	reconnaissance	NOUN	_	Gender=Fem|Number=Sing	15	comp:obj	_	_
 18-19	du	_	_	_	_	_	_	_	_
@@ -14855,7 +14854,7 @@
 13	poursuivre	poursuivre	VERB	_	VerbForm=Inf	12	comp:obj	_	Subject=Generic
 14	leur	son	DET	_	Gender=Masc|Number=Plur|Person=3|Poss=Yes	15	det	_	_
 15	mouvement	mouvement	NOUN	_	Gender=Masc|Number=Sing	13	comp:obj	_	mwehead=NC+|pred=y
-16	de	de	ADP	_	_	15	unk	_	pred=y
+16	de	de	ADP	_	_	15	udep	_	pred=y
 17	grève	grève	NOUN	_	Gender=Fem|Number=Sing	16	comp:obj	_	pred=y
 18	pour	pour	ADP	_	_	5	mod	_	_
 19	protester	protester	VERB	_	VerbForm=Inf	18	comp:obj	_	Subject=Generic
@@ -14894,7 +14893,7 @@
 20	d'	de	ADP	_	_	19	udep	_	SpaceAfter=No
 21	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	arrêt	arrêt	NOUN	_	Gender=Masc|Number=Sing	20	comp:obj	_	mwehead=NC+|pred=y
-23	de	de	ADP	_	_	22	unk	_	pred=y
+23	de	de	ADP	_	_	22	udep	_	pred=y
 24	travail	travail	NOUN	_	Gender=Masc|Number=Sing	23	comp:obj	_	pred=y
 25	observé	observer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	22	mod	_	_
 26	par	par	ADP	_	_	25	comp:obl	_	_
@@ -14933,12 +14932,12 @@
 11	dans	dans	ADP	_	_	6	mod	_	_
 12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	centres	centre	NOUN	_	Gender=Masc|Number=Plur	11	comp:obj	_	mwehead=NC+|pred=y
-14	de	de	ADP	_	_	13	unk	_	pred=y
+14	de	de	ADP	_	_	13	udep	_	pred=y
 15	tri	tri	NOUN	_	Gender=Masc|Number=Sing	14	comp:obj	_	pred=y
 16	d'	de	ADP	_	_	13	udep	_	SpaceAfter=No
 17	Avignon	Avignon	PROPN	_	Gender=Masc|Number=Sing	16	comp:obj	_	_
 18	et	et	CCONJ	_	_	19	cc	_	_
-19	de	de	ADP	_	_	16	conj	_	_
+19	de	de	ADP	_	_	16	conj:coord	_	_
 20	Cavaillon	Cavaillon	PROPN	_	Gender=Masc|Number=Sing	19	comp:obj	_	_
 21	(	(	PUNCT	_	Shared=Yes	19	punct	_	SpaceAfter=No
 22	Vaucluse	Vaucluse	PROPN	_	Gender=Masc|Number=Sing|Shared=Yes	19	comp:obj	_	SpaceAfter=No
@@ -14960,8 +14959,8 @@
 6	effectifs	effectif	NOUN	_	Gender=Masc|Number=Plur	4	comp:obj	_	_
 7	et	et	CCONJ	_	_	9	cc	_	_
 8	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	9	det	_	_
-9	conditions	condition	NOUN	_	Gender=Fem|Number=Plur	6	conj	_	mwehead=NC+|pred=y
-10	de	de	ADP	_	_	9	unk	_	pred=y
+9	conditions	condition	NOUN	_	Gender=Fem|Number=Plur	6	conj:coord	_	mwehead=NC+|pred=y
+10	de	de	ADP	_	_	9	udep	_	pred=y
 11	travail	travail	NOUN	_	Gender=Masc|Number=Sing	10	comp:obj	_	pred=y|SpaceAfter=No
 12	.	.	PUNCT	_	_	3	punct	_	_
 
@@ -14985,7 +14984,7 @@
 16	projet	projet	NOUN	_	Gender=Masc|Number=Sing	14	comp:obj	_	_
 17	d'	de	ADP	_	_	16	udep	_	SpaceAfter=No
 18	augmentation	augmentation	NOUN	_	Gender=Fem|Number=Sing	17	comp:obj	_	mwehead=NC+|pred=y
-19	de	de	ADP	_	_	18	unk	_	pred=y
+19	de	de	ADP	_	_	18	udep	_	pred=y
 20	capital	capital	NOUN	_	Gender=Masc|Number=Plur	19	comp:obj	_	pred=y
 21	de	de	ADP	_	_	18	udep	_	_
 22	43	43	NUM	_	Gender=Masc|Number=Plur|NumType=Card	23	det	_	_
@@ -15001,10 +15000,10 @@
 32	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	33	det	_	_
 33	magazine	magazine	NOUN	_	Gender=Masc|Number=Sing	31	comp:obj	_	_
 34	(	(	PUNCT	_	_	44	punct	_	SpaceAfter=No
-35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	44	mod	_	mwehead=NC+|pred=y
-36	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	35	det	_	pred=y
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	mwehead=NC+|pred=y
+36	Monde	monde	NOUN	_	Gender=Masc|Number=Sing	44	mod	_	pred=y
 37-38	du	_	_	_	_	_	_	_	_
-37	de	de	ADP	_	_	35	dep	_	_
+37	de	de	ADP	_	_	36	dep	_	_
 38	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	_
 39	16	16	NUM	_	Gender=Masc|Number=Sing|NumType=Card	37	comp:obj	_	_
 40	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	39	udep	_	_
@@ -15024,7 +15023,7 @@
 53	avec	avec	ADP	_	_	52	unk	_	pred=y
 54	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
 55	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	51	comp:obj	_	mwehead=NC+|pred=y
-56	de	de	ADP	_	_	55	unk	_	pred=y
+56	de	de	ADP	_	_	55	udep	_	pred=y
 57	surveillance	surveillance	NOUN	_	Gender=Fem|Number=Sing	56	comp:obj	_	pred=y|SpaceAfter=No
 58	,	,	PUNCT	_	_	51	punct	_	_
 59	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	61	det	_	_
@@ -15084,7 +15083,7 @@
 9	supplément	supplément	NOUN	_	Gender=Masc|Number=Sing	7	comp:obj	_	mwehead=NC+|pred=y
 10	hebdomadaire	hebdomadaire	ADJ	_	Number=Sing	9	mod	_	pred=y
 11	et	et	CCONJ	_	_	12	cc	_	_
-12	couvrira	couvrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	conj	_	_
+12	couvrira	couvrir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	conj:coord	_	_
 13	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	14	det	_	_
 14	besoins	besoin	NOUN	_	Gender=Masc|Number=Plur	12	comp:obj	_	_
 15-16	du	_	_	_	_	_	_	_	_
@@ -15105,12 +15104,12 @@
 8	bancaires	bancaire	ADJ	_	Gender=Masc|Number=Plur	7	mod	_	_
 9	et	et	CCONJ	_	_	13	cc	_	_
 10	pour	pour	ADP	_	_	9	mod	_	mwehead=ADV+|pred=y
-11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	unk	_	pred=y
-12	reste	reste	NOUN	_	Gender=Masc|Number=Sing	11	det	_	pred=y
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	pred=y
+12	reste	reste	NOUN	_	Gender=Masc|Number=Sing	10	unk	_	pred=y
 13	d'	de	ADP	_	_	3	conj	_	SpaceAfter=No
 14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	augmentation	augmentation	NOUN	_	Gender=Fem|Number=Sing	13	comp:obj	_	mwehead=NC+|pred=y
-16	de	de	ADP	_	_	15	unk	_	pred=y
+16	de	de	ADP	_	_	15	udep	_	pred=y
 17	capital	capital	NOUN	_	Gender=Masc|Number=Plur	16	comp:obj	_	pred=y|SpaceAfter=No
 18	.	.	PUNCT	_	Shared=Yes	13	punct	_	_
 
@@ -15149,7 +15148,7 @@
 28	à	à	ADP	_	_	25	comp:obl	_	_
 29	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	_	_
 30	conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	28	comp:obj	_	mwehead=NC+|pred=y
-31	d'	de	ADP	_	_	30	unk	_	pred=y|SpaceAfter=No
+31	d'	de	ADP	_	_	30	udep	_	pred=y|SpaceAfter=No
 32	administration	administration	NOUN	_	Gender=Fem|Number=Sing	31	comp:obj	_	pred=y|SpaceAfter=No
 33	.	.	PUNCT	_	_	16	punct	_	_
 
@@ -15158,7 +15157,7 @@
 1	Si	si	SCONJ	_	_	10	mod	_	_
 2	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	3	det	_	_
 3	augmentation	augmentation	NOUN	_	Gender=Fem|Number=Sing	6	subj	_	mwehead=NC+|pred=y
-4	de	de	ADP	_	_	3	unk	_	pred=y
+4	de	de	ADP	_	_	3	udep	_	pred=y
 5	capital	capital	NOUN	_	Gender=Masc|Number=Plur	4	comp:obj	_	pred=y
 6	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	comp:obj	_	_
 7	votée	voter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	6	comp:aux@pass	_	SpaceAfter=No
@@ -15204,7 +15203,7 @@
 15	projet	projet	NOUN	_	Gender=Masc|Number=Sing	12	comp:obj	_	_
 16	d'	de	ADP	_	_	15	udep	_	SpaceAfter=No
 17	augmentation	augmentation	NOUN	_	Gender=Fem|Number=Sing	16	comp:obj	_	mwehead=NC+|pred=y
-18	de	de	ADP	_	_	17	unk	_	pred=y
+18	de	de	ADP	_	_	17	udep	_	pred=y
 19	capital	capital	NOUN	_	Gender=Masc|Number=Plur	18	comp:obj	_	pred=y
 20	tenait	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 21	en	en	ADP	_	_	20	mod	_	mwehead=ADV+|pred=y
@@ -15268,7 +15267,7 @@
 29	difficulté	difficulté	NOUN	_	Gender=Fem|Number=Sing	28	comp:obj	_	_
 30	et	et	CCONJ	_	_	32	cc	_	_
 31	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	32	det	_	_
-32	chômeurs	chômeur	NOUN	_	Gender=Masc|Number=Plur	27	conj	_	_
+32	chômeurs	chômeur	NOUN	_	Gender=Masc|Number=Plur	27	conj:coord	_	_
 33	de	de	ADP	_	_	32	udep	_	_
 34	longue	long	ADJ	_	Gender=Fem|Number=Sing	35	mod	_	mwehead=NC+|pred=y
 35	durée	durée	NOUN	_	Gender=Fem|Number=Sing	33	comp:obj	_	pred=y|SpaceAfter=No
@@ -15279,7 +15278,7 @@
 1	Elles	il	PRON	_	Gender=Fem|Number=Plur|Person=3	2	subj	_	_
 2	reprennent	reprendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	et	et	CCONJ	_	_	4	cc	_	_
-4	amplifient	amplifier	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
+4	amplifient	amplifier	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	conj:coord	_	_
 5	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
 6	programmes	programme	NOUN	_	Gender=Masc|Number=Plur|Shared=Yes	4	comp:obj	_	_
 7	existants	existant	ADJ	_	Gender=Masc|Number=Plur	6	mod	_	_
@@ -15348,10 +15347,10 @@
 38	mises	mise	NOUN	_	Gender=Fem|Number=Plur	36	comp:obj	_	mwehead=NC+|pred=y
 39-40	au	_	_	_	_	_	_	_	_
 39	à	à	ADP	_	_	38	unk	_	pred=y
-40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	unk	_	InIdiom=Yes
-41	point	point	NOUN	_	Gender=Masc|Number=Sing	40	det	_	pred=y
+40	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	41	det	_	InIdiom=Yes
+41	point	point	NOUN	_	Gender=Masc|Number=Sing	39	unk	_	pred=y
 42	et	et	CCONJ	_	_	43	cc	_	_
-43	précisions	précision	NOUN	_	Gender=Fem|Number=Plur	38	conj	_	SpaceAfter=No
+43	précisions	précision	NOUN	_	Gender=Fem|Number=Plur	38	conj:coord	_	SpaceAfter=No
 44	.	.	PUNCT	_	_	36	punct	_	_
 
 # sent_id = flmf7ae1ep-404
@@ -15488,7 +15487,7 @@
 62	"	"	PUNCT	_	_	58	punct	_	_
 63	et	et	CCONJ	_	_	65	cc	_	_
 64	"	"	PUNCT	_	_	65	punct	_	_
-65	tient	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	conj	_	_
+65	tient	tenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	45	conj:coord	_	_
 66	à	à	ADP	_	_	65	comp:obl	_	_
 67	rappeler	rappeler	VERB	_	VerbForm=Inf	66	comp:obj	_	Subject=Generic
 68	qu'	que	SCONJ	_	_	67	comp:obj	_	SpaceAfter=No
@@ -15589,7 +15588,7 @@
 33	administration	administration	NOUN	_	Gender=Fem|Number=Sing	31	comp:obj	_	_
 34	et	et	CCONJ	_	_	36	cc	_	_
 35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	_
-36	Congrès	congrès	NOUN	_	Gender=Masc|Number=Sing	33	conj	_	_
+36	Congrès	congrès	NOUN	_	Gender=Masc|Number=Sing	33	conj:coord	_	_
 37	pour	pour	ADP	_	_	26	mod	_	_
 38	réduire	réduire	VERB	_	VerbForm=Inf	37	comp:obj	_	Subject=Generic
 39	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	_
@@ -15606,7 +15605,7 @@
 6	électorale	électoral	ADJ	_	Gender=Fem|Number=Sing	5	mod	_	pred=y
 7	et	et	CCONJ	_	_	9	cc	_	_
 8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	gravité	gravité	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	_
+9	gravité	gravité	NOUN	_	Gender=Fem|Number=Sing	2	conj:coord	_	_
 10	de	de	ADP	_	_	9	udep	_	_
 11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	_
 12	situation	situation	NOUN	_	Gender=Fem|Number=Sing	10	comp:obj	_	mwehead=NC+|pred=y
@@ -15655,8 +15654,8 @@
 26	28	28	NUM	_	Gender=Masc|Number=Sing|NumType=Card	23	mod	_	_
 27	janvier	janvier	NOUN	_	Gender=Masc|Number=Sing	26	udep	_	_
 28	à	à	ADP	_	ExtPos=ADV	23	mod	_	mwehead=P+D+|pred=y
-29	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	28	unk	_	pred=y|SpaceAfter=No
-30	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	29	det	_	pred=y
+29	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	30	det	_	pred=y|SpaceAfter=No
+30	occasion	occasion	NOUN	_	Gender=Fem|Number=Sing	28	unk	_	pred=y
 31-32	du	_	_	_	_	_	_	_	_
 31	de	de	ADP	_	_	28	comp:obl	_	pred=y
 32	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	34	det	_	_
@@ -15670,8 +15669,8 @@
 39	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	40	det	_	SpaceAfter=No
 40	état	état	NOUN	_	Gender=Masc|Number=Sing	38	comp:obj	_	_
 41	de	de	ADP	_	_	40	udep	_	_
-42	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	41	comp:obj	_	mwehead=NPP+|pred=y|SpaceAfter=No
-43	union	union	NOUN	_	Gender=Fem|Number=Sing	42	det	_	pred=y|SpaceAfter=No
+42	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	43	det	_	mwehead=NPP+|pred=y|SpaceAfter=No
+43	union	union	NOUN	_	Gender=Fem|Number=Sing	41	comp:obj	_	pred=y|SpaceAfter=No
 44	.	.	PUNCT	_	_	4	punct	_	_
 
 # sent_id = flmf7ae1ep-411
@@ -15718,8 +15717,8 @@
 40	économie	économie	NOUN	_	Gender=Fem|Number=Sing	41	subj	_	_
 41	était	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	38	comp:obj	_	_
 42	sur	sur	ADP	_	ExtPos=ADV	41	comp:obl	_	mwehead=P+|pred=y
-43	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	unk	_	pred=y
-44	voie	voie	NOUN	_	Gender=Fem|Number=Sing	43	det	_	pred=y
+43	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	44	det	_	pred=y
+44	voie	voie	NOUN	_	Gender=Fem|Number=Sing	42	unk	_	pred=y
 45	de	de	ADP	_	_	42	comp:obl	_	pred=y
 46	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	47	det	_	_
 47	reprise	reprise	NOUN	_	Gender=Fem|Number=Sing	45	comp:obj	_	_
@@ -15745,8 +15744,8 @@
 14	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	15	subj	_	_
 15	annoncerait	annoncer	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	mod@relcl	_	_
 16	à	à	ADP	_	ExtPos=ADV	15	mod	_	mwehead=P+D+|pred=y
-17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	unk	_	pred=y
-18	fin	fin	NOUN	_	Number=Sing	17	det	_	pred=y
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	pred=y
+18	fin	fin	NOUN	_	Number=Sing	16	unk	_	pred=y
 19-20	du	_	_	_	_	_	_	_	_
 19	de	de	ADP	_	_	16	comp:obl	_	pred=y
 20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
@@ -15768,7 +15767,7 @@
 35	de	de	ADP	_	_	34	udep	_	_
 36	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	37	det	_	_
 37	crédits	crédit	NOUN	_	Gender=Masc|Number=Plur	35	comp:obj	_	mwehead=NC+|pred=y
-38	d'	de	ADP	_	_	37	unk	_	pred=y|SpaceAfter=No
+38	d'	de	ADP	_	_	37	udep	_	pred=y|SpaceAfter=No
 39	impôt	impôt	NOUN	_	Gender=Masc|Number=Sing	38	comp:obj	_	pred=y
 40	pour	pour	ADP	_	_	37	udep	_	_
 41	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	42	det	_	_
@@ -15794,7 +15793,7 @@
 60	"	"	PUNCT	_	_	55	punct	_	_
 61	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	63	det	_	_
 62	bon	bon	ADJ	_	Gender=Masc|Number=Sing	63	mod	_	_
-63	programme	programme	NOUN	_	Gender=Masc|Number=Sing	44	conj	_	_
+63	programme	programme	NOUN	_	Gender=Masc|Number=Sing	44	conj:coord	_	_
 64	de	de	ADP	_	_	63	udep	_	_
 65	santé	santé	NOUN	_	Gender=Fem|Number=Sing	64	comp:obj	_	_
 66	"	"	PUNCT	_	_	65	punct	_	SpaceAfter=No
@@ -15907,7 +15906,7 @@
 24	première	premier	ADJ	_	Gender=Fem|Number=Sing|NumType=Ord	25	mod	_	_
 25	année	année	NOUN	_	Gender=Fem|Number=Sing	16	comp:obj	_	_
 26	et	et	CCONJ	_	_	27	cc	_	_
-27	de	de	ADP	_	_	16	conj	_	_
+27	de	de	ADP	_	_	16	conj:coord	_	_
 28	50	50	NUM	_	Gender=Masc|Number=Plur|NumType=Card	29	det	_	_
 29	milliards	milliard	NOUN	_	Gender=Masc|Number=Plur	27	comp:obj	_	_
 30	sur	sur	ADP	_	_	27	orphan	_	_
@@ -15934,7 +15933,7 @@
 11	nouvelles	nouveau	ADJ	_	Gender=Fem|Number=Plur	10	mod	_	SpaceAfter=No
 12	,	,	PUNCT	_	_	14	punct	_	_
 13	soit	soit	CCONJ	_	_	14	cc	_	_
-14	par	par	ADP	_	_	8	conj	_	_
+14	par	par	ADP	_	_	8	conj:coord	_	_
 15	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	16	det	_	_
 16	compression	compression	NOUN	_	Gender=Fem|Number=Sing	14	comp:obj	_	_
 17-18	des	_	_	_	_	_	_	_	_
@@ -16013,8 +16012,8 @@
 16	effet	effet	NOUN	_	Gender=Masc|Number=Sing	15	comp:obj	_	_
 17	de	de	ADP	_	_	14	comp:obj	_	_
 18	creuser	creuser	VERB	_	VerbForm=Inf	17	comp:obj	_	Subject=Generic
-19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	mod	_	mwehead=ADV+|pred=y
-20	peu	peu	ADV	_	_	19	unk	_	pred=y
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	InIdiom=Yes|pred=y
+20	peu	peu	NOUN	_	Gender=Masc|Number=Sing	18	mod	_	Idiom=Yes|mwehead=ADV+|pred=y
 21	plus	plus	ADV	_	_	20	unk	_	pred=y
 22	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	_
 23	déficit	déficit	NOUN	_	Gender=Masc|Number=Sing	18	comp:obj	_	_
@@ -16039,7 +16038,7 @@
 10	,	,	PUNCT	_	_	2	punct	_	_
 11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 12	chiffre	chiffre	NOUN	_	Gender=Masc|Number=Sing	23	subj	_	mwehead=NC+|pred=y
-13	d'	de	ADP	_	_	12	unk	_	pred=y|SpaceAfter=No
+13	d'	de	ADP	_	_	12	udep	_	pred=y|SpaceAfter=No
 14	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	13	comp:obj	_	pred=y
 15	pour	pour	ADP	_	_	12	udep	_	_
 16	1991	1991	NUM	_	Gender=Fem|Number=Sing|NumType=Card	15	comp:obj	_	_
@@ -16122,7 +16121,7 @@
 16	civil	civil	ADJ	_	Gender=Masc|Number=Sing	15	mod	_	_
 17	et	et	CCONJ	_	_	19	cc	_	_
 18	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	19	det	_	_
-19	activités	activité	NOUN	_	Gender=Fem|Number=Plur	15	conj	_	_
+19	activités	activité	NOUN	_	Gender=Fem|Number=Plur	15	conj:coord	_	_
 20	militaires	militaire	ADJ	_	Gender=Fem|Number=Plur	19	mod	_	SpaceAfter=No
 21	.	.	PUNCT	_	_	10	punct	_	_
 
@@ -16165,8 +16164,8 @@
 2	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	7	subj	_	mwehead=NC+|pred=y
 4	de	de	ADP	_	_	3	unk	_	pred=y
-5	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	unk	_	pred=y|SpaceAfter=No
-6	industrie	industrie	NOUN	_	Gender=Fem|Number=Sing	5	det	_	pred=y
+5	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	det	_	pred=y|SpaceAfter=No
+6	industrie	industrie	NOUN	_	Gender=Fem|Number=Sing	4	unk	_	pred=y
 7	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	présenter	présenter	VERB	_	VerbForm=Inf	7	comp:obj	_	SpaceAfter=No|Subject=Generic
 9	,	,	PUNCT	_	_	10	punct	_	_
@@ -16197,7 +16196,7 @@
 34	marché	marché	NOUN	_	Gender=Masc|Number=Sing	32	comp:obj	_	_
 35	japonais	japonais	ADJ	_	Gender=Masc|Number=Sing	34	mod	_	_
 36	et	et	CCONJ	_	_	37	cc	_	_
-37	à	à	ADP	_	_	27	conj	_	_
+37	à	à	ADP	_	_	27	conj:coord	_	_
 38	faire	faire	AUX	_	VerbForm=Inf	37	comp:obj	_	Subject=Generic
 39	mieux	mieux	ADV	_	_	40	mod	_	_
 40	connaître	connaître	VERB	_	VerbForm=Inf	38	comp:aux@caus	_	Subject=Generic
@@ -16215,8 +16214,8 @@
 1	Les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	2	det	_	_
 2	moyens	moyen	NOUN	_	Gender=Masc|Number=Plur	21	subj	_	_
 3	à	à	ADP	_	ExtPos=ADV	2	udep	_	mwehead=P+D+|pred=y
-4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	unk	_	pred=y
-5	disposition	disposition	NOUN	_	Gender=Fem|Number=Sing	4	det	_	pred=y
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	pred=y
+5	disposition	disposition	NOUN	_	Gender=Fem|Number=Sing	3	unk	_	pred=y
 6-7	des	_	_	_	_	_	_	_	_
 6	de	de	ADP	_	_	3	comp:obl	_	pred=y
 7	les	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
@@ -16264,7 +16263,7 @@
 4	(	(	PUNCT	_	_	2	punct	_	SpaceAfter=No
 5	cuirs	cuir	NOUN	_	Gender=Masc|Number=Plur	2	mod	_	_
 6	et	et	CCONJ	_	_	7	cc	_	_
-7	peaux	peau	NOUN	_	Gender=Masc|Number=Plur	5	conj	_	SpaceAfter=No
+7	peaux	peau	NOUN	_	Gender=Masc|Number=Plur	5	conj:coord	_	SpaceAfter=No
 8	,	,	PUNCT	_	_	9	punct	_	_
 9	chimie	chimie	NOUN	_	Gender=Fem|Number=Sing	2	mod	_	SpaceAfter=No
 10	,	,	PUNCT	_	_	11	punct	_	_
@@ -16295,17 +16294,17 @@
 34	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	33	comp:aux@tense	_	_
 35	identifiés	identifier	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	34	comp:aux@pass	_	_
 36	et	et	CCONJ	_	_	37	cc	_	_
-37	devraient	devoir	VERB	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	conj	_	_
+37	devraient	devoir	VERB	_	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	35	conj:coord	_	_
 38	faire	faire	VERB	_	VerbForm=Inf	37	comp:obj	_	mwehead=VINF+|pred=y|Subject=Generic
-39	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	38	unk	_	pred=y|SpaceAfter=No
-40	objet	objet	NOUN	_	Gender=Masc|Number=Sing	39	det	_	pred=y
+39	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	40	det	_	pred=y|SpaceAfter=No
+40	objet	objet	NOUN	_	Gender=Masc|Number=Sing	38	unk	_	pred=y
 41	d'	de	ADP	_	_	38	comp:obl	_	SpaceAfter=No
 42	opérations	opération	NOUN	_	Gender=Fem|Number=Plur	41	comp:obj	_	_
 43	particulières	particulier	ADJ	_	Gender=Fem|Number=Plur	42	mod	_	_
 44	de	de	ADP	_	_	42	udep	_	_
 45	promotion	promotion	NOUN	_	Gender=Fem|Number=Sing	44	comp:obj	_	_
 46	et	et	CCONJ	_	_	47	cc	_	_
-47	d'	de	ADP	_	_	44	conj	_	SpaceAfter=No
+47	d'	de	ADP	_	_	44	conj:coord	_	SpaceAfter=No
 48	aide	aide	NOUN	_	Gender=Masc|Number=Sing	47	comp:obj	_	SpaceAfter=No
 49	.	.	PUNCT	_	Shared=Yes	37	punct	_	_
 
@@ -16319,7 +16318,7 @@
 6	automatisation	automatisation	NOUN	_	Gender=Fem|Number=Sing	14	subj	_	_
 7	et	et	CCONJ	_	_	9	cc	_	_
 8	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	SpaceAfter=No
-9	emploi	emploi	NOUN	_	Gender=Masc|Number=Sing	6	conj	_	_
+9	emploi	emploi	NOUN	_	Gender=Masc|Number=Sing	6	conj:coord	_	_
 10	rémunéré	rémunéré	ADJ	_	Gender=Masc|Number=Sing	9	mod	_	_
 11-12	des	_	_	_	_	_	_	_	_
 11	de	de	ADP	_	_	9	udep	_	_
@@ -16413,7 +16412,7 @@
 67	,	,	PUNCT	_	_	69	punct	_	_
 68	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	det	_	SpaceAfter=No
 69	instrument	instrument	NOUN	_	Gender=Masc|Number=Sing	73	subj	_	mwehead=NC+|pred=y
-70	de	de	ADP	_	_	69	unk	_	pred=y
+70	de	de	ADP	_	_	69	udep	_	pred=y
 71	torture	torture	NOUN	_	Gender=Fem|Number=Sing	70	comp:obj	_	pred=y|SpaceAfter=No
 72	,	,	PUNCT	_	_	73	punct	_	_
 73	donna	donner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	64	parataxis	_	_
@@ -16487,7 +16486,7 @@
 9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_
 10	écoles	école	NOUN	_	Gender=Fem|Number=Plur	8	comp:obj	_	_
 11	et	et	CCONJ	_	_	12	cc	_	_
-12	théories	théorie	NOUN	_	Gender=Fem|Number=Plur	10	conj	_	_
+12	théories	théorie	NOUN	_	Gender=Fem|Number=Plur	10	conj:coord	_	_
 13	qu'	que	SCONJ	_	_	5	comp:obj	_	SpaceAfter=No
 14	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	15	det	_	_
 15	recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	13	comp:obj	_	SpaceAfter=No
@@ -16544,7 +16543,7 @@
 3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
 4	loisir	loisir	NOUN	_	Gender=Masc|Number=Sing	2	comp:obj	_	_
 5	et	et	CCONJ	_	_	6	cc	_	_
-6	mythe	mythe	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	_
+6	mythe	mythe	NOUN	_	Gender=Masc|Number=Sing	1	conj:coord	_	_
 7-8	du	_	_	_	_	_	_	_	_
 7	de	de	ADP	_	_	6	udep	_	_
 8	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
@@ -16570,7 +16569,7 @@
 28	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	_	_
 29	machine	machine	NOUN	_	Gender=Fem|Number=Sing	27	comp:obj	_	_
 30	et	et	CCONJ	_	_	31	cc	_	_
-31	asservi	asservir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	25	conj	_	_
+31	asservi	asservir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	25	conj:coord	_	_
 32	à	à	ADP	_	_	31	comp:obl	_	_
 33	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	_	SpaceAfter=No
 34	organisation	organisation	NOUN	_	Gender=Fem|Number=Sing	32	comp:obj	_	SpaceAfter=No
@@ -16614,8 +16613,8 @@
 20	division	division	NOUN	_	Gender=Fem|Number=Sing	18	comp:obj	_	mwehead=NC+|pred=y
 21-22	du	_	_	_	_	_	_	_	_
 21	de	de	ADP	_	_	20	unk	_	pred=y
-22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	unk	_	InIdiom=Yes
-23	travail	travail	NOUN	_	Gender=Masc|Number=Sing	22	det	_	pred=y|SpaceAfter=No
+22	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	det	_	InIdiom=Yes
+23	travail	travail	NOUN	_	Gender=Masc|Number=Sing	21	unk	_	pred=y|SpaceAfter=No
 24	.	.	PUNCT	_	_	14	punct	_	_
 
 # sent_id = flmf7ae1ep-437
@@ -16708,14 +16707,14 @@
 6	OS	OS	PROPN	_	Gender=Masc|Number=Plur	4	comp:obj	_	_
 7	augmente	augmenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	et	et	CCONJ	_	_	9	cc	_	_
-9	puise	puiser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+9	puise	puiser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj:coord	_	_
 10	largement	largement	ADV	_	_	9	mod	_	_
 11	dans	dans	ADP	_	_	9	mod	_	_
 12	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	13	det	_	_
 13	milieux	milieu	NOUN	_	Gender=Masc|Number=Plur	11	comp:obj	_	_
 14	ruraux	rural	ADJ	_	Gender=Masc|Number=Plur	13	mod	_	_
 15	et	et	CCONJ	_	_	16	cc	_	_
-16	dans	dans	ADP	_	_	11	conj	_	_
+16	dans	dans	ADP	_	_	11	conj:coord	_	_
 17	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	SpaceAfter=No
 18	immigration	immigration	NOUN	_	Gender=Fem|Number=Sing	16	comp:obj	_	SpaceAfter=No
 19	.	.	PUNCT	_	_	7	punct	_	_
@@ -16727,7 +16726,7 @@
 3	d'	de	ADP	_	_	2	udep	_	SpaceAfter=No
 4	interprétation	interprétation	NOUN	_	Gender=Fem|Number=Sing	3	comp:obj	_	_
 5	et	et	CCONJ	_	_	6	cc	_	_
-6	de	de	ADP	_	_	3	conj	_	_
+6	de	de	ADP	_	_	3	conj:coord	_	_
 7	prévision	prévision	NOUN	_	Gender=Fem|Number=Sing	6	comp:obj	_	_
 8-9	des	_	_	_	_	_	_	_	_
 8	de	de	ADP	_	_	2	udep	_	_
@@ -16797,7 +16796,7 @@
 26	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	27	det	_	_
 27	travail	travail	NOUN	_	Gender=Masc|Number=Sing	25	comp:obj	_	_
 28	et	et	CCONJ	_	_	29	cc	_	_
-29	à	à	ADP	_	_	22	conj	_	_
+29	à	à	ADP	_	_	22	conj:coord	_	_
 30	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	SpaceAfter=No
 31	emploi	emploi	NOUN	_	Gender=Masc|Number=Sing	29	comp:obj	_	SpaceAfter=No
 32	,	,	PUNCT	_	_	34	punct	_	_
@@ -16815,7 +16814,7 @@
 44	,	,	PUNCT	_	_	45	punct	_	_
 45	organisation	organisation	NOUN	_	Gender=Fem|Number=Sing	43	conj	_	_
 46	et	et	CCONJ	_	_	47	cc	_	_
-47	travail	travail	NOUN	_	Gender=Masc|Number=Sing	45	conj	_	_
+47	travail	travail	NOUN	_	Gender=Masc|Number=Sing	45	conj:coord	_	_
 48	"	"	PUNCT	_	_	47	punct	_	SpaceAfter=No
 49	.	.	PUNCT	_	_	34	punct	_	_
 
@@ -16832,8 +16831,8 @@
 5	automatisation	automatisation	NOUN	_	Gender=Fem|Number=Sing	3	comp:obj	_	_
 6	n'	ne	ADV	_	Polarity=Neg	7	mod	_	SpaceAfter=No
 7	apparaît	apparaître	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-8	en	en	ADP	_	_	7	mod	_	mwehead=ADV+|pred=y
-9	fait	fait	NOUN	_	Gender=Masc|Number=Sing	8	comp:obj	_	pred=y
+8	en	en	ADP	_	_	7	mod	_	Idiom=Yes|mwehead=ADV+|pred=y
+9	fait	fait	NOUN	_	Gender=Masc|Number=Sing	8	comp:obj	_	InIdiom=Yes|pred=y
 10	que	que	ADV	_	Polarity=Neg	7	mod	_	_
 11	dans	dans	ADP	_	_	7	mod	_	_
 12	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	13	det	_	_
@@ -16865,7 +16864,7 @@
 38	et	et	CCONJ	_	_	41	cc	_	_
 39	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	41	mod	_	_
 40	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	41	det	_	_
-41	techniques	technique	NOUN	_	Gender=Fem|Number=Plur	21	conj	_	_
+41	techniques	technique	NOUN	_	Gender=Fem|Number=Plur	21	conj:coord	_	_
 42	qui	qui	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Rel	43	subj	_	_
 43	rendent	rendre	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	41	mod@relcl	_	_
 44	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	_	_
@@ -16879,7 +16878,7 @@
 2	micro-électronique	micro-électronique	NOUN	_	Gender=Fem|Number=Sing	6	subj	_	_
 3	et	et	CCONJ	_	_	5	cc	_	_
 4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	_
-5	micro-informatique	micro-informatique	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	_
+5	micro-informatique	micro-informatique	NOUN	_	Gender=Fem|Number=Sing	2	conj:coord	_	_
 6	transforment	transformer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	_
 8	nature	nature	NOUN	_	Gender=Fem|Number=Sing	6	comp:obj	_	_
@@ -16961,8 +16960,8 @@
 # text = Au contraire : toutes les activités de contrôle confiées au système informatique accentuent les formes d'exclusion de l'homme par rapport au travail.
 1-2	Au	_	_	_	_	_	_	_	_
 1	À	à	ADP	_	_	15	mod	_	mwehead=ADV+|pred=y
-2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	unk	_	InIdiom=Yes
-3	contraire	contraire	NOUN	_	Gender=Masc|Number=Sing	2	det	_	pred=y
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	InIdiom=Yes
+3	contraire	contraire	NOUN	_	Gender=Masc|Number=Sing	1	unk	_	pred=y
 4	:	:	PUNCT	_	_	15	punct	_	_
 5	toutes	tout	ADJ	_	Gender=Fem|Number=Plur	7	mod	_	_
 6	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	7	det	_	_
@@ -17013,7 +17012,7 @@
 18	technique	technique	NOUN	_	Gender=Fem|Number=Sing	16	comp:obj	_	_
 19	et	et	CCONJ	_	_	21	cc	_	_
 20	les	le	DET	_	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	21	det	_	_
-21	recherches	recherche	NOUN	_	Gender=Fem|Number=Plur	18	conj	_	_
+21	recherches	recherche	NOUN	_	Gender=Fem|Number=Plur	18	conj:coord	_	_
 22	sur	sur	ADP	_	_	21	udep	_	_
 23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	_
 24	technique	technique	NOUN	_	Gender=Fem|Number=Sing	22	comp:obj	_	_
@@ -17042,7 +17041,7 @@
 19	productivité	productivité	NOUN	_	Gender=Fem|Number=Sing	17	comp:obj	_	SpaceAfter=No
 20	,	,	PUNCT	_	_	22	punct	_	_
 21	et	et	CCONJ	_	_	22	cc	_	_
-22	sur	sur	ADP	_	_	11	conj	_	_
+22	sur	sur	ADP	_	_	11	conj:coord	_	_
 23	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No
 24	impossibilité	impossibilité	NOUN	_	Gender=Fem|Number=Sing	22	comp:obj	_	_
 25	pour	pour	ADP	_	_	24	udep	_	_
@@ -17168,7 +17167,7 @@
 16	,	,	PUNCT	_	_	17	punct	_	_
 17	rémunéré	rémunérer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	14	mod	_	_
 18	et	et	CCONJ	_	_	19	cc	_	_
-19	honoré	honorer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	conj	_	SpaceAfter=No
+19	honoré	honorer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	conj:coord	_	SpaceAfter=No
 20	.	.	PUNCT	_	_	10	punct	_	_
 
 # sent_id = flmf7ae1ep-456
@@ -17197,7 +17196,7 @@
 20	travail	travail	NOUN	_	Gender=Masc|Number=Sing	18	comp:obj	_	_
 21	et	et	CCONJ	_	_	23	cc	_	_
 22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	_
-23	famille	famille	NOUN	_	Gender=Fem|Number=Sing	20	conj	_	_
+23	famille	famille	NOUN	_	Gender=Fem|Number=Sing	20	conj:coord	_	_
 24	s'	le/lui	PRON	_	Gender=Fem|Number=Sing|Person=3|Reflex=Yes	25	comp	_	SpaceAfter=No
 25	analyse	analyser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 26	comme	comme	ADP	_	_	25	comp:pred	_	_
@@ -17215,8 +17214,8 @@
 # sent_id = flmf7ae1ep-457
 # text = De la sorte, le travail d'une société se répartit en fonction du statut familial des individus (en général le couple), et la division sociale devient division familiale.
 1	De	de	ADP	_	_	11	mod	_	mwehead=ADV+|pred=y
-2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	1	unk	_	pred=y
-3	sorte	sorte	NOUN	_	Gender=Fem|Number=Sing	2	det	_	pred=y|SpaceAfter=No
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	pred=y
+3	sorte	sorte	NOUN	_	Gender=Fem|Number=Sing	1	unk	_	pred=y|SpaceAfter=No
 4	,	,	PUNCT	_	_	1	punct	_	_
 5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	travail	travail	NOUN	_	Gender=Masc|Number=Sing	11	subj	_	_
@@ -17237,8 +17236,8 @@
 19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_
 20	individus	individu	NOUN	_	Gender=Masc|Number=Plur	18	comp:obj	_	_
 21	(	(	PUNCT	_	_	20	punct	_	SpaceAfter=No
-22	en	en	ADP	_	_	20	mod	_	mwehead=ADV+|pred=y
-23	général	général	NOUN	_	Gender=Masc|Number=Sing	22	comp:obj	_	pred=y
+22	en	en	ADP	_	_	20	mod	_	Idiom=Yes|mwehead=ADV+|pred=y
+23	général	général	NOUN	_	Gender=Masc|Number=Sing	22	comp:obj	_	InIdiom=Yes|pred=y
 24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	_
 25	couple	couple	NOUN	_	Gender=Masc|Number=Sing	20	mod	_	SpaceAfter=No
 26	)	)	PUNCT	_	_	11	punct	_	SpaceAfter=No
@@ -17247,7 +17246,7 @@
 29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	_
 30	division	division	NOUN	_	Gender=Fem|Number=Sing	32	subj	_	_
 31	sociale	social	ADJ	_	Gender=Fem|Number=Sing	30	mod	_	_
-32	devient	devenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj	_	_
+32	devient	devenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	conj:coord	_	_
 33	division	division	NOUN	_	Gender=Fem|Number=Sing	32	comp:pred	_	_
 34	familiale	familial	ADJ	_	Gender=Fem|Number=Sing	33	mod	_	SpaceAfter=No
 35	.	.	PUNCT	_	Shared=Yes	32	punct	_	_
@@ -17276,8 +17275,8 @@
 # text = C'est un peu ce que fait l'auteur avec les armes du sociologue.
 1	C'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3	2	subj	_	SpaceAfter=No
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	mod	_	mwehead=ADV+|pred=y
-4	peu	peu	ADV	_	_	3	unk	_	pred=y
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	InIdiom=Yes|pred=y
+4	peu	peu	NOUN	_	Gender=Masc|Number=Sing	2	mod	_	Idiom=Yes|mwehead=ADV+|pred=y
 5	ce	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	comp:pred	_	_
 6	que	que	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Rel	7	comp:obj	_	_
 7	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	mod@relcl	_	_
@@ -17391,7 +17390,7 @@
 19	être	être	VERB	_	VerbForm=Inf	18	unk	_	pred=y|Subject=Generic
 20	aussi	aussi	ADV	_	_	16	mod	_	_
 21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
-22	chômage	chômage	NOUN	_	Gender=Masc|Number=Sing	14	conj	_	SpaceAfter=No
+22	chômage	chômage	NOUN	_	Gender=Masc|Number=Sing	14	conj:coord	_	SpaceAfter=No
 23	.	.	PUNCT	_	_	2	punct	_	_
 
 # sent_id = flmf7ae1ep-464
@@ -17522,7 +17521,7 @@
 5	remplir	remplir	VERB	_	VerbForm=Inf	37	subj	_	Subject=Generic
 6	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
 7	bulletins	bulletin	NOUN	_	Gender=Masc|Number=Plur	5	comp:obj	_	mwehead=NC+|pred=y
-8	de	de	ADP	_	_	7	unk	_	pred=y
+8	de	de	ADP	_	_	7	udep	_	pred=y
 9	paie	paie	NOUN	_	Gender=Fem|Number=Sing	8	comp:obj	_	pred=y
 10	de	de	ADP	_	_	7	udep	_	_
 11	l'	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	SpaceAfter=No
@@ -17531,7 +17530,7 @@
 14	industrieuse	industrieux	ADJ	_	Gender=Fem|Number=Sing	12	conj	_	_
 15	"	"	PUNCT	_	_	16	punct	_	_
 16	employée	employé	NOUN	_	Gender=Fem|Number=Sing	10	comp:obj	_	mwehead=NC+|pred=y
-17	de	de	ADP	_	_	16	unk	_	pred=y
+17	de	de	ADP	_	_	16	udep	_	pred=y
 18	maison	maison	NOUN	_	Gender=Fem|Number=Sing	17	comp:obj	_	pred=y
 19	"	"	PUNCT	_	_	16	punct	_	_
 20	(	(	PUNCT	_	_	16	punct	_	SpaceAfter=No
@@ -17547,7 +17546,7 @@
 30	de	de	ADP	_	_	25	udep	_	_
 31	"	"	PUNCT	_	_	30	punct	_	_
 32	femme	femme	NOUN	_	Gender=Fem|Number=Sing	30	comp:obj	_	mwehead=NC+|pred=y
-33	de	de	ADP	_	_	32	unk	_	pred=y
+33	de	de	ADP	_	_	32	udep	_	pred=y
 34	ménage	ménage	NOUN	_	Gender=Masc|Number=Sing	33	comp:obj	_	pred=y
 35	"	"	PUNCT	_	_	30	punct	_	SpaceAfter=No
 36	)	)	PUNCT	_	_	25	punct	_	_
@@ -17661,7 +17660,7 @@
 16	sur	sur	ADP	_	_	14	mod	_	_
 17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	bulletin	bulletin	NOUN	_	Gender=Masc|Number=Sing	16	comp:obj	_	mwehead=NC+|pred=y
-19	de	de	ADP	_	_	18	unk	_	pred=y
+19	de	de	ADP	_	_	18	udep	_	pred=y
 20	paie	paie	NOUN	_	Gender=Fem|Number=Sing	19	comp:obj	_	pred=y|SpaceAfter=No
 21	,	,	PUNCT	_	_	16	punct	_	_
 22	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
@@ -17703,7 +17702,7 @@
 11	ces	ce	DET	_	Gender=Masc|Number=Plur|PronType=Dem	12	det	_	_
 12	chiffres	chiffre	NOUN	_	Gender=Masc|Number=Plur	14	subj	_	_
 13	n'	ne	ADV	_	Polarity=Neg	14	mod	_	SpaceAfter=No
-14	apparaissaient	apparaître	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	2	conj	_	_
+14	apparaissaient	apparaître	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	2	conj:coord	_	_
 15	nulle	nul	ADJ	_	Gender=Fem|Number=Sing|Polarity=Neg	14	mod	_	mwehead=ADV+|pred=y
 16	part	part	NOUN	_	Number=Sing	15	unk	_	pred=y|SpaceAfter=No
 17	,	,	PUNCT	_	_	18	punct	_	_
@@ -17775,14 +17774,14 @@
 # text = Là, il a fallu l'ajouter d'un côté, la déduire de l'autre, et il a fallu aussi changer de bloc de bulletins de salaire, pour qu'ils soient conformes aux nouvelles règles.
 1	Là	Là	ADV	_	_	4	mod	_	SpaceAfter=No
 2	,	,	PUNCT	_	_	1	punct	_	_
-3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	4	subj@expl	_	_
+3	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	4	subj	_	_
 4	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5	fallu	falloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	comp:aux@tense	_	_
 6	l'	le	PRON	_	Gender=Fem|Number=Sing|Person=3	7	comp:obj	_	SpaceAfter=No
 7	ajouter	ajouter	VERB	_	VerbForm=Inf	5	comp:obj	_	Subject=Generic
 8	d'	de	ADP	_	_	7	mod	_	mwehead=ADV+|pred=y|SpaceAfter=No
-9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	unk	_	pred=y
-10	côté	côté	NOUN	_	Gender=Masc|Number=Sing	9	det	_	pred=y|SpaceAfter=No
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	pred=y
+10	côté	côté	NOUN	_	Gender=Masc|Number=Sing	8	unk	_	pred=y|SpaceAfter=No
 11	,	,	PUNCT	_	_	13	punct	_	_
 12	la	le	PRON	_	Gender=Fem|Number=Sing|Person=3	13	comp	_	_
 13	déduire	déduire	VERB	_	VerbForm=Inf	7	conj	_	Subject=Generic
@@ -17791,7 +17790,7 @@
 16	autre	autre	PRON	_	Gender=Masc|Number=Sing|Person=3	14	comp:obj	_	SpaceAfter=No
 17	,	,	PUNCT	_	_	20	punct	_	_
 18	et	et	CCONJ	_	_	20	cc	_	_
-19	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	20	subj@expl	_	_
+19	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3	20	subj	_	_
 20	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
 21	fallu	falloir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	20	comp:aux@tense	_	_
 22	aussi	aussi	ADV	_	_	21	mod	_	_
@@ -17800,7 +17799,7 @@
 25	bloc	bloc	NOUN	_	Gender=Masc|Number=Sing	24	comp:obj	_	_
 26	de	de	ADP	_	_	25	udep	_	_
 27	bulletins	bulletin	NOUN	_	Gender=Masc|Number=Plur	26	comp:obj	_	mwehead=NC+|pred=y
-28	de	de	ADP	_	_	27	unk	_	pred=y
+28	de	de	ADP	_	_	27	udep	_	pred=y
 29	salaire	salaire	NOUN	_	Gender=Masc|Number=Sing	28	comp:obj	_	pred=y|SpaceAfter=No
 30	,	,	PUNCT	_	_	31	punct	_	_
 31	pour	pour	ADP	_	_	23	mod	_	mwehead=CS+|pred=y
@@ -17924,7 +17923,7 @@
 19	eu	avoir	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	comp:aux@tense	_	_
 20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	_
 21	mal	mal	NOUN	_	Gender=Masc|Number=Sing	19	comp:obj	_	mwehead=NC+|pred=y
-22	de	de	ADP	_	_	21	unk	_	pred=y
+22	de	de	ADP	_	_	21	udep	_	pred=y
 23	chien	chien	NOUN	_	Gender=Masc|Number=Sing	22	comp:obj	_	pred=y
 24	à	à	ADP	_	_	18	mod	_	_
 25	comprendre	comprendre	VERB	_	VerbForm=Inf	24	comp:obj	_	SpaceAfter=No|Subject=Generic
@@ -17939,7 +17938,7 @@
 5	joint	joindre	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	comp:aux@tense	_	_
 6	des	un	DET	_	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	7	det	_	_
 7	bulletins	bulletin	NOUN	_	Gender=Masc|Number=Plur	5	comp:obj	_	mwehead=NC+|pred=y
-8	de	de	ADP	_	_	7	unk	_	pred=y
+8	de	de	ADP	_	_	7	udep	_	pred=y
 9	salaire	salaire	NOUN	_	Gender=Masc|Number=Sing	8	comp:obj	_	pred=y
 10	nouvelle	nouveau	ADJ	_	Gender=Fem|Number=Sing	11	mod	_	_
 11	formule	formule	NOUN	_	Gender=Fem|Number=Sing	7	mod	_	_
@@ -17979,7 +17978,7 @@
 5	,	,	PUNCT	_	_	4	punct	_	_
 6	lesdits	ledit	ADJ	_	Gender=Masc|Number=Plur	7	mod	_	_
 7	bulletins	bulletin	NOUN	_	Gender=Masc|Number=Plur	10	subj	_	mwehead=NC+|pred=y
-8	de	de	ADP	_	_	7	unk	_	pred=y
+8	de	de	ADP	_	_	7	udep	_	pred=y
 9	salaire	salaire	NOUN	_	Gender=Masc|Number=Sing	8	comp:obj	_	pred=y
 10	avaient	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	_
 11	encore	encore	ADV	_	_	10	mod	_	_
@@ -17989,7 +17988,7 @@
 15	et	et	CCONJ	_	_	18	cc	_	_
 16	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	17	det	_	_
 17	nouveaux	nouveau	NOUN	_	Gender=Masc|Number=Plur	18	subj	_	_
-18	remplaçaient	remplacer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	10	conj	_	_
+18	remplaçaient	remplacer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	10	conj:coord	_	_
 19	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	20	det	_	_
 20	anciens	ancien	NOUN	_	Gender=Masc|Number=Plur	18	comp:obj	_	SpaceAfter=No
 21	.	.	PUNCT	_	Shared=Yes	18	punct	_	_
@@ -18227,7 +18226,7 @@
 11	-	-	PUNCT	_	_	10	punct	_	_
 12	vente	vente	NOUN	_	Gender=Fem|Number=Sing	10	mod	_	_
 13	et	et	CCONJ	_	_	14	cc	_	_
-14	de	de	ADP	_	_	9	conj	_	_
+14	de	de	ADP	_	_	9	conj:coord	_	_
 15	son	son	DET	_	Gender=Fem|Number=Sing|Person=3|Poss=Yes	16	det	_	_
 16	abréviation	abréviation	NOUN	_	Gender=Fem|Number=Sing	14	comp:obj	_	_
 17	expo	expo	NOUN	_	Gender=Fem|Number=Sing	16	mod	_	_
@@ -18303,7 +18302,7 @@
 34	de	de	ADP	_	_	32	conj	_	_
 35	commerçants	commerçant	NOUN	_	Gender=Masc|Number=Plur	34	comp:obj	_	_
 36	ou	ou	CCONJ	_	_	37	cc	_	_
-37	de	de	ADP	_	_	34	conj	_	_
+37	de	de	ADP	_	_	34	conj:coord	_	_
 38	fabricants	fabricant	NOUN	_	Gender=Masc|Number=Plur	37	comp:obj	_	SpaceAfter=No
 39	,	,	PUNCT	_	Shared=Yes	40	punct	_	_
 40	dénommés	dénommer	VERB	_	Gender=Masc|Number=Plur|Shared=Yes|Tense=Past|VerbForm=Part	37	mod	_	_
@@ -18338,11 +18337,11 @@
 21	agent	agent	NOUN	_	Number=Sing	19	comp:obj	_	mwehead=NC+|pred=y
 22	commercial	commercial	ADJ	_	Gender=Masc|Number=Sing	21	mod	_	pred=y
 23	et	et	CCONJ	_	_	24	cc	_	_
-24	de	de	ADP	_	_	19	conj	_	_
+24	de	de	ADP	_	_	19	conj:coord	_	_
 25	son	son	DET	_	Gender=Masc|Number=Sing|Person=3|Poss=Yes	26	det	_	_
 26	mandant	mandant	NOUN	_	Gender=Masc|Number=Sing	24	comp:obj	_	_
 27	et	et	CCONJ	_	_	28	cc	_	_
-28	succède	succéder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj	_	_
+28	succède	succéder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	conj:coord	_	_
 29-30	au	_	_	_	_	_	_	_	_
 29	à	à	ADP	_	_	28	comp:obl	_	_
 30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	_
@@ -18384,7 +18383,7 @@
 18	commercial	commercial	ADJ	_	Gender=Masc|Number=Sing	17	mod	_	pred=y
 19	et	et	CCONJ	_	_	20	cc	_	_
 20-21	du	_	_	_	_	_	_	_	_
-20	de	de	ADP	_	_	15	conj	_	_
+20	de	de	ADP	_	_	15	conj:coord	_	_
 21	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	_
 22	mandant	mandant	NOUN	_	Gender=Masc|Number=Sing	20	comp:obj	_	_
 23	en	en	ADP	_	ExtPos=ADV	11	mod	_	mwehead=P+|pred=y
@@ -18399,8 +18398,8 @@
 32	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	parataxis	_	_
 33	mettre	mettre	VERB	_	VerbForm=Inf	32	comp:obj	_	Subject=Generic
 34	à	à	ADP	_	ExtPos=ADV	33	comp:obl	_	mwehead=P+|pred=y
-35	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	unk	_	pred=y
-36	disposition	disposition	NOUN	_	Gender=Fem|Number=Sing	35	det	_	pred=y
+35	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	_	pred=y
+36	disposition	disposition	NOUN	_	Gender=Fem|Number=Sing	34	unk	_	pred=y
 37	de	de	ADP	_	_	34	comp:obl	_	pred=y
 38	l'	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	_	SpaceAfter=No
 39	agent	agent	NOUN	_	Number=Sing	37	comp:obj	_	mwehead=NC+|pred=y
@@ -18412,11 +18411,11 @@
 45	les	le	DET	_	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	46	det	_	_
 46	produits	produit	NOUN	_	Gender=Masc|Number=Plur	44	comp:obj	_	_
 47	ou	ou	CCONJ	_	_	48	cc	_	_
-48	services	service	NOUN	_	Gender=Masc|Number=Plur	46	conj	_	_
+48	services	service	NOUN	_	Gender=Masc|Number=Plur	46	conj:coord	_	_
 49	qui	qui	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Rel	50	subj	_	_
 50	font	faire	VERB	_	Mood=Ind|Number=Plur|Person=3|Shared=Yes|Tense=Pres|VerbForm=Fin	48	mod@relcl	_	mwehead=V+|pred=y
-51	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	50	unk	_	pred=y|SpaceAfter=No
-52	objet	objet	NOUN	_	Gender=Masc|Number=Sing	51	det	_	pred=y
+51	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	52	det	_	pred=y|SpaceAfter=No
+52	objet	objet	NOUN	_	Gender=Masc|Number=Sing	50	unk	_	pred=y
 53-54	du	_	_	_	_	_	_	_	_
 53	de	de	ADP	_	_	50	comp:obl	_	_
 54	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	_	_
@@ -18639,7 +18638,7 @@
 18	sur	sur	ADP	_	_	17	udep	_	_
 19	gage	gage	NOUN	_	Gender=Masc|Number=Sing	18	comp:obj	_	_
 20	et	et	CCONJ	_	_	21	cc	_	_
-21	de	de	ADP	_	_	16	conj	_	_
+21	de	de	ADP	_	_	16	conj:coord	_	_
 22	prêt	prêt	NOUN	_	Gender=Masc|Number=Sing	21	comp:obj	_	_
 23-24	aux	_	_	_	_	_	_	_	_
 23	à	à	ADP	_	_	22	udep	_	_
@@ -18647,7 +18646,7 @@
 25	particuliers	particulier	NOUN	_	Gender=Masc|Number=Plur	23	comp:obj	_	_
 26	et	et	CCONJ	_	_	28	cc	_	_
 27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
-28	maintien	maintien	NOUN	_	Gender=Masc|Number=Sing	12	conj	_	_
+28	maintien	maintien	NOUN	_	Gender=Masc|Number=Sing	12	conj:coord	_	_
 29-30	des	_	_	_	_	_	_	_	_
 29	de	de	ADP	_	_	28	udep	_	_
 30	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	31	det	_	_
@@ -18673,7 +18672,7 @@
 48	tant	tant	ADV	_	_	47	comp:obj	_	pred=y
 49	qu'	que	SCONJ	_	_	48	unk	_	pred=y|SpaceAfter=No
 50	établissements	établissement	NOUN	_	Gender=Masc|Number=Plur	28	orphan	_	mwehead=NC+|pred=y
-51	de	de	ADP	_	_	50	unk	_	pred=y
+51	de	de	ADP	_	_	50	udep	_	pred=y
 52	crédit	crédit	NOUN	_	Gender=Masc|Number=Sing	51	comp:obj	_	pred=y|SpaceAfter=No
 53	,	,	PUNCT	_	_	10	punct	_	_
 54	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	55	det	_	_
@@ -18695,7 +18694,7 @@
 68	locaux	local	ADJ	_	Gender=Masc|Number=Plur	66	mod	_	_
 69	et	et	CCONJ	_	_	70	cc	_	_
 70-71	aux	_	_	_	_	_	_	_	_
-70	à	à	ADP	_	_	64	conj	_	_
+70	à	à	ADP	_	_	64	conj:coord	_	_
 71	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	72	det	_	_
 72	associations	association	NOUN	_	Gender=Fem|Number=Plur	70	comp:obj	_	_
 73	dont	dont	PRON	_	Gender=Fem|Number=Plur|Person=3|PronType=Rel	76	comp:obl	_	_
@@ -18719,7 +18718,7 @@
 89	de	de	ADP	_	_	88	udep	_	_
 90	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	91	det	_	_
 91	établissements	établissement	NOUN	_	Gender=Masc|Number=Plur	89	comp:obj	_	mwehead=NC+|pred=y
-92	de	de	ADP	_	_	91	unk	_	pred=y
+92	de	de	ADP	_	_	91	udep	_	pred=y
 93	crédit	crédit	NOUN	_	Gender=Masc|Number=Sing	92	comp:obj	_	pred=y
 94	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	parataxis	_	_
 95	nécessaire	nécessaire	ADJ	_	Gender=Masc|Number=Sing	94	comp:pred	_	SpaceAfter=No
